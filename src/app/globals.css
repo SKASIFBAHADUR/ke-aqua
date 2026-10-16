@@ -1,0 +1,167 @@
+@import "tailwindcss";
+@config "../../tailwind.config.ts";
+
+@theme {
+  /* Colors */
+  --color-primary: #0A192F; /* Deep Navy */
+  --color-primary-light: #112240;
+  --color-secondary: #FFFFFF;
+  --color-aqua: #00A896; /* Accent Aqua/Teal */
+  --color-aqua-light: #02C39A;
+  --color-green: #2E8B57; /* Agricultural Green */
+  --color-green-light: #3CB371;
+  
+  --color-background: #F8FAFC;
+  --color-surface: #FFFFFF;
+  --color-surface-hover: #F1F5F9;
+  
+  --color-text-main: #0F172A;
+  --color-text-muted: #64748B;
+  --color-text-inverse: #FFFFFF;
+  
+  --color-border: #E2E8F0;
+  --color-border-hover: #CBD5E1;
+  
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+
+  /* Typography */
+  --font-sans: "Inter", var(--font-sans);
+  --font-display: "Outfit", var(--font-sans);
+
+  /* Border Radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-card: 0 4px 20px -2px rgb(10 25 47 / 0.08);
+
+  /* Motion */
+  --animate-duration-fast: 150ms;
+  --animate-duration-normal: 300ms;
+  --animate-duration-slow: 500ms;
+  --ease-spring: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@layer base {
+  :root {
+    --background: var(--color-background);
+    --foreground: var(--color-text-main);
+  }
+
+  /* Optional Dark Mode Sections */
+  .dark-section {
+    --background: var(--color-primary);
+    --foreground: var(--color-secondary);
+    --color-text-main: var(--color-secondary);
+    --color-text-muted: #94A3B8;
+    --color-surface: var(--color-primary-light);
+    --color-border: #1E293B;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--color-text-main);
+  }
+
+  h1 { font-size: clamp(2.5rem, 5vw, 4rem); letter-spacing: -0.02em; }
+  h2 { font-size: clamp(2rem, 4vw, 3rem); letter-spacing: -0.01em; }
+  h3 { font-size: clamp(1.5rem, 3vw, 2.25rem); }
+  h4 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
+  
+  p {
+    line-height: 1.6;
+    color: var(--color-text-muted);
+  }
+}
+
+@layer components {
+  .container-width {
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .section-spacing {
+    padding-top: clamp(4rem, 8vw, 8rem);
+    padding-bottom: clamp(4rem, 8vw, 8rem);
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    transition: all var(--animate-duration-normal) var(--ease-smooth);
+    cursor: pointer;
+  }
+
+  .btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--color-primary-light);
+    transform: translateY(-2px);
+  }
+
+  .btn-aqua {
+    background-color: var(--color-aqua);
+    color: var(--color-secondary);
+  }
+
+  .btn-aqua:hover {
+    background-color: var(--color-aqua-light);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 168, 150, 0.3);
+  }
+
+  .btn-outline {
+    background-color: transparent;
+    border: 2px solid var(--color-border);
+    color: var(--color-text-main);
+  }
+
+  .btn-outline:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+  }
+
+  .card {
+    background-color: var(--color-surface);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--color-border);
+    transition: all var(--animate-duration-normal) var(--ease-smooth);
+  }
+
+  .card:hover {
+    box-shadow: var(--shadow-card);
+    transform: translateY(-4px);
+  }
+}
