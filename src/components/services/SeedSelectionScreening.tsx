@@ -321,11 +321,11 @@ export function SeedSelectionScreeningPage() {
             <Link href="/" className="hover:text-cyan-400 transition-colors">
               Home
             </Link>
-            <ChevronRight className="w-3.5 h-3.5 text-slate-600 flex-shrink-0" />
+            <ChevronRight className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />
             <Link href="/#services" className="hover:text-cyan-400 transition-colors">
               Capabilities
             </Link>
-            <ChevronRight className="w-3.5 h-3.5 text-slate-600 flex-shrink-0" />
+            <ChevronRight className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />
             <span className="text-emerald-400 font-medium whitespace-nowrap">
               Seed Selection &amp; Screening Support
             </span>
@@ -354,7 +354,7 @@ export function SeedSelectionScreeningPage() {
               </blockquote>
 
               {/* Supporting Text */}
-              <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-light">
+              <p className="text-base sm:text-lg text-slate-300 leading-relaxed">
                 Selecting high-quality Post-Larvae (PL) and conducting disciplined pre-stocking observation lays the foundation for a healthy crop cycle. At <strong className="text-white font-semibold">KE Aqua Farms</strong>, we provide practical seed selection, stress testing evaluation, acclimatization support, and stocking density advice grounded in commercial experience.
               </p>
 
@@ -404,8 +404,8 @@ export function SeedSelectionScreeningPage() {
               <div className="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900 shadow-2xl shadow-emerald-950/50 group">
                 <div className="aspect-[4/3] relative">
                   <Image
-                    src="/assets/svc-farm-ops.jpg"
-                    alt="KE Aqua Farms Team — Seed Quality Observation & Stocking"
+                    src="/Real_Images/image_2.jpeg"
+                    alt="Aqua Pulse technician conducting microscopic seed selection and post-larvae health screening"
                     fill
                     className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
                     priority
@@ -416,15 +416,15 @@ export function SeedSelectionScreeningPage() {
                 {/* Overlaid Card Info */}
                 <div className="p-6 relative space-y-4">
                   <div className="flex items-center justify-between border-b border-slate-800 pb-3">
-                    <span className="text-xs font-mono text-emerald-400 uppercase tracking-widest">
+                    <span className="text-xs font-mono text-emerald-400 uppercase tracking-wide">
                       PRE-STOCKING ADVISORY
                     </span>
-                    <span className="px-2.5 py-0.5 rounded-full bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 text-[11px] font-mono">
+                    <span className="px-2.5 py-0.5 rounded-full bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 text-xs font-mono">
                       SEED SCREENING
                     </span>
                   </div>
 
-                  <p className="text-xs text-slate-300 leading-relaxed font-light">
+                  <p className="text-xs text-slate-300 leading-relaxed">
                     &ldquo;Good seed selection does not eliminate all crop risks, but it ensures you start your farming cycle with the healthiest possible foundation.&rdquo;
                   </p>
 
@@ -434,7 +434,7 @@ export function SeedSelectionScreeningPage() {
                     </div>
                     <div>
                       <h4 className="text-xs font-bold text-white">KE Aqua Farms Operation</h4>
-                      <p className="text-[11px] text-slate-400 font-mono">Commercial Seed Evaluation &amp; Stocking</p>
+                      <p className="text-xs text-slate-400 font-mono">Commercial Seed Evaluation &amp; Stocking</p>
                     </div>
                   </div>
                 </div>
@@ -459,7 +459,7 @@ export function SeedSelectionScreeningPage() {
               Why Pre-Stocking Seed Selection Matters
             </h2>
 
-            <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-light">
+            <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
               Post-Larvae quality dictates early survival, feeding response, and stress resilience during the first 30 days of culture. Rigorous screening allows farmers to identify vigorous PL batches, avoid stunted or diseased seed, and match stocking density with pond aeration infrastructure.
             </p>
           </motion.div>
@@ -474,7 +474,7 @@ export function SeedSelectionScreeningPage() {
                 <Activity className="w-6 h-6" />
               </div>
               <h3 className="text-lg font-bold text-white">Vigor &amp; Stress Resilience</h3>
-              <p className="text-xs text-slate-300 leading-relaxed font-light">
+              <p className="text-xs text-slate-300 leading-relaxed">
                 Testing PL swimming behavior, phototactic response, and stress challenge endurance ensures the seed can withstand salinity and temperature shifts during stocking.
               </p>
             </motion.div>
@@ -487,7 +487,7 @@ export function SeedSelectionScreeningPage() {
                 <Microscope className="w-6 h-6" />
               </div>
               <h3 className="text-lg font-bold text-white">Microscopic Health Check</h3>
-              <p className="text-xs text-slate-300 leading-relaxed font-light">
+              <p className="text-xs text-slate-300 leading-relaxed">
                 Evaluating organ clarity, hepatopancreas lipid droplets, gut fullness, and muscle-to-gut ratio provides optical confirmation of seed health.
               </p>
             </motion.div>
@@ -500,7 +500,7 @@ export function SeedSelectionScreeningPage() {
                 <ShieldCheck className="w-6 h-6" />
               </div>
               <h3 className="text-lg font-bold text-white">Disciplined Acclimatization</h3>
-              <p className="text-xs text-slate-300 leading-relaxed font-light">
+              <p className="text-xs text-slate-300 leading-relaxed">
                 Following step-by-step parameter matching between packing bags and pond water prevents post-stocking osmotic shock and early mortality.
               </p>
             </motion.div>
@@ -522,7 +522,7 @@ export function SeedSelectionScreeningPage() {
               <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
                 12 Seed Screening &amp; Stocking Areas
               </h2>
-              <p className="text-slate-300 text-sm sm:text-base font-light">
+              <p className="text-slate-300 text-sm sm:text-base">
                 Practical observation points evaluated prior to seed purchase, transit, and pond stocking.
               </p>
             </motion.div>
@@ -555,7 +555,7 @@ export function SeedSelectionScreeningPage() {
 
                     <h3 className="text-base font-bold text-white">{area.title}</h3>
 
-                    <p className="text-xs text-slate-300 leading-relaxed font-light">
+                    <p className="text-xs text-slate-300 leading-relaxed">
                       {area.desc}
                     </p>
                   </div>
@@ -581,7 +581,7 @@ export function SeedSelectionScreeningPage() {
               Seed Selection &amp; Stocking Workflow
             </h2>
 
-            <p className="text-slate-300 text-sm sm:text-base font-light">
+            <p className="text-slate-300 text-sm sm:text-base">
               From initial hatchery evaluation to gentle pond release.
             </p>
           </motion.div>
@@ -601,7 +601,7 @@ export function SeedSelectionScreeningPage() {
                       <span className="text-[9px] font-mono font-bold px-1.5 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 truncate max-w-[80px]">
                         {st.label}
                       </span>
-                      <span className="text-[10px] font-mono text-slate-500">{st.step}</span>
+                      <span className="text-xs font-mono text-slate-400">{st.step}</span>
                     </div>
 
                     <div className="w-8 h-8 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-emerald-400">
@@ -610,7 +610,7 @@ export function SeedSelectionScreeningPage() {
 
                     <h3 className="text-xs font-bold text-white leading-snug">{st.title}</h3>
 
-                    <p className="text-[11px] text-slate-400 leading-relaxed font-light">
+                    <p className="text-xs text-slate-400 leading-relaxed">
                       {st.desc}
                     </p>
                   </div>
@@ -638,7 +638,7 @@ export function SeedSelectionScreeningPage() {
                 Connecting Seed Quality with Pond Readiness
               </h2>
 
-              <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-light">
+              <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
                 High-quality seed requires a well-prepared pond environment. Seed selection support at KE Aqua Farms connects seed screening directly with pre-stocking pond preparation, bloom stabilization, and acclimatization protocols.
               </p>
 
@@ -653,7 +653,7 @@ export function SeedSelectionScreeningPage() {
                     <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" />
                     <div>
                       <h4 className="text-xs font-bold text-white">{item.title}</h4>
-                      <p className="text-xs text-slate-400 font-light mt-0.5">{item.desc}</p>
+                      <p className="text-xs text-slate-400 mt-0.5">{item.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -673,15 +673,15 @@ export function SeedSelectionScreeningPage() {
                   </div>
                 </div>
 
-                <p className="text-xs text-slate-300 leading-relaxed font-light">
+                <p className="text-xs text-slate-300 leading-relaxed">
                   On our commercial farm, every batch of PL undergoes standard stress testing, salinity acclimatization, and early DOC feeding management before being released into growout ponds.
                 </p>
 
                 <div className="p-4 rounded-xl bg-slate-950 border border-slate-800 space-y-2">
-                  <span className="text-[11px] font-mono text-cyan-400 uppercase tracking-wider block font-bold">
+                  <span className="text-xs font-mono text-cyan-400 uppercase tracking-wider block font-bold">
                     RECOMMENDED STOCKING HOURS
                   </span>
-                  <p className="text-xs text-slate-300 font-light leading-relaxed">
+                  <p className="text-xs text-slate-300 leading-relaxed">
                     Always stock early in the morning (5:00 AM – 8:00 AM) or late evening when water temperatures are stable and solar radiation is minimal.
                   </p>
                 </div>
@@ -706,7 +706,7 @@ export function SeedSelectionScreeningPage() {
               SEE → LEARN → DO → MEASURE → IMPROVE
             </h2>
 
-            <p className="text-slate-300 text-sm sm:text-base font-light">
+            <p className="text-slate-300 text-sm sm:text-base">
               Our core farming methodology applied to seed selection and pre-stocking management.
             </p>
           </div>
@@ -727,7 +727,7 @@ export function SeedSelectionScreeningPage() {
                     <PilIcon className={`w-5 h-5 ${pil.color}`} />
                   </div>
                   <h3 className="text-base font-bold text-white">{pil.title}</h3>
-                  <p className="text-xs text-slate-300 leading-relaxed font-light">
+                  <p className="text-xs text-slate-300 leading-relaxed">
                     {pil.desc}
                   </p>
                 </motion.div>
@@ -766,7 +766,7 @@ export function SeedSelectionScreeningPage() {
                     <AudIcon className="w-5 h-5" />
                   </div>
                   <h3 className="text-base font-bold text-white">{aud.title}</h3>
-                  <p className="text-xs text-slate-300 leading-relaxed font-light">
+                  <p className="text-xs text-slate-300 leading-relaxed">
                     {aud.description}
                   </p>
                 </motion.div>
@@ -785,7 +785,7 @@ export function SeedSelectionScreeningPage() {
             <AlertCircle className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
             <div className="space-y-1">
               <span className="font-semibold text-white">Pre-Stocking Risk Disclaimer:</span>
-              <p className="font-light leading-relaxed">
+              <p className="leading-relaxed">
                 Seed screening can support better-informed stocking decisions but cannot eliminate all farming risks. Final crop performance depends on continuous pond management, water quality, weather conditions, and biosecurity.
               </p>
             </div>
@@ -810,7 +810,7 @@ export function SeedSelectionScreeningPage() {
                 Talk to Our Team About Seed Selection &amp; Stocking
               </h2>
 
-              <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-light">
+              <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
                 Planning your next stocking cycle? Reach out to discuss PL quality evaluation, stress testing procedures, or stocking density calculations with the KE Aqua Farms team.
               </p>
 
@@ -824,7 +824,7 @@ export function SeedSelectionScreeningPage() {
                     <Phone className="w-5 h-5" />
                   </div>
                   <div>
-                    <span className="text-[11px] font-mono text-slate-400 block">Direct Call</span>
+                    <span className="text-xs font-mono text-slate-400 block">Direct Call</span>
                     <span className="text-sm font-bold text-white group-hover:text-emerald-300 transition-colors">
                       {CONTACT_CONFIG.phone.display}
                     </span>
@@ -841,7 +841,7 @@ export function SeedSelectionScreeningPage() {
                     <MessageSquare className="w-5 h-5" />
                   </div>
                   <div>
-                    <span className="text-[11px] font-mono text-slate-400 block">WhatsApp Enquiries</span>
+                    <span className="text-xs font-mono text-slate-400 block">WhatsApp Enquiries</span>
                     <span className="text-sm font-bold text-white group-hover:text-emerald-300 transition-colors">
                       Chat on WhatsApp
                     </span>
@@ -854,10 +854,10 @@ export function SeedSelectionScreeningPage() {
                 <Clock className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
                 <div className="text-xs space-y-1">
                   <p className="font-semibold text-white">Working Hours &amp; Location:</p>
-                  <p className="text-slate-300 font-light">
+                  <p className="text-slate-300">
                     {CONTACT_CONFIG.operatingHours.days} • {CONTACT_CONFIG.operatingHours.time}
                   </p>
-                  <p className="text-slate-400 text-[11px] font-mono">{CONTACT_CONFIG.location.fullAddress}</p>
+                  <p className="text-slate-400 text-xs font-mono">{CONTACT_CONFIG.location.fullAddress}</p>
                 </div>
               </div>
             </motion.div>
@@ -867,7 +867,7 @@ export function SeedSelectionScreeningPage() {
               <div className="rounded-2xl p-7 bg-slate-900/90 border border-slate-800 shadow-2xl space-y-6">
                 <div className="border-b border-slate-800 pb-4">
                   <h3 className="text-xl font-bold text-white">Seed Support Enquiry Form</h3>
-                  <p className="text-xs text-slate-400 mt-1 font-light">
+                  <p className="text-xs text-slate-400 mt-1">
                     Submit your seed screening enquiry below. Our team will contact you directly.
                   </p>
                 </div>

@@ -73,34 +73,34 @@ const ecosystemNodes = [
 
 const colorMap = {
   green: {
-    bg: "bg-green/8",
-    border: "border-green/20",
-    icon: "bg-green/10 text-green",
-    step: "text-green",
-    tag: "bg-green/8 text-green border-green/15",
-    connector: "bg-green/30",
+    bg: "bg-emerald-50/60",
+    border: "border-emerald-200",
+    icon: "bg-emerald-100 text-emerald-800",
+    step: "text-emerald-800 font-bold",
+    tag: "bg-emerald-50 text-emerald-800 border-emerald-200",
+    connector: "bg-emerald-300",
   },
   aqua: {
-    bg: "bg-aqua/8",
-    border: "border-aqua/20",
-    icon: "bg-aqua/10 text-aqua",
-    step: "text-aqua",
-    tag: "bg-aqua/8 text-aqua border-aqua/15",
-    connector: "bg-aqua/30",
+    bg: "bg-teal-50/60",
+    border: "border-teal-200",
+    icon: "bg-teal-100 text-teal-800",
+    step: "text-teal-800 font-bold",
+    tag: "bg-teal-50 text-teal-800 border-teal-200",
+    connector: "bg-teal-300",
   },
   primary: {
-    bg: "bg-primary/5",
-    border: "border-primary/15",
-    icon: "bg-primary/10 text-primary",
-    step: "text-primary",
-    tag: "bg-primary/5 text-primary border-primary/12",
-    connector: "bg-primary/20",
+    bg: "bg-slate-50",
+    border: "border-slate-300",
+    icon: "bg-slate-200 text-[#0A192F]",
+    step: "text-[#0A192F] font-bold",
+    tag: "bg-slate-100 text-slate-800 border-slate-300",
+    connector: "bg-slate-300",
   },
 };
 
 export function EcosystemSection() {
   return (
-    <section className="section-spacing bg-background border-b border-border">
+    <section className="section-spacing bg-[#F8FAFC] border-b border-slate-200 text-slate-900">
       <div className="container-width">
         {/* Section Header */}
         <motion.div
@@ -110,16 +110,16 @@ export function EcosystemSection() {
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.55, ease: "easeOut" }}
         >
-          <span className="text-xs uppercase tracking-widest text-aqua font-bold mb-3 block">
+          <span className="text-xs uppercase tracking-wide text-teal-800 font-bold mb-3 block">
             Our Integrated Structure
           </span>
-          <h2 className="text-primary font-display text-3xl sm:text-4xl font-bold tracking-tight mb-4 leading-tight">
+          <h2 className="text-[#0A192F] font-display text-3xl sm:text-4xl font-extrabold tracking-tight mb-4 leading-tight">
             An Integrated Aquaculture Ecosystem
           </h2>
-          <p className="text-text-muted text-base sm:text-lg leading-relaxed">
+          <p className="text-slate-700 text-base sm:text-lg leading-relaxed">
             KE Aqua Group brings together complementary businesses across the aquaculture value chain — from farm science to seafood value. Each division serves a distinct and purposeful role.
           </p>
-          <p className="mt-3 text-sm text-text-muted italic">
+          <p className="mt-3 text-sm text-slate-700 font-medium italic">
             From Farm Science to Seafood Value.
           </p>
         </motion.div>
@@ -128,7 +128,7 @@ export function EcosystemSection() {
         <div className="relative">
           {/* Horizontal connector line (desktop only) */}
           <div
-            className="hidden xl:block absolute top-[4.5rem] left-0 right-0 h-px bg-gradient-to-r from-green/20 via-aqua/30 to-aqua/20 z-0"
+            className="hidden xl:block absolute top-[4.5rem] left-0 right-0 h-px bg-gradient-to-r from-emerald-200 via-teal-300 to-teal-200 z-0"
             aria-hidden="true"
           />
 
@@ -151,7 +151,7 @@ export function EcosystemSection() {
                       className="xl:hidden absolute -bottom-3 left-1/2 -translate-x-1/2 z-20 pointer-events-none"
                       aria-hidden="true"
                     >
-                      <ArrowRight className="w-4 h-4 text-border rotate-90" />
+                      <ArrowRight className="w-4 h-4 text-slate-400 rotate-90" />
                     </div>
                   )}
 
@@ -159,7 +159,7 @@ export function EcosystemSection() {
                   <div
                     className={`
                       relative flex flex-col h-full
-                      bg-surface border rounded-xl p-5
+                      bg-white border rounded-xl p-5 sm:p-6 shadow-sm
                       transition-all duration-300 ease-out
                       hover:shadow-card hover:-translate-y-1
                       ${c.border}
@@ -167,7 +167,7 @@ export function EcosystemSection() {
                   >
                     {/* Step indicator */}
                     <div className="flex items-center justify-between mb-4">
-                      <span className={`text-xs font-bold tracking-widest uppercase ${c.step}`}>
+                      <span className={`text-xs font-bold tracking-wider uppercase ${c.step}`}>
                         {node.step}
                       </span>
                       <div className={`p-2 rounded-lg ${c.icon} transition-colors`}>
@@ -185,17 +185,17 @@ export function EcosystemSection() {
                     </div>
 
                     {/* Role Label */}
-                    <p className="text-[0.68rem] uppercase tracking-wider font-semibold text-text-muted mb-1">
+                    <p className="text-xs uppercase tracking-wide font-bold text-slate-700 mb-1">
                       {node.role}
                     </p>
 
                     {/* Tagline */}
-                    <p className={`text-xs font-medium mb-3 ${c.step}`}>
+                    <p className={`text-xs sm:text-sm font-semibold mb-3 ${c.step}`}>
                       {node.tagline}
                     </p>
 
                     {/* Description */}
-                    <p className="text-xs text-text-muted leading-relaxed mb-4 flex-1">
+                    <p className="text-sm text-slate-700 leading-relaxed mb-4 flex-1">
                       {node.description}
                     </p>
 
@@ -204,7 +204,7 @@ export function EcosystemSection() {
                       {node.tags.map((tag) => (
                         <span
                           key={tag}
-                          className={`text-[0.62rem] font-medium px-2 py-0.5 rounded-full border ${c.tag}`}
+                          className={`text-xs font-semibold px-2.5 py-1 rounded-full border ${c.tag}`}
                         >
                           {tag}
                         </span>
@@ -219,7 +219,7 @@ export function EcosystemSection() {
 
         {/* Group Philosophy Strip — directly from source */}
         <motion.div
-          className="mt-14 rounded-xl border border-border bg-surface overflow-hidden"
+          className="mt-14 rounded-xl border border-slate-200 bg-white shadow-sm overflow-hidden"
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
@@ -227,7 +227,7 @@ export function EcosystemSection() {
         >
           <div className="flex flex-col lg:flex-row">
             {/* Left — Group brand */}
-            <div className="lg:w-64 bg-primary flex flex-col items-center justify-center p-8 shrink-0">
+            <div className="lg:w-64 bg-[#0A192F] flex flex-col items-center justify-center p-8 shrink-0">
               <img
                 src="/assets/ke-logo-emblem.png"
                 alt="KE Aqua Group emblem"
@@ -236,17 +236,17 @@ export function EcosystemSection() {
               <p className="text-white font-display font-bold text-center text-base leading-tight">
                 KE Aqua Group
               </p>
-              <p className="text-aqua-light text-xs font-medium tracking-wider text-center mt-1">
+              <p className="text-cyan-300 text-xs font-semibold tracking-wide text-center mt-1">
                 From Farm to Future
               </p>
             </div>
 
             {/* Right — Pillars */}
             <div className="flex-1 p-6 sm:p-8">
-              <p className="text-xs uppercase tracking-widest text-text-muted font-semibold mb-5">
+              <p className="text-xs uppercase tracking-wide text-slate-700 font-bold mb-5">
                 Group Philosophy
               </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 {[
                   {
                     heading: "We Practice. We Monitor. We Learn. We Share.",
@@ -266,12 +266,12 @@ export function EcosystemSection() {
                   },
                 ].map((item) => (
                   <div key={item.heading} className="flex gap-3">
-                    <div className="w-1 rounded-full bg-aqua/40 shrink-0 mt-1" />
+                    <div className="w-1 rounded-full bg-teal-600 shrink-0 mt-1" />
                     <div>
-                      <p className="text-sm font-semibold text-primary leading-snug mb-1">
+                      <p className="text-sm sm:text-base font-bold text-[#0A192F] leading-snug mb-1">
                         {item.heading}
                       </p>
-                      <p className="text-xs text-text-muted leading-relaxed">{item.body}</p>
+                      <p className="text-sm text-slate-700 leading-relaxed">{item.body}</p>
                     </div>
                   </div>
                 ))}

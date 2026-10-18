@@ -290,14 +290,14 @@ export function IoTSensorMonitoringPage() {
             <Link href="/" className="hover:text-cyan-400 transition-colors">
               Home
             </Link>
-            <ChevronRight className="w-3.5 h-3.5 text-slate-600 flex-shrink-0" />
+            <ChevronRight className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />
             <Link
               href="/#services"
               className="hover:text-cyan-400 transition-colors"
             >
               Capabilities
             </Link>
-            <ChevronRight className="w-3.5 h-3.5 text-slate-600 flex-shrink-0" />
+            <ChevronRight className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />
             <span className="text-purple-400 font-medium whitespace-nowrap">
               IoT & Sensor Monitoring
             </span>
@@ -322,7 +322,7 @@ export function IoTSensorMonitoringPage() {
               </h1>
 
               {/* Supporting Text */}
-              <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-light">
+              <p className="text-base sm:text-lg text-slate-300 leading-relaxed">
                 Smart aquaculture begins with better information.{" "}
                 <strong className="text-white font-semibold">KE Aqua Farms</strong>{" "}
                 evaluates and applies sensor-based monitoring technologies within our
@@ -389,15 +389,15 @@ export function IoTSensorMonitoringPage() {
                 {/* Overlaid Card Info */}
                 <div className="p-6 relative space-y-4">
                   <div className="flex items-center justify-between border-b border-slate-800 pb-3">
-                    <span className="text-xs font-mono text-purple-400 uppercase tracking-widest">
+                    <span className="text-xs font-mono text-purple-400 uppercase tracking-wide">
                       TECHNOLOGY-ASSISTED MONITORING
                     </span>
-                    <span className="px-2.5 py-0.5 rounded-full bg-purple-500/20 border border-purple-500/40 text-purple-300 text-[11px] font-mono">
+                    <span className="px-2.5 py-0.5 rounded-full bg-purple-500/20 border border-purple-500/40 text-purple-300 text-xs font-mono">
                       IoT & SENSORS
                     </span>
                   </div>
 
-                  <p className="text-xs text-slate-300 leading-relaxed font-light">
+                  <p className="text-xs text-slate-300 leading-relaxed">
                     &ldquo;Technology options and sensor capabilities should be confirmed
                     according to the actual systems available and demonstrated by
                     KE Aqua.&rdquo;
@@ -411,7 +411,7 @@ export function IoTSensorMonitoringPage() {
                       <h4 className="text-xs font-bold text-white">
                         KE Aqua Farms Practice
                       </h4>
-                      <p className="text-[11px] text-slate-400 font-mono">
+                      <p className="text-xs text-slate-400 font-mono">
                         Smart Aquaculture — 30-Acre Working Farm
                       </p>
                     </div>
@@ -441,7 +441,7 @@ export function IoTSensorMonitoringPage() {
               Why Sensor Monitoring Matters in Aquaculture
             </h2>
 
-            <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-light">
+            <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
               Aquaculture farm management depends on timely, reliable information.
               Water conditions, shrimp behaviour, feeding response, and aeration
               performance are all subject to change—often rapidly and sometimes during
@@ -461,7 +461,7 @@ export function IoTSensorMonitoringPage() {
               <h3 className="text-lg font-bold text-white">
                 Technology-Assisted Data Collection
               </h3>
-              <p className="text-xs text-slate-300 leading-relaxed font-light">
+              <p className="text-xs text-slate-300 leading-relaxed">
                 Sensor systems can assist in collecting parameter data that complements
                 regular laboratory testing and direct farm observation. The value of
                 this data depends on how it is interpreted and applied in farm management.
@@ -478,7 +478,7 @@ export function IoTSensorMonitoringPage() {
               <h3 className="text-lg font-bold text-white">
                 Complementing Farmer Observation
               </h3>
-              <p className="text-xs text-slate-300 leading-relaxed font-light">
+              <p className="text-xs text-slate-300 leading-relaxed">
                 Technology does not replace the farmer's direct observation, experience,
                 and judgment. Sensor data is most valuable when reviewed alongside
                 physical pond checks and an understanding of overall farm conditions.
@@ -495,7 +495,7 @@ export function IoTSensorMonitoringPage() {
               <h3 className="text-lg font-bold text-white">
                 Supporting Better-Informed Decisions
               </h3>
-              <p className="text-xs text-slate-300 leading-relaxed font-light">
+              <p className="text-xs text-slate-300 leading-relaxed">
                 Collected data, interpreted in context with farm experience and
                 observation, can support more consistent and informed management
                 decisions. Outcomes depend on actual conditions and consistent application.
@@ -522,7 +522,7 @@ export function IoTSensorMonitoringPage() {
               <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
                 Key Areas of Sensor-Assisted Monitoring
               </h2>
-              <p className="text-slate-300 text-sm sm:text-base font-light">
+              <p className="text-slate-300 text-sm sm:text-base">
                 Areas where sensor-based technology can complement farm monitoring
                 practices, subject to confirmed available systems.
               </p>
@@ -560,7 +560,7 @@ export function IoTSensorMonitoringPage() {
                       {item.title}
                     </h3>
 
-                    <p className="text-xs text-slate-300 leading-relaxed font-light">
+                    <p className="text-xs text-slate-300 leading-relaxed">
                       {item.desc}
                     </p>
                   </div>
@@ -575,7 +575,7 @@ export function IoTSensorMonitoringPage() {
             {...fadeUp(0.3)}
           >
             <AlertTriangle className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
-            <p className="text-xs text-amber-200 leading-relaxed font-light">
+            <p className="text-xs text-amber-200 leading-relaxed">
               <strong className="font-semibold text-amber-300">Note:</strong>{" "}
               Technology options and sensor capabilities should be confirmed according to
               the actual systems available and demonstrated by KE Aqua. We do not
@@ -604,7 +604,7 @@ export function IoTSensorMonitoringPage() {
               Farm Problem → Technology → Practice → Observation → Benefit
             </h2>
 
-            <p className="text-slate-300 text-sm sm:text-base font-light">
+            <p className="text-slate-300 text-sm sm:text-base">
               How KE Aqua evaluates and applies sensor technology within the context
               of real farm needs and practical observation.
             </p>
@@ -622,10 +622,10 @@ export function IoTSensorMonitoringPage() {
                 >
                   <div className="space-y-3">
                     <div className="flex items-center justify-between">
-                      <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded bg-purple-500/10 border border-purple-500/30 text-purple-300">
+                      <span className="text-xs font-mono font-bold px-2 py-0.5 rounded bg-purple-500/10 border border-purple-500/30 text-purple-300">
                         {st.label}
                       </span>
-                      <span className="text-xs font-mono text-slate-500">
+                      <span className="text-xs font-mono text-slate-400">
                         {st.step}
                       </span>
                     </div>
@@ -636,7 +636,7 @@ export function IoTSensorMonitoringPage() {
 
                     <h3 className="text-base font-bold text-white">{st.title}</h3>
 
-                    <p className="text-xs text-slate-400 leading-relaxed font-light">
+                    <p className="text-xs text-slate-300 leading-relaxed">
                       {st.desc}
                     </p>
                   </div>
@@ -644,7 +644,7 @@ export function IoTSensorMonitoringPage() {
                   {/* Connector arrow (not on last) */}
                   {idx < technologyFrameworkSteps.length - 1 && (
                     <div className="hidden lg:block absolute -right-3 top-1/2 -translate-y-1/2 z-10">
-                      <ChevronRight className="w-5 h-5 text-slate-600" />
+                      <ChevronRight className="w-5 h-5 text-slate-400" />
                     </div>
                   )}
                 </motion.div>
@@ -672,7 +672,7 @@ export function IoTSensorMonitoringPage() {
               Technology Supports Decisions — It Does Not Replace Farmer Judgment
             </h2>
 
-            <p className="text-slate-300 text-sm sm:text-base font-light">
+            <p className="text-slate-300 text-sm sm:text-base">
               Sensor data is one input among many. Better farm decisions come from
               combining multiple sources of information with experience and context.
             </p>
@@ -731,13 +731,13 @@ export function IoTSensorMonitoringPage() {
                       >
                         {item.label}
                       </p>
-                      <p className="text-[11px] text-slate-400 font-light leading-relaxed">
+                      <p className="text-xs text-slate-400 leading-relaxed">
                         {item.sub}
                       </p>
                     </motion.div>
 
                     {idx < arr.length - 1 && (
-                      <div className="hidden md:flex items-center justify-center text-slate-500 font-bold text-xl col-span-0">
+                      <div className="hidden md:flex items-center justify-center text-slate-400 font-bold text-xl col-span-0">
                       </div>
                     )}
                   </React.Fragment>
@@ -750,13 +750,13 @@ export function IoTSensorMonitoringPage() {
               className="mt-8 p-6 rounded-2xl bg-gradient-to-r from-purple-950/50 via-slate-900 to-emerald-950/50 border border-slate-700 text-center space-y-3"
               {...fadeUp(0.35)}
             >
-              <p className="text-[11px] font-mono text-slate-400 uppercase tracking-widest">
+              <p className="text-xs font-mono text-slate-400 uppercase tracking-wide">
                 Combined together
               </p>
               <h3 className="text-xl sm:text-2xl font-extrabold text-white">
                 = Better-Informed Farm Management
               </h3>
-              <p className="text-xs text-slate-300 font-light max-w-2xl mx-auto leading-relaxed">
+              <p className="text-xs text-slate-300 max-w-2xl mx-auto leading-relaxed">
                 No single element guarantees better outcomes. The combination of
                 good data, consistent observation, detailed records and practical
                 farm experience supports more informed decisions—and better decisions
@@ -782,7 +782,7 @@ export function IoTSensorMonitoringPage() {
               Traditional + Scientific + Advanced Monitoring
             </h2>
 
-            <p className="text-slate-300 text-sm sm:text-base font-light">
+            <p className="text-slate-300 text-sm sm:text-base">
               Sensors complement rather than replace conventional observation and
               laboratory practice. Each approach has its place in a well-managed farm.
             </p>
@@ -816,7 +816,7 @@ export function IoTSensorMonitoringPage() {
                       </p>
                     </div>
 
-                    <p className="text-xs text-slate-300 leading-relaxed font-light">
+                    <p className="text-xs text-slate-300 leading-relaxed">
                       {tier.desc}
                     </p>
 
@@ -829,7 +829,7 @@ export function IoTSensorMonitoringPage() {
                           <CheckCircle2
                             className={`w-3.5 h-3.5 ${tier.color} flex-shrink-0`}
                           />
-                          <span className="font-light">{pt}</span>
+                          <span className="">{pt}</span>
                         </li>
                       ))}
                     </ul>
@@ -856,7 +856,7 @@ export function IoTSensorMonitoringPage() {
               Connected Services & Technology Areas
             </h2>
 
-            <p className="text-slate-300 text-sm sm:text-base font-light">
+            <p className="text-slate-300 text-sm sm:text-base">
               IoT and sensor monitoring works alongside other KE Aqua capabilities
               and service areas within a broader farm management approach.
             </p>
@@ -879,11 +879,11 @@ export function IoTSensorMonitoringPage() {
                       <h3 className="text-base font-bold text-white group-hover:text-purple-300 transition-colors">
                         {svc.title}
                       </h3>
-                      <p className="text-[11px] font-mono text-slate-400 mt-0.5">
+                      <p className="text-xs font-mono text-slate-400 mt-0.5">
                         {svc.subtitle}
                       </p>
                     </div>
-                    <p className="text-xs text-slate-300 leading-relaxed font-light">
+                    <p className="text-xs text-slate-300 leading-relaxed">
                       {svc.desc}
                     </p>
                   </div>
@@ -919,7 +919,7 @@ export function IoTSensorMonitoringPage() {
             We do not publish fabricated hardware specifications, accuracy figures,
             or automation claims.&rdquo;
           </blockquote>
-          <p className="text-xs text-slate-400 font-light max-w-2xl mx-auto">
+          <p className="text-xs text-slate-400 max-w-2xl mx-auto">
             KE Aqua evaluates technology from the perspective of practical farm
             benefit—not as a product catalogue. Every technology we discuss is
             evaluated on our own 30-acre working farm before any recommendation is made.
@@ -944,7 +944,7 @@ export function IoTSensorMonitoringPage() {
                 Discuss IoT & Sensor Monitoring for Your Farm
               </h2>
 
-              <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-light">
+              <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
                 Whether you want to understand how sensor technology might support
                 your farm monitoring practice, evaluate specific technology for your
                 farm conditions, or discuss how data and observation work together—
@@ -961,7 +961,7 @@ export function IoTSensorMonitoringPage() {
                     <Phone className="w-5 h-5" />
                   </div>
                   <div>
-                    <span className="text-[11px] font-mono text-slate-400 block">
+                    <span className="text-xs font-mono text-slate-400 block">
                       Direct Call
                     </span>
                     <span className="text-sm font-bold text-white group-hover:text-purple-300 transition-colors">
@@ -980,7 +980,7 @@ export function IoTSensorMonitoringPage() {
                     <MessageSquare className="w-5 h-5" />
                   </div>
                   <div>
-                    <span className="text-[11px] font-mono text-slate-400 block">
+                    <span className="text-xs font-mono text-slate-400 block">
                       WhatsApp Enquiries
                     </span>
                     <span className="text-sm font-bold text-white group-hover:text-emerald-300 transition-colors">
@@ -997,11 +997,11 @@ export function IoTSensorMonitoringPage() {
                   <p className="font-semibold text-white">
                     Working Hours & Location:
                   </p>
-                  <p className="text-slate-300 font-light">
+                  <p className="text-slate-300">
                     {CONTACT_CONFIG.operatingHours.days} •{" "}
                     {CONTACT_CONFIG.operatingHours.time}
                   </p>
-                  <p className="text-slate-400 text-[11px] font-mono">
+                  <p className="text-slate-400 text-xs font-mono">
                     {CONTACT_CONFIG.location.fullAddress}
                   </p>
                 </div>
@@ -1015,7 +1015,7 @@ export function IoTSensorMonitoringPage() {
                   <h3 className="text-xl font-bold text-white">
                     IoT / Sensor Monitoring Enquiry
                   </h3>
-                  <p className="text-xs text-slate-400 mt-1 font-light">
+                  <p className="text-xs text-slate-400 mt-1">
                     Submit your enquiry below. Our team will contact you directly to discuss your farm&apos;s monitoring needs.
                   </p>
                 </div>
@@ -1034,7 +1034,7 @@ export function IoTSensorMonitoringPage() {
                       <h4 className="text-lg font-bold text-white">
                         Enquiry Submitted
                       </h4>
-                      <p className="text-sm text-slate-300 font-light">
+                      <p className="text-sm text-slate-300">
                         Your message has been forwarded via WhatsApp. Our team
                         will be in touch shortly to discuss your farm&apos;s
                         monitoring needs.
@@ -1129,7 +1129,7 @@ export function IoTSensorMonitoringPage() {
                         <span>DISCUSS FARM MONITORING TECHNOLOGY</span>
                       </button>
 
-                      <p className="text-[11px] text-center text-slate-500 font-light">
+                      <p className="text-xs text-center text-slate-400 font-normal">
                         Your enquiry will be sent via WhatsApp for a direct response
                         from our technical team.
                       </p>
@@ -1148,7 +1148,7 @@ export function IoTSensorMonitoringPage() {
             <h3 className="text-2xl font-extrabold text-white">
               Contact KE Aqua Farms
             </h3>
-            <p className="text-sm text-slate-300 font-light max-w-xl mx-auto">
+            <p className="text-sm text-slate-300 max-w-xl mx-auto">
               For farm visits, detailed technology discussions, or general aquaculture
               enquiries—reach our team directly.
             </p>

@@ -77,22 +77,22 @@ export default function FounderPage() {
           <h2 className="text-2xl font-bold text-white mb-8 border-b border-slate-800 pb-4">Professional Journey</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-slate-900 border border-slate-800 p-6 rounded-2xl">
-              <span className="text-slate-500 font-mono text-xs font-bold block mb-2">01</span>
+              <span className="text-slate-400 font-mono text-xs font-bold block mb-2">01</span>
               <h3 className="text-lg font-bold text-cyan-400 mb-3">Automobile Industry</h3>
               <p className="text-sm leading-relaxed">Started career at Varun Maruti Suzuki and Tata Jasper, developing a strong foundation in mechanical systems, service operations, and technical troubleshooting.</p>
             </div>
             <div className="bg-slate-900 border border-slate-800 p-6 rounded-2xl">
-              <span className="text-slate-500 font-mono text-xs font-bold block mb-2">02</span>
+              <span className="text-slate-400 font-mono text-xs font-bold block mb-2">02</span>
               <h3 className="text-lg font-bold text-cyan-400 mb-3">Technical Training &amp; Skill Development</h3>
               <p className="text-sm leading-relaxed">Worked extensively with APSSDC-associated programs at Andhra Loyola Engineering College and Government Polytechnic, Vijayawada. Evaluated candidate skills for major manufacturers like Kia Motors.</p>
             </div>
             <div className="bg-slate-900 border border-slate-800 p-6 rounded-2xl">
-              <span className="text-slate-500 font-mono text-xs font-bold block mb-2">03</span>
+              <span className="text-slate-400 font-mono text-xs font-bold block mb-2">03</span>
               <h3 className="text-lg font-bold text-cyan-400 mb-3">Agricultural Technology</h3>
               <p className="text-sm leading-relaxed">Transitioned to agricultural mechanization with TAFE CSR (JFarm Services), facilitating machinery access for farmers across multiple districts and training farmers on modern agricultural technology adoption.</p>
             </div>
             <div className="bg-slate-900 border border-slate-800 p-6 rounded-2xl">
-              <span className="text-slate-500 font-mono text-xs font-bold block mb-2">04</span>
+              <span className="text-slate-400 font-mono text-xs font-bold block mb-2">04</span>
               <h3 className="text-lg font-bold text-emerald-400 mb-3">Transition to Aquaculture</h3>
               <p className="text-sm leading-relaxed">Recognized the need for practical engineering, scientific monitoring, and responsible management in the rapidly expanding aquaculture sector, shifting full focus to shrimp farming operations.</p>
             </div>
@@ -141,7 +141,7 @@ export default function FounderPage() {
             <p className="text-sm leading-relaxed mb-6">
               Technology should not be adopted merely for display—it must demonstrate practical value in the pond. Evaluated solutions include:
             </p>
-            <ul className="space-y-2 text-sm text-slate-400">
+            <ul className="space-y-2 text-sm text-slate-300">
               <li>• Automatic feeders &amp; feed management</li>
               <li>• Water-quality monitoring and IoT systems</li>
               <li>• Paddlewheel, blower &amp; aeration approaches</li>
@@ -150,10 +150,10 @@ export default function FounderPage() {
               <li>• Data-supported management &amp; traceability</li>
             </ul>
             <div className="mt-6 flex items-center justify-between text-xs font-mono font-bold text-cyan-400 uppercase tracking-widest bg-cyan-950/20 p-3 rounded-lg">
-              <span>Study</span><span className="text-slate-600">→</span>
-              <span>Test</span><span className="text-slate-600">→</span>
-              <span>Implement</span><span className="text-slate-600">→</span>
-              <span>Monitor</span><span className="text-slate-600">→</span>
+              <span>Study</span><span className="text-slate-400">→</span>
+              <span>Test</span><span className="text-slate-400">→</span>
+              <span>Implement</span><span className="text-slate-400">→</span>
+              <span>Monitor</span><span className="text-slate-400">→</span>
               <span>Learn</span>
             </div>
           </div>
@@ -163,7 +163,7 @@ export default function FounderPage() {
             <p className="text-sm leading-relaxed mb-6">
               Developing farming practices around regulatory awareness, responsible production, biosecurity, traceability and scientific monitoring.
             </p>
-            <ul className="space-y-2 text-sm text-slate-400">
+            <ul className="space-y-2 text-sm text-slate-300">
               <li>• Biosecurity and farm documentation</li>
               <li>• Responsible chemical &amp; antibiotic usage</li>
               <li>• Water, soil and microbiological monitoring</li>
@@ -182,8 +182,8 @@ export default function FounderPage() {
               One of Emmanuel&apos;s major objectives is to encourage young people, aspiring farmers, professionals, investors and entrepreneurs to understand aquaculture through practical exposure before making major decisions.
             </p>
             <div className="bg-slate-900/50 p-6 rounded-xl border border-slate-800 mt-6">
-              <span className="text-xs font-bold text-emerald-500 uppercase tracking-wider block mb-2">Developing Initiative</span>
-              <p className="text-sm text-slate-400">
+              <span className="text-xs font-bold text-emerald-400 uppercase tracking-wider block mb-2">Developing Initiative</span>
+              <p className="text-sm text-slate-300">
                 KE Aqua Farms is developing as a practical platform for observing and learning about shrimp farming fundamentals, scientific monitoring, farm economics, technology in real conditions, and responsible entrepreneurship.
               </p>
             </div>
@@ -195,17 +195,17 @@ export default function FounderPage() {
               KE Coastal represents the next stage of Emmanuel&apos;s vision, aiming to connect aquaculture and responsible sourcing directly with processing, value addition and consumer markets.
             </p>
             <div className="flex flex-wrap items-center gap-2 text-xs font-mono font-bold text-cyan-400 mt-6 bg-cyan-950/20 p-4 rounded-xl border border-cyan-900/50">
-              <span>Pond / Responsible Sourcing</span><span className="text-slate-600">→</span>
-              <span>Harvest</span><span className="text-slate-600">→</span>
-              <span>Processing</span><span className="text-slate-600">→</span>
-              <span>Value Addition</span><span className="text-slate-600">→</span>
+              <span>Pond / Responsible Sourcing</span><span className="text-slate-400">→</span>
+              <span>Harvest</span><span className="text-slate-400">→</span>
+              <span>Processing</span><span className="text-slate-400">→</span>
+              <span>Value Addition</span><span className="text-slate-400">→</span>
               <span>Consumer</span>
             </div>
           </div>
 
           <div className="bg-emerald-950/20 border border-emerald-900/50 rounded-3xl p-8 lg:p-12 text-center">
             <h2 className="text-2xl font-bold text-white mb-4">Long-Term Vision</h2>
-            <p className="text-lg leading-relaxed text-emerald-100/80 max-w-3xl mx-auto">
+            <p className="text-lg leading-relaxed text-emerald-100 max-w-3xl mx-auto">
               To develop an integrated aquaculture ecosystem where practical farming experience, scientific monitoring, technology, training, and seafood value addition work together. The aim is not simply to build another aquaculture business, but to create a platform where experience can be tested, knowledge shared, and the next generation can participate with greater confidence.
             </p>
           </div>

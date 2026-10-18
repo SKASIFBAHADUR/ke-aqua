@@ -71,7 +71,7 @@ export default function OurBusinessesPage() {
             <div key={i} className="bg-slate-900 border border-slate-800 rounded-xl p-8 hover:border-cyan-900 transition-colors">
               <span className="text-cyan-400 font-mono text-xs uppercase tracking-wider mb-2 block">{div.role}</span>
               <h3 className="text-2xl font-display font-bold text-white mb-4">{div.name}</h3>
-              <p className="text-slate-400 mb-8 text-sm leading-relaxed">
+              <p className="text-slate-300 mb-8 text-sm leading-relaxed">
                 {div.description}
               </p>
               <Link href={div.link} className="text-cyan-400 hover:text-cyan-300 font-bold text-sm inline-flex items-center gap-2">

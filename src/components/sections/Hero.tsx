@@ -54,10 +54,9 @@ export function Hero() {
           />
         </motion.div>
 
-        {/* Cinematic Directional Overlays Removed to keep video fully visible */}
-        {/* Soft bottom vignette into next section */}
+        {/* Subtle directional scrim to preserve video clarity while ensuring WCAG AA contrast over bright water spray */}
         <div
-          className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-primary to-transparent z-10 pointer-events-none"
+          className="absolute inset-0 bg-gradient-to-b from-[#0A192F]/60 via-[#0A192F]/35 to-[#0A192F]/90 z-10 pointer-events-none"
           aria-hidden="true"
         />
       </div>
@@ -76,11 +75,11 @@ export function Hero() {
               <span className="w-2 h-2 rounded-full bg-aqua animate-pulse" />
               30-Acre Working Aquaculture Farm
             </span>
-            <span className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-surface/10 text-white/90 border border-white/10 backdrop-blur-md">
+            <span className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-slate-900/60 text-white/95 border border-white/15 backdrop-blur-md">
               <Waves className="w-3.5 h-3.5 text-aqua-light" />
               From Seed to Seafood
             </span>
-            <span className="hidden md:inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-surface/10 text-white/90 border border-white/10 backdrop-blur-md">
+            <span className="hidden md:inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-slate-900/60 text-white/95 border border-white/15 backdrop-blur-md">
               <Cpu className="w-3.5 h-3.5 text-green-light" />
               Smart Technology & IoT
             </span>
@@ -88,7 +87,7 @@ export function Hero() {
 
           {/* Core Branding */}
           <motion.div variants={itemVariants} className="mb-3">
-            <p className="text-xs sm:text-sm font-semibold uppercase tracking-[0.25em] text-aqua-light">
+            <p className="text-xs sm:text-sm font-semibold uppercase tracking-wider text-cyan-300 drop-shadow-sm">
               KE Aqua Farms • The Key to Practical Aquaculture
             </p>
           </motion.div>
@@ -96,11 +95,11 @@ export function Hero() {
           {/* Primary Main Heading */}
           <motion.h1
             variants={itemVariants}
-            className="text-white font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.08] tracking-tight mb-5"
+            className="text-white font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.08] tracking-tight mb-5 drop-shadow-md"
           >
             PRACTICAL AQUACULTURE.
             <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-aqua-light via-teal-200 to-white">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-teal-200 to-white">
               SCIENTIFIC APPROACH.
             </span>
             <br />
@@ -110,17 +109,15 @@ export function Hero() {
           {/* Supporting Master Brief Message */}
           <motion.p
             variants={itemVariants}
-            className="text-white/85 text-base sm:text-lg md:text-xl font-normal leading-relaxed max-w-2xl mb-8"
+            className="text-slate-100 text-base sm:text-lg md:text-xl font-normal leading-relaxed max-w-2xl mb-8 drop-shadow-sm"
           >
             At KE Aqua Farms, we combine real commercial farming experience, scientific monitoring, smart farm technology, and practical training to help build stronger farmers and responsible aquaculture entrepreneurs.
           </motion.p>
 
-
-
           {/* Source Tagline Sub-strip */}
           <motion.div
             variants={itemVariants}
-            className="pt-4 border-t border-white/15 w-full flex flex-wrap justify-center items-center gap-y-2 gap-x-4 text-xs sm:text-sm text-white/75 font-medium"
+            className="pt-4 border-t border-white/20 w-full flex flex-wrap justify-center items-center gap-y-2 gap-x-4 text-xs sm:text-sm text-slate-200 font-medium drop-shadow-sm"
           >
             <span className="flex items-center gap-1.5">
               <ShieldCheck className="w-4 h-4 text-green-light shrink-0" />
@@ -150,10 +147,10 @@ export function Hero() {
                 <Award className="w-5 h-5 text-aqua-light" />
               </div>
               <div>
-                <p className="text-xs uppercase tracking-wider text-aqua-light font-semibold">
+                <p className="text-xs uppercase tracking-wide text-cyan-300 font-bold">
                   Farmer Development Initiative (Developing)
                 </p>
-                <p className="text-xs sm:text-sm font-display font-medium text-white/90">
+                <p className="text-sm font-display font-medium text-white">
                   Learn Practically. Farm Scientifically. Grow Profitably.
                 </p>
               </div>
@@ -163,19 +160,19 @@ export function Hero() {
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-4 w-full lg:w-auto text-center">
               <div className="bg-white/5 border border-white/10 rounded-md px-3 py-2">
                 <span className="block text-base sm:text-lg font-bold text-white font-display">30 Acres</span>
-                <span className="block text-[0.68rem] text-white/70 uppercase tracking-wider">Working Farm</span>
+                <span className="block text-xs text-slate-200 uppercase tracking-wide font-medium">Working Farm</span>
               </div>
               <div className="bg-white/5 border border-white/10 rounded-md px-3 py-2">
                 <span className="block text-base sm:text-lg font-bold text-white font-display">Aqua Pulse</span>
-                <span className="block text-[0.68rem] text-white/70 uppercase tracking-wider">Water & Soil Lab</span>
+                <span className="block text-xs text-slate-200 uppercase tracking-wide font-medium">Water & Soil Lab</span>
               </div>
               <div className="bg-white/5 border border-white/10 rounded-md px-3 py-2">
                 <span className="block text-base sm:text-lg font-bold text-white font-display">IoT & Auto</span>
-                <span className="block text-[0.68rem] text-white/70 uppercase tracking-wider">Smart Feeders</span>
+                <span className="block text-xs text-slate-200 uppercase tracking-wide font-medium">Smart Feeders</span>
               </div>
               <div className="bg-white/5 border border-white/10 rounded-md px-3 py-2">
                 <span className="block text-base sm:text-lg font-bold text-white font-display">AP Coast</span>
-                <span className="block text-[0.68rem] text-white/70 uppercase tracking-wider">Krishna District</span>
+                <span className="block text-xs text-slate-200 uppercase tracking-wide font-medium">Krishna District</span>
               </div>
             </div>
           </div>

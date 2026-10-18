@@ -23,7 +23,7 @@ const farmPractices = [
     id: "farming-ops",
     title: "Commercial Aquaculture Farming",
     subtitle: "30-Acre Commercial Growout Facility",
-    image: "/assets/commercial_aquaculture_farming_home.png",
+    image: "/Real_Images/image_1.jpeg",
     tag: "Field Infrastructure",
     description:
       "Operating 30 acres of commercial growout ponds under active coastal weather and biological conditions in Andhra Pradesh. Real crop management, water management, and daily pond operations.",
@@ -37,7 +37,7 @@ const farmPractices = [
     id: "pond-infra",
     title: "Pond Infrastructure & Design",
     subtitle: "Central Drains & High Dyke Engineering",
-    image: "/assets/ponc_infrastructure_design_home.png",
+    image: "/Real_Images/image_4.jpeg",
     tag: "Infrastructure",
     description:
       "Earthen pond design optimized for efficient water circulation, sludge accumulation towards central drains, and solar-assisted monitoring stations on dykes.",
@@ -51,7 +51,7 @@ const farmPractices = [
     id: "pond-prep",
     title: "Pond Preparation Protocols",
     subtitle: "Soil Desilting & Natural Plankton Blooms",
-    image: "/assets/pond_preparation_protocol_home.png",
+    image: "/Real_Images/image_5.jpeg",
     tag: "Pre-Stocking",
     description:
       "Thorough sun-drying, soil desilting, agricultural liming, reservoir water treatment, and natural beneficial plankton bloom establishment before PL stocking.",
@@ -65,7 +65,7 @@ const farmPractices = [
     id: "seed-select",
     title: "Seed Selection & Screening",
     subtitle: "PL Quality & Pathogen Verification",
-    image: "/assets/seed_selection_screening_home.png",
+    image: "/Real_Images/image_2.jpeg",
     tag: "Seed Quality",
     description:
       "Microscopic screening of Post-Larvae (PL) for gut fullness, muscle-to-gut ratio, stress test survival, and cross-verification of PCR pathogen test reports.",
@@ -79,7 +79,7 @@ const farmPractices = [
     id: "stocking",
     title: "Controlled Stocking Protocol",
     subtitle: "Acclimatization & Carrying Capacity",
-    image: "/assets/Controlled_Stocking_Protocol_home.png",
+    image: "/Real_Images/image_2.jpeg",
     tag: "Stocking",
     description:
       "Gradual temperature and salinity acclimation on pond dykes before seed release, maintaining optimal stocking densities aligned with aeration capacity.",
@@ -93,7 +93,7 @@ const farmPractices = [
     id: "feeding",
     title: "Regulated Feeding & Check Trays",
     subtitle: "Check-Tray Monitoring & FCR Control",
-    image: "/assets/Regulated_Feeding_Check_Trays_home.png",
+    image: "/Real_Images/image_4.jpeg",
     tag: "Feed Management",
     description:
       "Four-ration daily feeding schedules combined with regular check-tray inspections to monitor appetite, prevent overfeeding, and optimize Feed Conversion Ratio (FCR).",
@@ -107,7 +107,7 @@ const farmPractices = [
     id: "auto-feeding",
     title: "Automated Feeding Systems",
     subtitle: "Broadcasting Units for Growth Uniformity",
-    image: "/assets/Automated_Feeding_Systems_home.png",
+    image: "/Real_Images/image_5.jpeg",
     tag: "Automation",
     description:
       "Deployment of electric auto-feeders with timer controls and adjustable broadcasting radii, ensuring continuous small-ration feeding across growout ponds.",
@@ -121,7 +121,7 @@ const farmPractices = [
     id: "aeration",
     title: "Aeration Management & DO Control",
     subtitle: "Paddlewheels & Subsurface Air Injectors",
-    image: "/assets/Aeration_Management_DO_Control_home.png",
+    image: "/Real_Images/image_1.jpeg",
     tag: "Oxygenation",
     description:
       "Strategic arrangement of 4-HP paddlewheel aerators and subsurface jet aerators to maintain dissolved oxygen levels above 4.5 ppm continuously.",
@@ -135,7 +135,7 @@ const farmPractices = [
     id: "water-mgmt",
     title: "Water Management & Minerals",
     subtitle: "Salinity, pH & Mineral Balance Tracking",
-    image: "/assets/Water_Management_Minerals_home.png",
+    image: "/Real_Images/image_7.jpeg",
     tag: "Water Chemistry",
     description:
       "Daily parameter logging of pH, salinity, alkalinity, hardness, and calcium-magnesium ratios to support regular molting cycles and water stability.",
@@ -149,7 +149,7 @@ const farmPractices = [
     id: "health-monitor",
     title: "Animal Health Monitoring",
     subtitle: "Routine Sampling & Gut Checks",
-    image: "/assets/Animal_Health_Monitoring_home.png",
+    image: "/Real_Images/image_6.jpeg",
     tag: "Health Screening",
     description:
       "Weekly cast-net sampling to observe shrimp weight gain (ADG), shell hardness, gut fullness, hepatopancreas color, and check for gill fouling or lethargy.",
@@ -163,7 +163,7 @@ const farmPractices = [
     id: "biosecurity",
     title: "Biosecurity Systems",
     subtitle: "Multi-Barrier Protection Protocols",
-    image: "/assets/Biosecurity_Systems_home.png",
+    image: "/Real_Images/image_5.jpeg",
     tag: "Biosecurity",
     description:
       "Physical exclusion barriers including bird netting, crab fencing, tire disinfestation baths, and restricted visitor entry protocols to protect growout ponds.",
@@ -177,7 +177,7 @@ const farmPractices = [
     id: "harvest",
     title: "Harvest Operations",
     subtitle: "Partial & Final Net Harvests",
-    image: "/assets/Harvest_Operations_home.png",
+    image: "/Real_Images/image_4.jpeg",
     tag: "Harvest",
     description:
       "Organized partial or complete harvests using specialized drag nets, immediate ice chilling on dykes, and rapid size grading for market dispatch.",
@@ -191,7 +191,7 @@ const farmPractices = [
     id: "crop-analysis",
     title: "Farm Records & Crop Analysis",
     subtitle: "Data-Driven Production Logging",
-    image: "/assets/Farm_Records_Crop_Analysis_home.png",
+    image: "/Real_Images/image_8.jpeg",
     tag: "Data Logging",
     description:
       "Detailed record-keeping covering daily feed consumption, water parameters, energy usage, total survival rate, FCR, and crop financial analysis.",
@@ -209,7 +209,7 @@ const labPractices = [
     id: "lab-water",
     title: "Water Quality Parameter Monitoring",
     subtitle: "Chemical Titration & Spectrophotometry",
-    image: "/assets/Water_Management_Minerals_home.png",
+    image: "/Real_Images/image_7.jpeg",
     tag: "Lab Diagnostics",
     description:
       "Precision testing for key water parameters including pH, Salinity, Total Ammonia Nitrogen (TAN), Toxic Nitrite (NO2), Alkalinity, Hardness, Calcium, and Magnesium.",
@@ -223,7 +223,7 @@ const labPractices = [
     id: "lab-microscope",
     title: "Microscopic Tissue Observation",
     subtitle: "Gill, Gut & Muscle Tissue Screening",
-    image: "/assets/Animal_Health_Monitoring_home.png",
+    image: "/Real_Images/image_6.jpeg",
     tag: "Microscopy",
     description:
       "High-magnification microscopic examination of live shrimp tissue to check gill filament cleanliness, gut fullness percentage, muscle clarity, and parasite presence.",
@@ -237,7 +237,7 @@ const labPractices = [
     id: "lab-health",
     title: "Shrimp Health & Hepatopancreas Inspection",
     subtitle: "Lipid Droplet & Organ Integrity Analysis",
-    image: "/assets/Animal_Health_Monitoring_home.png",
+    image: "/Real_Images/image_6.jpeg",
     tag: "Organ Screening",
     description:
       "Microscopic analysis of the hepatopancreas structure, observing lipid droplet density, tubule integrity, and early signs of cellular tubule atrophy.",
@@ -251,7 +251,7 @@ const labPractices = [
     id: "lab-plankton",
     title: "Plankton & Microalgae Observation",
     subtitle: "Diatom vs Cyanobacteria Colony Counting",
-    image: "/assets/pond_preparation_protocol_home.png",
+    image: "/Real_Images/image_6.jpeg",
     tag: "Algal Ecology",
     description:
       "Microscopic identification and counting of beneficial diatoms vs harmful blue-green algae (cyanobacteria) to guide pond water treatment decisions.",
@@ -265,7 +265,7 @@ const labPractices = [
     id: "lab-vibrio",
     title: "Microbiology & Vibrio Plating",
     subtitle: "TCBS Agar Plating & Colony Differentiation",
-    image: "/assets/seed_selection_screening_home.png",
+    image: "/Real_Images/image_3.jpeg",
     tag: "Microbiology",
     description:
       "Culture plating on TCBS agar media to quantify Total Vibrio counts in pond water and shrimp gut samples, differentiating green (pathogenic) vs yellow colonies.",
@@ -283,7 +283,7 @@ const techPractices = [
     id: "tech-feeders",
     title: "Automated Feeding Technology",
     subtitle: "Timer-Based Feed Broadcasting",
-    image: "/assets/Automated_Feeding_Systems_home.png",
+    image: "/Real_Images/image_5.jpeg",
     tag: "Smart Hardware",
     description:
       "Automated feed broadcasting units installed across growout ponds to disperse feed evenly, reducing labor costs and preventing bottom sludge buildup.",
@@ -297,7 +297,7 @@ const techPractices = [
     id: "tech-station",
     title: "Solar-Powered Dyke Monitoring",
     subtitle: "24/7 Dyke Security & Data Nodes",
-    image: "/assets/ponc_infrastructure_design_home.png",
+    image: "/Real_Images/image_1.jpeg",
     tag: "Solar Tech",
     description:
       "Off-grid solar power stations deployed on pond dykes to power continuous sensor arrays, night security lighting, and wireless data transmission nodes.",
@@ -311,7 +311,7 @@ const techPractices = [
     id: "tech-sensors",
     title: "IoT Water Quality Probes",
     subtitle: "Continuous pH, DO & Temperature Sensors",
-    image: "/assets/Water_Management_Minerals_home.png",
+    image: "/Real_Images/image_7.jpeg",
     tag: "Digital Probes",
     description:
       "Digital probe sensor arrays suspended in active ponds for real-time tracking of dissolved oxygen, pH, temperature, and electrical conductivity.",
@@ -325,7 +325,7 @@ const techPractices = [
     id: "tech-aeration",
     title: "Aeration Management Systems",
     subtitle: "Paddlewheel & Jet Aeration Synchronization",
-    image: "/assets/Aeration_Management_DO_Control_home.png",
+    image: "/Real_Images/image_1.jpeg",
     tag: "Aeration Tech",
     description:
       "Synchronized aeration systems combining high-efficiency paddlewheel aerators with directional jet injectors to maximize gas transfer and water movement.",
@@ -339,7 +339,7 @@ const techPractices = [
     id: "tech-nanobubble",
     title: "Micro & Nano Bubble Technology",
     subtitle: "Deep Benthic Gas Dissolution",
-    image: "/assets/Aeration_Management_DO_Control_home.png",
+    image: "/Real_Images/image_4.jpeg",
     tag: "Advanced Oxygenation",
     description:
       "Evaluation of micro and nano bubble generator units designed to increase oxygen residence time in pond water and prevent anaerobic sludge zones.",
@@ -353,7 +353,7 @@ const techPractices = [
     id: "tech-records",
     title: "Digital Farm Data & Records",
     subtitle: "Centralized Crop Parameter Tracking",
-    image: "/assets/Farm_Records_Crop_Analysis_home.png",
+    image: "/Real_Images/image_8.jpeg",
     tag: "Data Software",
     description:
       "Centralized digital logging of daily feeding rates, water test results, chemical dosages, harvest counts, and overall pond economic performance.",
@@ -475,10 +475,10 @@ export function PracticeShowcaseSection() {
                 className={`px-4 py-2.5 rounded-xl text-xs font-semibold whitespace-nowrap transition-all flex items-center gap-2 shrink-0 border ${
                   selectedIndex === idx
                     ? "bg-slate-800 border-cyan-400 text-cyan-300 shadow-md"
-                    : "bg-slate-950/70 border-slate-850 text-slate-400 hover:border-slate-700 hover:text-slate-200"
+                    : "bg-slate-950/70 border-slate-800 text-slate-300 hover:border-slate-700 hover:text-white"
                 }`}
               >
-                <span className="font-mono text-[10px] text-slate-500">0{idx + 1}</span>
+                <span className="font-mono text-xs text-slate-400">0{idx + 1}</span>
                 <span>{item.title}</span>
               </button>
             ))}
@@ -522,8 +522,8 @@ export function PracticeShowcaseSection() {
                   {/* Bottom Image Caption */}
                   <div className="absolute bottom-4 left-4 right-4 p-3.5 rounded-xl bg-slate-950/90 backdrop-blur border border-slate-800 z-10 flex items-center justify-between">
                     <div>
-                      <span className="text-[10px] font-mono text-slate-400 uppercase tracking-widest block">Operational Area</span>
-                      <p className="text-xs font-bold text-white truncate max-w-[240px] sm:max-w-none">{activeItem.subtitle}</p>
+                      <span className="text-xs font-mono text-slate-300 uppercase tracking-wide block">Operational Area</span>
+                      <p className="text-sm font-bold text-white truncate max-w-[240px] sm:max-w-none">{activeItem.subtitle}</p>
                     </div>
                     <span className="text-xs font-mono font-bold text-cyan-400 bg-cyan-950/60 px-2.5 py-1 rounded border border-cyan-800">
                       {selectedIndex + 1} / {currentData.length}
@@ -561,23 +561,23 @@ export function PracticeShowcaseSection() {
                   <h3 className="text-2xl sm:text-3xl font-extrabold text-white mb-3">
                     {activeItem.title}
                   </h3>
-                  <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+                  <p className="text-slate-200 text-sm sm:text-base leading-relaxed">
                     {activeItem.description}
                   </p>
                 </div>
 
                 {/* Practice Checkpoints List */}
                 <div className="space-y-3 pt-2">
-                  <span className="text-xs font-bold text-slate-400 uppercase tracking-wider block">
+                  <span className="text-xs font-bold text-slate-300 uppercase tracking-wider block">
                     Operational Field Routines &amp; Verification:
                   </span>
                   {activeItem.details.map((detail, idx) => (
                     <div
                       key={idx}
-                      className="p-3.5 rounded-xl bg-slate-950/80 border border-slate-850 flex items-start gap-3"
+                      className="p-3.5 rounded-xl bg-slate-950/80 border border-slate-800 flex items-start gap-3"
                     >
                       <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-                      <span className="text-xs sm:text-sm text-slate-200 leading-relaxed">
+                      <span className="text-sm text-slate-200 leading-relaxed">
                         {detail}
                       </span>
                     </div>
@@ -585,7 +585,7 @@ export function PracticeShowcaseSection() {
                 </div>
 
                 {/* Authentic Practice Banner */}
-                <div className="p-3.5 rounded-xl bg-cyan-950/40 border border-cyan-800/40 text-xs text-cyan-200/90 flex items-center gap-2.5">
+                <div className="p-3.5 rounded-xl bg-cyan-950/40 border border-cyan-800/40 text-sm text-cyan-200 flex items-center gap-2.5">
                   <ShieldCheck className="w-4 h-4 text-cyan-400 shrink-0" />
                   <span>Verified practice implemented under real commercial farm conditions at KE Aqua Farms.</span>
                 </div>
@@ -600,12 +600,12 @@ export function PracticeShowcaseSection() {
         {/* ==================================================================== */}
         {/* BOTTOM AUTHENTIC PRACTICE DISCLOSURE STRIP                          */}
         {/* ==================================================================== */}
-        <div className="mt-12 p-4 rounded-2xl bg-slate-900/60 border border-slate-800 text-xs text-slate-400 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
+        <div className="mt-12 p-4 rounded-2xl bg-slate-900/60 border border-slate-800 text-sm text-slate-300 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
           <div className="flex items-center gap-2 text-slate-300">
             <Info className="w-4 h-4 text-cyan-400 shrink-0" />
             <span>Demonstration reflects our internal farming operations, lab capabilities, and equipment testing.</span>
           </div>
-          <span className="font-mono text-[11px] text-slate-500">
+          <span className="font-mono text-xs text-slate-300">
             KE Aqua Farms · 30-Acre Commercial Facility
           </span>
         </div>

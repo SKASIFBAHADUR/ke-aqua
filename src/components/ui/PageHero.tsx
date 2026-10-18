@@ -9,7 +9,7 @@ export function PageHero({ title, description }: { title: string; description: s
         <h1 className="text-4xl md:text-5xl font-display font-extrabold text-white mb-4 tracking-tight">
           {title}
         </h1>
-        <p className="text-slate-400 text-lg max-w-2xl">
+        <p className="text-slate-300 text-lg max-w-2xl leading-relaxed">
           {description}
         </p>
       </div>

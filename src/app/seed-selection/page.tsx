@@ -46,10 +46,10 @@ export default function SeedSelectionPage() {
       <div className="container-width px-4 sm:px-6 lg:px-8 -mt-8 mb-20">
         <div className="relative w-full aspect-video md:aspect-[21/9] rounded-3xl overflow-hidden shadow-2xl border border-slate-700">
           <Image
-            src="/assets/seed_selection_screening_home.png"
-            alt="Seed Selection and Microscopic Observation"
+            src="/Real_Images/image_2.jpeg"
+            alt="Aqua Pulse laboratory technician conducting microscopic screening of seed and larvae samples"
             fill
-            className="object-cover"
+            className="object-cover object-center"
             sizes="(max-width: 1200px) 100vw, 1200px"
             priority
           />
@@ -69,9 +69,9 @@ export default function SeedSelectionPage() {
           </p>
           
           <div className="flex flex-wrap items-center justify-center gap-3 text-sm md:text-base font-mono font-bold text-emerald-400 uppercase tracking-widest bg-emerald-950/20 p-4 md:p-6 rounded-xl border border-emerald-900/50">
-            <span>Hatchery</span><span className="text-slate-600">→</span>
-            <span>Assessment</span><span className="text-slate-600">→</span>
-            <span>Selection</span><span className="text-slate-600">→</span>
+            <span>Hatchery</span><span className="text-slate-400">→</span>
+            <span>Assessment</span><span className="text-slate-400">→</span>
+            <span>Selection</span><span className="text-slate-400">→</span>
             <span>Stocking</span>
           </div>
         </section>
@@ -95,7 +95,7 @@ export default function SeedSelectionPage() {
                   <div className="bg-slate-900/60 border border-slate-800 rounded-xl p-6 flex-1 group-hover:border-cyan-900/80 transition-colors">
                     <span className="md:hidden text-cyan-500 font-mono text-xs font-bold mb-1 block">{item.step}</span>
                     <h3 className="text-cyan-400 font-bold tracking-widest text-sm mb-2">{item.title}</h3>
-                    <p className="text-slate-400 text-sm leading-relaxed">{item.desc}</p>
+                    <p className="text-slate-300 text-sm leading-relaxed">{item.desc}</p>
                   </div>
                 </div>
               ))}
@@ -112,29 +112,29 @@ export default function SeedSelectionPage() {
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4 text-xs md:text-sm font-mono font-bold text-blue-400 uppercase tracking-wider">
             <div className="bg-blue-950/30 border border-blue-900/50 px-4 py-2 rounded">Hatchery</div>
-            <span className="hidden md:block text-slate-600">→</span>
-            <span className="md:hidden text-slate-600">↓</span>
+            <span className="hidden md:block text-slate-400">→</span>
+            <span className="md:hidden text-slate-400">↓</span>
             
             <div className="bg-blue-950/30 border border-blue-900/50 px-4 py-2 rounded">Observation</div>
-            <span className="hidden md:block text-slate-600">→</span>
-            <span className="md:hidden text-slate-600">↓</span>
+            <span className="hidden md:block text-slate-400">→</span>
+            <span className="md:hidden text-slate-400">↓</span>
             
             <div className="bg-blue-950/30 border border-blue-900/50 px-4 py-2 rounded">Stress Response</div>
-            <span className="hidden md:block text-slate-600">→</span>
-            <span className="md:hidden text-slate-600">↓</span>
+            <span className="hidden md:block text-slate-400">→</span>
+            <span className="md:hidden text-slate-400">↓</span>
             
             <div className="bg-blue-950/30 border border-blue-900/50 px-4 py-2 rounded">Microscopy</div>
-            <span className="hidden md:block text-slate-600">→</span>
-            <span className="md:hidden text-slate-600">↓</span>
+            <span className="hidden md:block text-slate-400">→</span>
+            <span className="md:hidden text-slate-400">↓</span>
             
             <div className="bg-blue-950/30 border border-blue-900/50 px-4 py-2 rounded">PCR</div>
             
-            <span className="hidden md:block text-slate-600">→</span>
-            <span className="md:hidden text-slate-600">↓</span>
+            <span className="hidden md:block text-slate-400">→</span>
+            <span className="md:hidden text-slate-400">↓</span>
             <div className="bg-emerald-950/40 border border-emerald-900/60 text-emerald-400 px-4 py-2 rounded">Cumulative Assessment</div>
             
-            <span className="hidden md:block text-slate-600">→</span>
-            <span className="md:hidden text-slate-600">↓</span>
+            <span className="hidden md:block text-slate-400">→</span>
+            <span className="md:hidden text-slate-400">↓</span>
             <div className="bg-cyan-950/50 border border-cyan-500/50 text-cyan-400 px-6 py-2 rounded shadow-lg shadow-cyan-900/20">SELECTION</div>
           </div>
         </section>
@@ -148,15 +148,15 @@ export default function SeedSelectionPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-slate-900 border border-slate-800 p-8 rounded-2xl">
               <h3 className="text-xl font-bold text-cyan-400 mb-2">01 — Transportation</h3>
-              <p className="text-sm text-slate-400">Temperature • Oxygen • Careful Handling</p>
+              <p className="text-sm text-slate-300">Temperature • Oxygen • Careful Handling</p>
             </div>
             <div className="bg-slate-900 border border-slate-800 p-8 rounded-2xl">
               <h3 className="text-xl font-bold text-cyan-400 mb-2">02 — Acclimatization</h3>
-              <p className="text-sm text-slate-400">Gradual Adjustment to Pond Conditions</p>
+              <p className="text-sm text-slate-300">Gradual Adjustment to Pond Conditions</p>
             </div>
             <div className="bg-slate-900 border border-slate-800 p-8 rounded-2xl">
               <h3 className="text-xl font-bold text-cyan-400 mb-2">03 — Stocking</h3>
-              <p className="text-sm text-slate-400">Careful Release Into Prepared Ponds</p>
+              <p className="text-sm text-slate-300">Careful Release Into Prepared Ponds</p>
             </div>
           </div>
         </section>
@@ -175,7 +175,7 @@ export default function SeedSelectionPage() {
         {/* 7. After Stocking / Seed Selection Is Only the Beginning */}
         <section className="text-center space-y-6">
           <h2 className="text-2xl font-bold text-white">Seed Selection Is Only the Beginning</h2>
-          <p className="text-lg leading-relaxed text-slate-400 max-w-2xl mx-auto">
+          <p className="text-lg leading-relaxed text-slate-300 max-w-2xl mx-auto">
             Once stocking is complete, crop performance depends on continued observation, feeding management, water-quality monitoring, animal health observation and appropriate farm management.
           </p>
           <div className="pt-4">
@@ -189,7 +189,7 @@ export default function SeedSelectionPage() {
         <section className="bg-slate-900/50 border border-slate-800 p-8 lg:p-12 rounded-3xl">
           <div className="mb-10 text-center">
             <h2 className="text-2xl font-bold text-white mb-4">Learn From Our Farm Experience</h2>
-            <p className="text-slate-400 max-w-2xl mx-auto">
+            <p className="text-slate-300 max-w-2xl mx-auto">
               Our approach to aquaculture is built around observation, documentation and learning from real farm conditions.
             </p>
           </div>
@@ -198,7 +198,7 @@ export default function SeedSelectionPage() {
             {/* Case Study 1 */}
             <div className="bg-[#0A192F] border border-slate-800 rounded-2xl p-6 flex flex-col h-full hover:border-emerald-500/50 transition-colors">
               <h3 className="text-lg font-bold text-white mb-3">Smart Aquaculture &amp; Technology Evaluation</h3>
-              <p className="text-sm text-slate-400 mb-6 flex-grow">
+              <p className="text-sm text-slate-300 mb-6 flex-grow">
                 Practical assessment of IoT sensor performance, auto-feeders, and data integration in active ponds.
               </p>
               <Link href="/case-studies/smart-aquaculture" className="text-sm font-bold text-emerald-400 hover:text-emerald-300 inline-flex items-center gap-1 group">
@@ -209,7 +209,7 @@ export default function SeedSelectionPage() {
             {/* Case Study 2 */}
             <div className="bg-[#0A192F] border border-slate-800 rounded-2xl p-6 flex flex-col h-full hover:border-cyan-500/50 transition-colors">
               <h3 className="text-lg font-bold text-white mb-3">Preventive Pond Management &amp; White-Gut Risk</h3>
-              <p className="text-sm text-slate-400 mb-6 flex-grow">
+              <p className="text-sm text-slate-300 mb-6 flex-grow">
                 Field documentation of proactive water quality and feeding strategies to address gastrointestinal challenges.
               </p>
               <Link href="/case-studies/white-gut-risk" className="text-sm font-bold text-cyan-400 hover:text-cyan-300 inline-flex items-center gap-1 group">

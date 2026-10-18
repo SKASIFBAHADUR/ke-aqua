@@ -260,7 +260,7 @@ const ecosystemPillars = [
     icon: FlaskConical,
     highlight: "Lab Diagnostics",
     color: "cyan",
-    image: "/assets/svc-lab-bg.jpg",
+    image: "/Real_Images/image_5.jpeg",
   },
   {
     title: "Smart Technology",
@@ -280,7 +280,7 @@ const ecosystemPillars = [
     icon: GraduationCap,
     highlight: "Training",
     color: "amber",
-    image: "/assets/svc-training-bg.jpg",
+    image: "/Real_Images/image_8.jpeg",
   },
 ];
 
@@ -319,10 +319,10 @@ const personas = [
  * ==================================================================== */
 const farmExperienceItems = [
   { label: "Pond Preparation", image: "/assets/svc-pond.jpg" },
-  { label: "Seed Screening", image: "/assets/svc-farm-ops.jpg" },
-  { label: "Water Management", image: "/assets/svc-monitoring.jpg" },
+  { label: "Seed Screening", image: "/Real_Images/image_2.jpeg" },
+  { label: "Water Management", image: "/Real_Images/image_1.jpeg" },
   { label: "Technology", image: "/assets/svc-tech-bg.jpg" },
-  { label: "Health Monitoring", image: "/assets/svc-lab-bg.jpg" },
+  { label: "Health Monitoring", image: "/Real_Images/image_6.jpeg" },
   { label: "Harvest & Analysis", image: "/assets/svc-training-bg.jpg" },
 ];
 
@@ -359,9 +359,9 @@ export function AquacultureFarmConsultancyPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs text-slate-400">
               <Link href="/" className="hover:text-cyan-400 transition-colors">Home</Link>
-              <ChevronRight className="w-3 h-3" />
-              <span className="text-slate-500">Services</span>
-              <ChevronRight className="w-3 h-3" />
+              <ChevronRight className="w-3 h-3 text-slate-400" />
+              <span className="text-slate-400">Services</span>
+              <ChevronRight className="w-3 h-3 text-slate-400" />
               <span className="text-slate-300">Farm Consultancy</span>
             </nav>
           </div>
@@ -383,7 +383,7 @@ export function AquacultureFarmConsultancyPage() {
               variants={{ hidden: { opacity: 0, y: 16 }, visible: { opacity: 1, y: 0, transition: { duration: 0.5 } } }}
               className="flex flex-wrap items-center gap-2.5 mb-5"
             >
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold tracking-widest uppercase bg-cyan-500/15 text-cyan-400 border border-cyan-500/30 backdrop-blur-sm">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold tracking-wide uppercase bg-cyan-500/15 text-cyan-400 border border-cyan-500/30 backdrop-blur-sm">
                 <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
                 Aquaculture Farm Consultancy
               </span>
@@ -450,7 +450,7 @@ export function AquacultureFarmConsultancyPage() {
 
             {/* Left — Text content */}
             <div>
-              <motion.span {...fadeUp(0)} className="block text-xs font-bold uppercase tracking-widest text-cyan-400 mb-3">
+              <motion.span {...fadeUp(0)} className="block text-xs font-bold uppercase tracking-wide text-cyan-400 mb-3">
                 Why Experience Matters
               </motion.span>
               <motion.h2 {...fadeUp(0.05)} className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight mb-6">
@@ -513,7 +513,7 @@ export function AquacultureFarmConsultancyPage() {
 
           {/* Header */}
           <div className="max-w-2xl mb-14">
-            <motion.span {...fadeUp(0)} className="block text-xs font-bold uppercase tracking-widest text-emerald-400 mb-3">
+            <motion.span {...fadeUp(0)} className="block text-xs font-bold uppercase tracking-wide text-emerald-400 mb-3">
               Areas of Practical Support
             </motion.span>
             <motion.h2 {...fadeUp(0.05)} className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight mb-5">
@@ -565,7 +565,7 @@ export function AquacultureFarmConsultancyPage() {
 
           {/* Header */}
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <motion.span {...fadeUp(0)} className="block text-xs font-bold uppercase tracking-widest text-cyan-400 mb-3">
+            <motion.span {...fadeUp(0)} className="block text-xs font-bold uppercase tracking-wide text-cyan-400 mb-3">
               Our Practical Method
             </motion.span>
             <motion.h2 {...fadeUp(0.05)} className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight mb-5">
@@ -580,10 +580,10 @@ export function AquacultureFarmConsultancyPage() {
           <motion.div {...fadeUp(0.1)} className="flex flex-wrap items-center justify-center gap-2 mb-14">
             {["SEE", "LEARN", "DO", "MEASURE", "IMPROVE"].map((step, i) => (
               <React.Fragment key={step}>
-                <span className="px-4 py-2 rounded-lg bg-cyan-500/10 border border-cyan-500/25 text-cyan-300 font-bold text-sm tracking-widest">
+                <span className="px-4 py-2 rounded-lg bg-cyan-500/10 border border-cyan-500/25 text-cyan-300 font-bold text-sm tracking-wide">
                   {step}
                 </span>
-                {i < 4 && <ArrowRight className="w-4 h-4 text-slate-600" />}
+                {i < 4 && <ArrowRight className="w-4 h-4 text-slate-400" />}
               </React.Fragment>
             ))}
           </motion.div>
@@ -602,17 +602,17 @@ export function AquacultureFarmConsultancyPage() {
                 >
                   {/* Step connector dot */}
                   <div className="flex items-center gap-3 mb-3">
-                    <span className="text-xs font-mono text-slate-500">{step.step}</span>
+                    <span className="text-xs font-mono text-slate-400">{step.step}</span>
                     <div className={`w-px flex-1 h-px ${c.dot} opacity-30`} />
                     <div className={`inline-flex items-center justify-center w-8 h-8 rounded-lg ${c.icon} border`}>
                       <Icon className="w-4 h-4" />
                     </div>
                   </div>
-                  <p className={`text-xs font-bold uppercase tracking-widest mb-2`}
+                  <p className={`text-xs font-bold uppercase tracking-wide mb-2`}
                     style={{ color: step.color === "cyan" ? "#22d3ee" : step.color === "emerald" ? "#34d399" : step.color === "blue" ? "#60a5fa" : step.color === "purple" ? "#a78bfa" : "#fbbf24" }}>
                     {step.label}
                   </p>
-                  <p className="text-xs text-slate-400 leading-relaxed">{step.description}</p>
+                  <p className="text-xs text-slate-300 leading-relaxed">{step.description}</p>
                 </motion.div>
               );
             })}
@@ -629,7 +629,7 @@ export function AquacultureFarmConsultancyPage() {
 
           {/* Header */}
           <div className="max-w-2xl mb-14">
-            <motion.span {...fadeUp(0)} className="block text-xs font-bold uppercase tracking-widest text-emerald-400 mb-3">
+            <motion.span {...fadeUp(0)} className="block text-xs font-bold uppercase tracking-wide text-emerald-400 mb-3">
               The Shrimp Farming Cycle
             </motion.span>
             <motion.h2 {...fadeUp(0.05)} className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight mb-5">
@@ -654,20 +654,12 @@ export function AquacultureFarmConsultancyPage() {
                     key={step.label}
                     {...fadeUp(i * 0.04 + 0.1)}
                     onClick={() => setActiveProcess(isActive ? null : i)}
-                    className={`group flex flex-col items-center gap-2 p-3 rounded-xl border text-center transition-all duration-200 cursor-pointer ${
-                      isActive
-                        ? "bg-cyan-500/15 border-cyan-500/50 shadow-lg shadow-cyan-500/10"
-                        : "bg-[#112240] border-slate-800 hover:border-cyan-500/30 hover:bg-cyan-500/5"
-                    }`}
+                    className={`group flex flex-col items-center gap-2 p-3 rounded-xl border text-center transition-all duration-200 cursor-pointer ${ isActive ? "bg-cyan-500/15 border-cyan-500/50 shadow-lg shadow-cyan-500/10" : "bg-[#112240] border-slate-800 hover:border-cyan-500/30 hover:bg-cyan-500/5" }`}
                   >
-                    <div className={`w-9 h-9 rounded-lg flex items-center justify-center transition-colors ${
-                      isActive ? "bg-cyan-500/20 text-cyan-400" : "bg-slate-800 text-slate-400 group-hover:text-cyan-400"
-                    }`}>
+                    <div className={`w-9 h-9 rounded-lg flex items-center justify-center transition-colors ${ isActive ? "bg-cyan-500/20 text-cyan-400" : "bg-slate-800 text-slate-400 group-hover:text-cyan-400" }`}>
                       <Icon className="w-4 h-4" />
                     </div>
-                    <span className={`text-[0.6rem] font-bold uppercase tracking-wider leading-tight transition-colors ${
-                      isActive ? "text-cyan-300" : "text-slate-400 group-hover:text-slate-200"
-                    }`}>
+                    <span className={`text-[0.6rem] font-bold uppercase tracking-wider leading-tight transition-colors ${ isActive ? "text-cyan-300" : "text-slate-400 group-hover:text-slate-200" }`}>
                       {step.label}
                     </span>
                   </motion.button>
@@ -712,7 +704,7 @@ export function AquacultureFarmConsultancyPage() {
 
           {/* Header */}
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <motion.span {...fadeUp(0)} className="block text-xs font-bold uppercase tracking-widest text-cyan-400 mb-3">
+            <motion.span {...fadeUp(0)} className="block text-xs font-bold uppercase tracking-wide text-cyan-400 mb-3">
               Integrated Capability
             </motion.span>
             <motion.h2 {...fadeUp(0.05)} className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight mb-5">
@@ -750,14 +742,12 @@ export function AquacultureFarmConsultancyPage() {
                     <div className={`inline-flex items-center justify-center w-9 h-9 rounded-lg mb-3 ${colorMap[pillar.color].icon} border`}>
                       <Icon className="w-4 h-4" />
                     </div>
-                    <span className={`text-[0.62rem] font-bold uppercase tracking-widest block mb-1 ${
-                      pillar.color === "cyan" ? "text-cyan-400" : pillar.color === "emerald" ? "text-emerald-400" : pillar.color === "blue" ? "text-blue-400" : "text-amber-400"
-                    }`}>
+                    <span className={`text-[0.62rem] font-bold uppercase tracking-wide block mb-1 ${ pillar.color === "cyan" ? "text-cyan-400" : pillar.color === "emerald" ? "text-emerald-400" : pillar.color === "blue" ? "text-blue-400" : "text-amber-400" }`}>
                       {pillar.highlight}
                     </span>
                     <h3 className="text-sm font-bold text-white mb-1 leading-snug">{pillar.title}</h3>
-                    <p className="text-[0.7rem] text-slate-500 font-medium mb-3">{pillar.sub}</p>
-                    <p className="text-xs text-slate-400 leading-relaxed">{pillar.description}</p>
+                    <p className="text-[0.7rem] text-slate-400 font-medium mb-3">{pillar.sub}</p>
+                    <p className="text-xs text-slate-300 leading-relaxed">{pillar.description}</p>
                   </div>
                 </motion.div>
               );
@@ -784,7 +774,7 @@ export function AquacultureFarmConsultancyPage() {
 
           {/* Header */}
           <div className="text-center max-w-xl mx-auto mb-14">
-            <motion.span {...fadeUp(0)} className="block text-xs font-bold uppercase tracking-widest text-purple-400 mb-3">
+            <motion.span {...fadeUp(0)} className="block text-xs font-bold uppercase tracking-wide text-purple-400 mb-3">
               Who This Is For
             </motion.span>
             <motion.h2 {...fadeUp(0.05)} className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight mb-4">
@@ -829,11 +819,11 @@ export function AquacultureFarmConsultancyPage() {
             {/* Left — Image */}
             <motion.div {...fadeIn(0.1)} className="relative rounded-3xl overflow-hidden h-[420px] lg:h-[520px] order-2 lg:order-1">
               <Image
-                src="/assets/svc-farm-ops.jpg"
-                alt="KE Aqua Farms team observing pond conditions — practical farm experience in the field"
+                src="/Real_Images/image_4.jpeg"
+                alt="Aqua Pulse laboratory and technical diagnostic team inside the testing facility"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover"
+                className="object-cover object-center"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0A192F]/80 via-transparent to-transparent" />
 
@@ -849,7 +839,7 @@ export function AquacultureFarmConsultancyPage() {
 
             {/* Right — Text */}
             <div className="order-1 lg:order-2">
-              <motion.span {...fadeUp(0)} className="block text-xs font-bold uppercase tracking-widest text-emerald-400 mb-3">
+              <motion.span {...fadeUp(0)} className="block text-xs font-bold uppercase tracking-wide text-emerald-400 mb-3">
                 Philosophy
               </motion.span>
               <motion.h2 {...fadeUp(0.05)} className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight mb-6">
@@ -890,7 +880,7 @@ export function AquacultureFarmConsultancyPage() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-cyan-500/8 blur-[160px] pointer-events-none" />
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
 
-          <motion.div {...fadeUp(0)} className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs font-bold uppercase tracking-widest mb-6">
+          <motion.div {...fadeUp(0)} className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs font-bold uppercase tracking-wide mb-6">
             <MessageSquare className="w-3.5 h-3.5" />
             Start the Conversation
           </motion.div>
@@ -932,7 +922,7 @@ export function AquacultureFarmConsultancyPage() {
           </motion.div>
 
           {/* Location and hours strip */}
-          <motion.div {...fadeUp(0.25)} className="flex flex-col sm:flex-row items-center justify-center gap-6 text-xs text-slate-500 font-mono border-t border-slate-800/60 pt-10">
+          <motion.div {...fadeUp(0.25)} className="flex flex-col sm:flex-row items-center justify-center gap-6 text-xs text-slate-400 font-mono border-t border-slate-800/60 pt-10">
             <span className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
               {CONTACT_CONFIG.operatingHours.days} · {CONTACT_CONFIG.operatingHours.time}

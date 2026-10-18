@@ -196,7 +196,7 @@ export function AboutStorySection() {
           <motion.div {...fadeUp(0.2)} className="lg:col-span-5 space-y-4">
             <div className="relative h-80 sm:h-96 rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl group">
               <Image
-                src="/assets/pond_to_progress_home.png"
+                src="/Real_Images/image_1.jpeg"
                 alt="KE Aqua Farms 30-acre growout pond facility"
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -252,13 +252,13 @@ export function AboutStorySection() {
                   {/* Step Connector Arrow for Desktop */}
                   {idx < philosophySteps.length - 1 && (
                     <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 z-20 pointer-events-none">
-                      <ChevronRight className="w-5 h-5 text-slate-600" />
+                      <ChevronRight className="w-5 h-5 text-slate-400" />
                     </div>
                   )}
 
                   <div>
                     <div className="flex items-center justify-between mb-3">
-                      <span className="text-xs font-bold tracking-widest font-mono text-slate-500">{s.step}</span>
+                      <span className="text-xs font-bold tracking-widest font-mono text-slate-400">{s.step}</span>
                       <div className={`p-2 rounded-lg ${s.color}`}>
                         <Icon className="w-4 h-4" />
                       </div>
@@ -314,13 +314,13 @@ export function AboutStorySection() {
                 className="p-5 rounded-2xl bg-slate-900/90 border border-slate-800 hover:border-amber-500/40 transition-all flex flex-col justify-between"
               >
                 <div>
-                  <span className="text-[10px] font-bold text-amber-400 uppercase tracking-wider font-mono block mb-2">
+                  <span className="text-xs font-bold text-amber-400 uppercase tracking-wide font-mono block mb-2">
                     {item.tag}
                   </span>
                   <h4 className="text-base font-bold text-white mb-2">{item.q}</h4>
-                  <p className="text-xs text-slate-300 leading-relaxed">{item.a}</p>
+                  <p className="text-sm text-slate-200 leading-relaxed">{item.a}</p>
                 </div>
-                <div className="mt-4 pt-2 border-t border-slate-850 flex items-center gap-1 text-[11px] text-slate-500 font-mono">
+                <div className="mt-4 pt-2 border-t border-slate-800 flex items-center gap-1 text-xs text-slate-400 font-mono">
                   <span>Question 0{idx + 1}</span>
                 </div>
               </motion.div>
@@ -339,11 +339,11 @@ export function AboutStorySection() {
                 <Layers className="w-6 h-6" />
               </div>
               <div>
-                <span className="text-xs font-bold uppercase tracking-wider text-cyan-400">Complete Value Chain</span>
+                <span className="text-xs font-bold uppercase tracking-wide text-cyan-400">Complete Value Chain</span>
                 <h3 className="text-2xl sm:text-3xl font-bold text-white">From Seed to Seafood</h3>
               </div>
             </div>
-            <span className="text-xs text-slate-400 hidden sm:inline-block">Scroll or explore the 12-stage aquaculture chain</span>
+            <span className="text-xs text-slate-300 hidden sm:inline-block">Scroll or explore the 12-stage aquaculture chain</span>
           </motion.div>
 
           {/* Interactive Stepper Cards */}
@@ -356,13 +356,13 @@ export function AboutStorySection() {
                   className={`p-3 rounded-xl border text-left transition-all ${
                     activeTab === idx
                       ? "bg-cyan-500/20 border-cyan-400 text-white shadow-lg"
-                      : "bg-slate-950/60 border-slate-800 text-slate-400 hover:border-slate-700 hover:text-slate-200"
+                      : "bg-slate-950/60 border-slate-800 text-slate-300 hover:border-slate-700 hover:text-white"
                   }`}
                 >
-                  <span className="text-[10px] font-mono font-bold block opacity-60 mb-0.5">
+                  <span className="text-xs font-mono font-bold block opacity-75 mb-0.5">
                     Stage {idx + 1 < 10 ? `0${idx + 1}` : idx + 1}
                   </span>
-                  <span className="text-xs font-bold block truncate">{step.name}</span>
+                  <span className="text-sm font-bold block truncate">{step.name}</span>
                 </button>
               ))}
             </div>
@@ -370,17 +370,17 @@ export function AboutStorySection() {
             {/* Active Stage Description Banner */}
             <div className="p-5 rounded-xl bg-slate-950/80 border border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4">
               <div>
-                <span className="text-xs font-bold text-cyan-400 uppercase tracking-widest block mb-1">
+                <span className="text-xs font-bold text-cyan-400 uppercase tracking-wide block mb-1">
                   Stage {activeTab + 1}: {valueChainSteps[activeTab].name}
                 </span>
                 <h4 className="text-base font-bold text-white">
                   {valueChainSteps[activeTab].desc} — Key Focus in the Value Chain
                 </h4>
-                <p className="text-xs text-slate-300 mt-1">
+                <p className="text-sm text-slate-300 mt-1 leading-relaxed">
                   Understanding where individual skills, capital, or business models fit best within aquaculture.
                 </p>
               </div>
-              <div className="text-xs text-slate-400 italic bg-slate-900 px-3 py-2 rounded-lg border border-slate-800 shrink-0">
+              <div className="text-xs text-slate-300 italic bg-slate-900 px-3 py-2 rounded-lg border border-slate-800 shrink-0">
                 “You don&apos;t necessarily need to own a pond to become an aquaculture entrepreneur.”
               </div>
             </div>
@@ -402,7 +402,7 @@ export function AboutStorySection() {
                 Every challenge should improve the system.<br className="hidden sm:inline" />
                 Every experience should create value for another farmer.”
               </blockquote>
-              <p className="text-xs text-slate-400 font-mono">
+              <p className="text-xs text-slate-300 font-mono">
                 — The KE Aqua Group Founding Principle
               </p>
             </div>

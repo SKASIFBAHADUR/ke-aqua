@@ -56,21 +56,21 @@ export default function ServicePage() {
         <section className="bg-slate-900/50 border border-slate-800 p-8 lg:p-12 rounded-3xl text-center mb-20 shadow-xl">
           <h2 className="text-2xl font-bold text-white mb-8">Aeration Management Approach</h2>
           
-          <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-3 text-[10px] sm:text-xs md:text-sm font-mono font-bold text-cyan-400 uppercase tracking-widest bg-cyan-950/20 p-4 md:p-6 rounded-xl border border-cyan-900/50 mb-8">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-3 text-xs md:text-sm font-mono font-bold text-cyan-400 uppercase tracking-wide bg-cyan-950/30 p-4 md:p-6 rounded-xl border border-cyan-800/60 mb-8">
             <span>OBSERVE</span>
-            <span className="md:hidden text-slate-600">↓</span><span className="hidden md:block text-slate-600">→</span>
+            <span className="md:hidden text-slate-400">↓</span><span className="hidden md:block text-slate-400">→</span>
             
             <span>POSITION</span>
-            <span className="md:hidden text-slate-600">↓</span><span className="hidden md:block text-slate-600">→</span>
+            <span className="md:hidden text-slate-400">↓</span><span className="hidden md:block text-slate-400">→</span>
             
             <span>OPERATE</span>
-            <span className="md:hidden text-slate-600">↓</span><span className="hidden md:block text-slate-600">→</span>
+            <span className="md:hidden text-slate-400">↓</span><span className="hidden md:block text-slate-400">→</span>
 
             <span>MONITOR</span>
-            <span className="md:hidden text-slate-600">↓</span><span className="hidden md:block text-slate-600">→</span>
+            <span className="md:hidden text-slate-400">↓</span><span className="hidden md:block text-slate-400">→</span>
 
             <span>ADJUST</span>
-            <span className="md:hidden text-slate-600">↓</span><span className="hidden md:block text-slate-600">→</span>
+            <span className="md:hidden text-slate-400">↓</span><span className="hidden md:block text-slate-400">→</span>
 
             <span className="text-emerald-400">RECORD</span>
           </div>
@@ -85,7 +85,7 @@ export default function ServicePage() {
       <section className="bg-slate-900 border-t border-slate-800 py-16 text-center">
         <div className="container-width px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto">
           <h3 className="text-2xl font-bold text-white mb-4">Have Questions About Technology?</h3>
-          <p className="text-slate-400 mb-8 leading-relaxed">
+          <p className="text-slate-300 mb-8 leading-relaxed">
             Contact our team to discuss aquaculture technology and farm requirements.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">

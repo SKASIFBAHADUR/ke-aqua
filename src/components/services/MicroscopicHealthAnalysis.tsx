@@ -276,11 +276,11 @@ export function MicroscopicHealthAnalysisPage() {
             <Link href="/" className="hover:text-cyan-400 transition-colors">
               Home
             </Link>
-            <ChevronRight className="w-3.5 h-3.5 text-slate-600 flex-shrink-0" />
+            <ChevronRight className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />
             <Link href="/#services" className="hover:text-cyan-400 transition-colors">
               Capabilities
             </Link>
-            <ChevronRight className="w-3.5 h-3.5 text-slate-600 flex-shrink-0" />
+            <ChevronRight className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />
             <span className="text-purple-400 font-medium whitespace-nowrap">
               Microscopic Shrimp Health Analysis
             </span>
@@ -304,7 +304,7 @@ export function MicroscopicHealthAnalysisPage() {
               </h1>
 
               {/* Supporting Text */}
-              <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-light">
+              <p className="text-base sm:text-lg text-slate-300 leading-relaxed">
                 Microscopic observation provides vital visual insights into shrimp hepatopancreas condition, gut fullness, gill filament cleanliness, and pond microalgae dynamics. As part of <strong className="text-white font-semibold">Aqua Pulse Laboratory</strong> and <strong className="text-white font-semibold">KE Aqua Farms</strong>, microscopic checks complement daily field monitoring for informed farm management.
               </p>
 
@@ -354,8 +354,8 @@ export function MicroscopicHealthAnalysisPage() {
               <div className="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900 shadow-2xl shadow-purple-950/50 group">
                 <div className="aspect-[4/3] relative">
                   <Image
-                    src="/assets/svc-lab-bg.jpg"
-                    alt="Aqua Pulse Technician - Microscopic Shrimp Observation"
+                    src="/Real_Images/image_6.jpeg"
+                    alt="Aqua Pulse technician conducting microscopic shrimp health analysis under compound microscope"
                     fill
                     className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
                     priority
@@ -366,15 +366,15 @@ export function MicroscopicHealthAnalysisPage() {
                 {/* Overlaid Card Info */}
                 <div className="p-6 relative space-y-4">
                   <div className="flex items-center justify-between border-b border-slate-800 pb-3">
-                    <span className="text-xs font-mono text-purple-400 uppercase tracking-widest">
+                    <span className="text-xs font-mono text-purple-400 uppercase tracking-wide">
                       OPTICAL DIAGNOSTIC SCAN
                     </span>
-                    <span className="px-2.5 py-0.5 rounded-full bg-purple-500/20 border border-purple-500/40 text-purple-300 text-[11px] font-mono">
+                    <span className="px-2.5 py-0.5 rounded-full bg-purple-500/20 border border-purple-500/40 text-purple-300 text-xs font-mono">
                       MICROSCOPIC LAB
                     </span>
                   </div>
 
-                  <p className="text-xs text-slate-300 leading-relaxed font-light">
+                  <p className="text-xs text-slate-300 leading-relaxed">
                     &ldquo;Visual and microscopic observation allows farm managers to see subtle physiological signs before stress impacts feeding or growth.&rdquo;
                   </p>
 
@@ -384,7 +384,7 @@ export function MicroscopicHealthAnalysisPage() {
                     </div>
                     <div>
                       <h4 className="text-xs font-bold text-white">Aqua Pulse Laboratory</h4>
-                      <p className="text-[11px] text-slate-400 font-mono">Microscopic Health &amp; Plankton Check</p>
+                      <p className="text-xs text-slate-400 font-mono">Microscopic Health &amp; Plankton Check</p>
                     </div>
                   </div>
                 </div>
@@ -409,7 +409,7 @@ export function MicroscopicHealthAnalysisPage() {
               Why Microscopic Observation Matters
             </h2>
 
-            <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-light">
+            <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
               Macro visual inspection of shrimp on check trays gives a quick impression, but optical magnification under the microscope reveals details that cannot be seen with the naked eye. Microscopic checks support overall shrimp health assessment alongside daily water parameter logs and feeding records.
             </p>
           </motion.div>
@@ -424,7 +424,7 @@ export function MicroscopicHealthAnalysisPage() {
                 <Search className="w-6 h-6" />
               </div>
               <h3 className="text-lg font-bold text-white">Deeper Visual Visibility</h3>
-              <p className="text-xs text-slate-300 leading-relaxed font-light">
+              <p className="text-xs text-slate-300 leading-relaxed">
                 Inspecting gill filaments for silt accumulation, checking HP lipid droplet abundance, and examining gut continuity provide clear observational indicators of shrimp physiological state.
               </p>
             </motion.div>
@@ -437,7 +437,7 @@ export function MicroscopicHealthAnalysisPage() {
                 <Droplets className="w-6 h-6" />
               </div>
               <h3 className="text-lg font-bold text-white">Plankton Bloom Dynamics</h3>
-              <p className="text-xs text-slate-300 leading-relaxed font-light">
+              <p className="text-xs text-slate-300 leading-relaxed">
                 Microscopic water sample scans reveal phytoplankton species diversity. Identifying shift trends helps farm technicians anticipate potential plankton die-offs or crash risks.
               </p>
             </motion.div>
@@ -450,7 +450,7 @@ export function MicroscopicHealthAnalysisPage() {
                 <ShieldCheck className="w-6 h-6" />
               </div>
               <h3 className="text-lg font-bold text-white">Supporting Farm Decisions</h3>
-              <p className="text-xs text-slate-300 leading-relaxed font-light">
+              <p className="text-xs text-slate-300 leading-relaxed">
                 Microscopic observations inform practical farm management decisions such as adjusting aeration, lime additions, feeding rates, or scheduling deeper water quality testing.
               </p>
             </motion.div>
@@ -472,7 +472,7 @@ export function MicroscopicHealthAnalysisPage() {
               <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
                 Core Microscopic Observation Areas
               </h2>
-              <p className="text-slate-300 text-sm sm:text-base font-light">
+              <p className="text-slate-300 text-sm sm:text-base">
                 Specific areas of visual and microscopic examination conducted at Aqua Pulse Laboratory.
               </p>
             </motion.div>
@@ -504,7 +504,7 @@ export function MicroscopicHealthAnalysisPage() {
                       <div className={`w-12 h-12 rounded-xl bg-slate-900 border border-slate-700/80 flex items-center justify-center ${area.iconColor}`}>
                         <AreaIcon className="w-6 h-6" />
                       </div>
-                      <span className={`px-2.5 py-1 rounded-md text-[11px] font-mono border ${area.badgeColor}`}>
+                      <span className={`px-2.5 py-1 rounded-md text-xs font-mono border ${area.badgeColor}`}>
                         0{idx + 1} • MICROSCOPIC
                       </span>
                     </div>
@@ -518,7 +518,7 @@ export function MicroscopicHealthAnalysisPage() {
                     </div>
 
                     {/* Description */}
-                    <p className="text-xs text-slate-300 leading-relaxed font-light">
+                    <p className="text-xs text-slate-300 leading-relaxed">
                       {area.description}
                     </p>
 
@@ -527,7 +527,7 @@ export function MicroscopicHealthAnalysisPage() {
                       {area.points.map((pt, pIdx) => (
                         <li key={pIdx} className="flex items-start space-x-2 text-xs text-slate-300">
                           <CheckCircle2 className={`w-3.5 h-3.5 mt-0.5 flex-shrink-0 ${area.iconColor}`} />
-                          <span className="leading-tight font-light">{pt}</span>
+                          <span className="leading-tight">{pt}</span>
                         </li>
                       ))}
                     </ul>
@@ -554,7 +554,7 @@ export function MicroscopicHealthAnalysisPage() {
                         className="mt-4 pt-4 border-t border-purple-500/20 text-xs text-slate-300 space-y-2 bg-slate-900/90 p-4 rounded-xl"
                       >
                         <p className="font-semibold text-purple-300">Observational Purpose:</p>
-                        <p className="text-slate-400 leading-relaxed font-light">
+                        <p className="text-slate-400 leading-relaxed">
                           Microscopic findings are logged into structured check sheets alongside water quality parameter logs to track shifts across the crop cycle.
                         </p>
                       </motion.div>
@@ -582,7 +582,7 @@ export function MicroscopicHealthAnalysisPage() {
               7 Key Shrimp Health Observations
             </h2>
 
-            <p className="text-slate-300 text-sm sm:text-base font-light">
+            <p className="text-slate-300 text-sm sm:text-base">
               Routine visual and physical observations conducted during sampling and laboratory checks.
             </p>
           </motion.div>
@@ -601,7 +601,7 @@ export function MicroscopicHealthAnalysisPage() {
                     <PtIcon className="w-5 h-5" />
                   </div>
                   <h3 className="text-base font-bold text-white">{pt.title}</h3>
-                  <p className="text-xs text-slate-400 leading-relaxed font-light">
+                  <p className="text-xs text-slate-400 leading-relaxed">
                     {pt.desc}
                   </p>
                 </motion.div>
@@ -615,7 +615,7 @@ export function MicroscopicHealthAnalysisPage() {
             {...fadeUp(0.3)}
           >
             <AlertCircle className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
-            <p className="text-xs text-slate-300 leading-relaxed font-light">
+            <p className="text-xs text-slate-300 leading-relaxed">
               <strong className="text-white font-semibold">Observational Note:</strong> The parameters listed above are physical and microscopic field observations. They provide valuable diagnostic indicators for farm management but are <strong className="text-white font-semibold">NOT definitive disease diagnoses</strong>.
             </p>
           </motion.div>
@@ -637,7 +637,7 @@ export function MicroscopicHealthAnalysisPage() {
               Farm Observation to Decision Workflow
             </h2>
 
-            <p className="text-slate-300 text-sm sm:text-base font-light">
+            <p className="text-slate-300 text-sm sm:text-base">
               How field observations lead to laboratory verification and actionable farm decisions.
             </p>
           </motion.div>
@@ -654,10 +654,10 @@ export function MicroscopicHealthAnalysisPage() {
                 >
                   <div className="space-y-3">
                     <div className="flex items-center justify-between">
-                      <span className="text-[11px] font-mono font-bold px-2 py-0.5 rounded bg-purple-500/10 border border-purple-500/30 text-purple-300">
+                      <span className="text-xs font-mono font-bold px-2 py-0.5 rounded bg-purple-500/10 border border-purple-500/30 text-purple-300">
                         {st.label}
                       </span>
-                      <span className="text-xs font-mono text-slate-500">{st.step}</span>
+                      <span className="text-xs font-mono text-slate-400">{st.step}</span>
                     </div>
 
                     <div className="w-10 h-10 rounded-lg bg-slate-950 border border-slate-800 flex items-center justify-center text-purple-400">
@@ -666,7 +666,7 @@ export function MicroscopicHealthAnalysisPage() {
 
                     <h3 className="text-base font-bold text-white">{st.title}</h3>
 
-                    <p className="text-xs text-slate-400 leading-relaxed font-light">
+                    <p className="text-xs text-slate-400 leading-relaxed">
                       {st.description}
                     </p>
                   </div>
@@ -692,7 +692,7 @@ export function MicroscopicHealthAnalysisPage() {
               Scientific Observation + Traditional Experience
             </h2>
 
-            <p className="text-slate-300 text-sm sm:text-base font-light">
+            <p className="text-slate-300 text-sm sm:text-base">
               Microscopic checks are one part of KE Aqua Farms&apos; integrated methodology. We combine field intuition with objective laboratory observation and daily logbooks.
             </p>
           </div>
@@ -735,7 +735,7 @@ export function MicroscopicHealthAnalysisPage() {
                     <PilIcon className="w-5 h-5" />
                   </div>
                   <h3 className="text-base font-bold text-white">{pillar.title}</h3>
-                  <p className="text-xs text-slate-300 leading-relaxed font-light">
+                  <p className="text-xs text-slate-300 leading-relaxed">
                     {pillar.desc}
                   </p>
                 </motion.div>
@@ -774,7 +774,7 @@ export function MicroscopicHealthAnalysisPage() {
                     <AudIcon className="w-5 h-5" />
                   </div>
                   <h3 className="text-base font-bold text-white">{aud.title}</h3>
-                  <p className="text-xs text-slate-300 leading-relaxed font-light">
+                  <p className="text-xs text-slate-300 leading-relaxed">
                     {aud.description}
                   </p>
                 </motion.div>
@@ -793,7 +793,7 @@ export function MicroscopicHealthAnalysisPage() {
             <AlertCircle className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
             <div className="space-y-1">
               <span className="font-semibold text-white">Laboratory Scope Disclaimer:</span>
-              <p className="font-light leading-relaxed">
+              <p className="leading-relaxed">
                 Microscopic observation is part of broader shrimp-health and farm assessment. Actual observations and laboratory capabilities depend on the available facility and sample.
               </p>
             </div>
@@ -818,7 +818,7 @@ export function MicroscopicHealthAnalysisPage() {
                 Enquire About Microscopic Shrimp Health Analysis
               </h2>
 
-              <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-light">
+              <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
                 Discuss your microscopic observation requirements, sample collection procedures, or schedule a health check visit with the Aqua Pulse / KE Aqua Farms technical team.
               </p>
 
@@ -832,7 +832,7 @@ export function MicroscopicHealthAnalysisPage() {
                     <Phone className="w-5 h-5" />
                   </div>
                   <div>
-                    <span className="text-[11px] font-mono text-slate-400 block">Direct Call</span>
+                    <span className="text-xs font-mono text-slate-400 block">Direct Call</span>
                     <span className="text-sm font-bold text-white group-hover:text-purple-300 transition-colors">
                       {CONTACT_CONFIG.phone.display}
                     </span>
@@ -849,7 +849,7 @@ export function MicroscopicHealthAnalysisPage() {
                     <MessageSquare className="w-5 h-5" />
                   </div>
                   <div>
-                    <span className="text-[11px] font-mono text-slate-400 block">WhatsApp Enquiries</span>
+                    <span className="text-xs font-mono text-slate-400 block">WhatsApp Enquiries</span>
                     <span className="text-sm font-bold text-white group-hover:text-emerald-300 transition-colors">
                       Chat on WhatsApp
                     </span>
@@ -862,10 +862,10 @@ export function MicroscopicHealthAnalysisPage() {
                 <Clock className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" />
                 <div className="text-xs space-y-1">
                   <p className="font-semibold text-white">Laboratory Hours &amp; Location:</p>
-                  <p className="text-slate-300 font-light">
+                  <p className="text-slate-300">
                     {CONTACT_CONFIG.operatingHours.days} • {CONTACT_CONFIG.operatingHours.time}
                   </p>
-                  <p className="text-slate-400 text-[11px] font-mono">{CONTACT_CONFIG.location.fullAddress}</p>
+                  <p className="text-slate-400 text-xs font-mono">{CONTACT_CONFIG.location.fullAddress}</p>
                 </div>
               </div>
             </motion.div>
@@ -875,7 +875,7 @@ export function MicroscopicHealthAnalysisPage() {
               <div className="rounded-2xl p-7 bg-slate-900/90 border border-slate-800 shadow-2xl space-y-6">
                 <div className="border-b border-slate-800 pb-4">
                   <h3 className="text-xl font-bold text-white">Health Analysis Request Form</h3>
-                  <p className="text-xs text-slate-400 mt-1 font-light">
+                  <p className="text-xs text-slate-400 mt-1">
                     Submit your sample check enquiry below. Our technical team will reach out directly.
                   </p>
                 </div>

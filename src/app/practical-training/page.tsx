@@ -49,7 +49,7 @@ export default function PracticalTrainingPage() {
           {philosophy.map((step, i) => (
             <div key={i} className="flex items-center gap-4 md:gap-8">
               <span className="text-cyan-400 font-display font-bold text-xl md:text-2xl tracking-widest">{step}</span>
-              {i < philosophy.length - 1 && <span className="text-slate-600 hidden md:block">→</span>}
+              {i < philosophy.length - 1 && <span className="text-slate-400 hidden md:block">→</span>}
             </div>
           ))}
         </div>
@@ -68,7 +68,7 @@ export default function PracticalTrainingPage() {
               </div>
               <div className="flex-1">
                 <h3 className="text-white font-bold text-xl mb-2">{prog.name}</h3>
-                <p className="text-slate-400 leading-relaxed text-sm">{prog.desc}</p>
+                <p className="text-slate-300 leading-relaxed text-sm">{prog.desc}</p>
               </div>
             </div>
           ))}

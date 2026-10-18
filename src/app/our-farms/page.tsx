@@ -46,10 +46,10 @@ export default function OurFarmsPage() {
       <div className="container-width px-4 sm:px-6 lg:px-8 -mt-8 mb-20">
         <div className="relative w-full aspect-video md:aspect-[21/9] rounded-3xl overflow-hidden shadow-2xl border border-slate-700">
           <Image
-            src="/assets/commercial_aquaculture_farming_home.png"
-            alt="Real Working Shrimp Farm"
+            src="/Real_Images/image_1.jpeg"
+            alt="KE Aqua Farms - Aquaculture Operations and Monitoring"
             fill
-            className="object-cover"
+            className="object-cover object-center"
             sizes="(max-width: 1200px) 100vw, 1200px"
             priority
           />
@@ -75,11 +75,11 @@ export default function OurFarmsPage() {
           <h2 className="text-2xl font-bold text-white mb-8">Our Farming Philosophy</h2>
           
           <div className="flex flex-wrap items-center justify-center gap-3 text-sm md:text-base font-mono font-bold text-cyan-400 uppercase tracking-widest bg-cyan-950/20 p-4 md:p-6 rounded-xl border border-cyan-900/50 mb-8">
-            <span>Observe</span><span className="text-slate-600">→</span>
-            <span>Measure</span><span className="text-slate-600">→</span>
-            <span>Understand</span><span className="text-slate-600">→</span>
-            <span>Act</span><span className="text-slate-600">→</span>
-            <span>Record</span><span className="text-slate-600">→</span>
+            <span>Observe</span><span className="text-slate-400">→</span>
+            <span>Measure</span><span className="text-slate-400">→</span>
+            <span>Understand</span><span className="text-slate-400">→</span>
+            <span>Act</span><span className="text-slate-400">→</span>
+            <span>Record</span><span className="text-slate-400">→</span>
             <span>Improve</span>
           </div>
 
@@ -107,7 +107,7 @@ export default function OurFarmsPage() {
                   <div className="bg-slate-900/60 border border-slate-800 rounded-xl p-6 flex-1 group-hover:border-cyan-900/80 transition-colors">
                     <span className="md:hidden text-cyan-500 font-mono text-xs font-bold mb-1 block">{String(index + 1).padStart(2, '0')}</span>
                     <h3 className="text-cyan-400 font-bold tracking-widest uppercase text-sm mb-2">{item.step}</h3>
-                    <p className="text-slate-400 text-sm leading-relaxed">{item.desc}</p>
+                    <p className="text-slate-300 text-sm leading-relaxed">{item.desc}</p>
                   </div>
                 </div>
               ))}
@@ -119,7 +119,7 @@ export default function OurFarmsPage() {
         <section>
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-white mb-4">What We Monitor</h2>
-            <p className="text-slate-400 max-w-2xl mx-auto">
+            <p className="text-slate-300 max-w-2xl mx-auto">
               Our monitoring practices are categorized into practical areas supported by farm operations and laboratory diagnostics.
             </p>
           </div>
@@ -192,7 +192,7 @@ export default function OurFarmsPage() {
         <section>
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-white mb-4">Science Meets the Farm</h2>
-            <p className="text-slate-400 max-w-2xl mx-auto text-lg">
+            <p className="text-slate-300 max-w-2xl mx-auto text-lg">
               Farming decisions are strengthened by scientific observation and appropriate technology.
             </p>
           </div>
@@ -200,19 +200,19 @@ export default function OurFarmsPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
             <div className="bg-slate-900 border border-slate-800 p-8 rounded-2xl shadow-lg">
               <h3 className="text-xl font-bold text-white mb-4">Scientific Monitoring</h3>
-              <p className="text-sm text-slate-400 leading-relaxed">
+              <p className="text-sm text-slate-300 leading-relaxed">
                 Water, shrimp and pond observations supported by laboratory analysis where required.
               </p>
             </div>
             <div className="bg-slate-900 border border-slate-800 p-8 rounded-2xl shadow-lg">
               <h3 className="text-xl font-bold text-white mb-4">Technology in Practice</h3>
-              <p className="text-sm text-slate-400 leading-relaxed">
+              <p className="text-sm text-slate-300 leading-relaxed">
                 Evaluation of tools such as automatic feeding, aeration and farm-monitoring technologies under real farm conditions.
               </p>
             </div>
             <div className="bg-slate-900 border border-slate-800 p-8 rounded-2xl shadow-lg">
               <h3 className="text-xl font-bold text-white mb-4">Field Learning</h3>
-              <p className="text-sm text-slate-400 leading-relaxed">
+              <p className="text-sm text-slate-300 leading-relaxed">
                 Farm records and crop observations are reviewed to understand what worked, what did not, and what can be improved.
               </p>
             </div>
@@ -229,7 +229,7 @@ export default function OurFarmsPage() {
         <section className="bg-slate-900/50 border border-slate-800 p-8 lg:p-12 rounded-3xl">
           <div className="mb-10 text-center">
             <h2 className="text-3xl font-bold text-white mb-4">What We Learn From the Farm</h2>
-            <p className="text-slate-400 max-w-2xl mx-auto">
+            <p className="text-slate-300 max-w-2xl mx-auto">
               Every crop provides data. Every challenge provides a lesson. Our farm observations are documented so that practical experiences can be evaluated and shared.
             </p>
           </div>
@@ -238,10 +238,10 @@ export default function OurFarmsPage() {
             {/* Case Study 1 */}
             <div className="bg-[#0A192F] border border-slate-800 rounded-2xl p-6 flex flex-col h-full hover:border-cyan-500/50 transition-colors">
               <div className="mb-4">
-                <span className="text-[10px] font-mono font-bold tracking-widest text-cyan-500 uppercase">Case Study</span>
+                <span className="text-xs font-mono font-bold tracking-wide text-cyan-400 uppercase">Case Study</span>
               </div>
               <h3 className="text-lg font-bold text-white mb-3">Preventive Pond Management &amp; White-Gut Risk Mitigation</h3>
-              <p className="text-sm text-slate-400 mb-6 flex-grow">
+              <p className="text-sm text-slate-200 mb-6 flex-grow leading-relaxed">
                 Field documentation of proactive water quality and feeding strategies to address gastrointestinal challenges.
               </p>
               <Link href="/case-studies/white-gut-risk" className="text-sm font-bold text-cyan-400 hover:text-cyan-300 inline-flex items-center gap-1 group">
@@ -252,10 +252,10 @@ export default function OurFarmsPage() {
             {/* Case Study 2 */}
             <div className="bg-[#0A192F] border border-slate-800 rounded-2xl p-6 flex flex-col h-full hover:border-cyan-500/50 transition-colors">
               <div className="mb-4">
-                <span className="text-[10px] font-mono font-bold tracking-widest text-emerald-500 uppercase">Case Study</span>
+                <span className="text-xs font-mono font-bold tracking-wide text-emerald-400 uppercase">Case Study</span>
               </div>
               <h3 className="text-lg font-bold text-white mb-3">Smart Aquaculture &amp; Technology Evaluation</h3>
-              <p className="text-sm text-slate-400 mb-6 flex-grow">
+              <p className="text-sm text-slate-200 mb-6 flex-grow leading-relaxed">
                 Practical assessment of IoT sensor performance, auto-feeders, and data integration in active ponds.
               </p>
               <Link href="/case-studies/smart-aquaculture" className="text-sm font-bold text-emerald-400 hover:text-emerald-300 inline-flex items-center gap-1 group">
@@ -266,10 +266,10 @@ export default function OurFarmsPage() {
             {/* Case Study 3 */}
             <div className="bg-[#0A192F] border border-slate-800 rounded-2xl p-6 flex flex-col h-full hover:border-cyan-500/50 transition-colors">
               <div className="mb-4">
-                <span className="text-[10px] font-mono font-bold tracking-widest text-blue-500 uppercase">Case Study</span>
+                <span className="text-xs font-mono font-bold tracking-wide text-blue-400 uppercase">Case Study</span>
               </div>
               <h3 className="text-lg font-bold text-white mb-3">Feed Cost Optimization &amp; Growth Strategies</h3>
-              <p className="text-sm text-slate-400 mb-6 flex-grow">
+              <p className="text-sm text-slate-200 mb-6 flex-grow leading-relaxed">
                 Analysis of feed utilization, FCR optimization techniques, and controlled feeding protocols.
               </p>
               <Link href="/case-studies/feed-cost-optimization" className="text-sm font-bold text-blue-400 hover:text-blue-300 inline-flex items-center gap-1 group">
@@ -295,7 +295,7 @@ export default function OurFarmsPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
             <div className="bg-slate-900 border border-slate-800 rounded-2xl p-8 flex flex-col items-start hover:border-slate-600 transition-colors">
               <h3 className="text-white font-bold text-xl mb-3">Learn From Our Experience</h3>
-              <p className="text-slate-400 text-sm leading-relaxed mb-6 flex-grow">
+              <p className="text-slate-300 text-sm leading-relaxed mb-6 flex-grow">
                 Explore documented observations, practical lessons and field experience from KE Aqua Farms.
               </p>
               <Link href="/case-studies" className="text-cyan-400 font-bold text-sm inline-flex items-center gap-1 hover:underline">
@@ -305,7 +305,7 @@ export default function OurFarmsPage() {
 
             <div className="bg-slate-900 border border-slate-800 rounded-2xl p-8 flex flex-col items-start hover:border-slate-600 transition-colors">
               <h3 className="text-white font-bold text-xl mb-3">Explore Aqua Pulse</h3>
-              <p className="text-slate-400 text-sm leading-relaxed mb-6 flex-grow">
+              <p className="text-slate-300 text-sm leading-relaxed mb-6 flex-grow">
                 Discover the scientific monitoring and technical side of our aquaculture ecosystem.
               </p>
               <Link href="/aqua-pulse-lab" className="text-cyan-400 font-bold text-sm inline-flex items-center gap-1 hover:underline">
@@ -315,7 +315,7 @@ export default function OurFarmsPage() {
 
             <div className="bg-slate-900 border border-slate-800 rounded-2xl p-8 flex flex-col items-start hover:border-slate-600 transition-colors">
               <h3 className="text-white font-bold text-xl mb-3">Contact KE Aqua Group</h3>
-              <p className="text-slate-400 text-sm leading-relaxed mb-6 flex-grow">
+              <p className="text-slate-300 text-sm leading-relaxed mb-6 flex-grow">
                 For farm-related enquiries and practical discussions.
               </p>
               <Link href="/contact" className="text-cyan-400 font-bold text-sm inline-flex items-center gap-1 hover:underline">

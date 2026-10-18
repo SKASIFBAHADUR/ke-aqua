@@ -78,11 +78,11 @@ export default function RegistrationsCredentialsPage() {
                   <span className="text-cyan-400 font-mono text-xs uppercase tracking-widest block mb-1">{cred.entity}</span>
                   <h3 className="text-white font-bold text-lg">{cred.type}</h3>
                 </div>
-                <ShieldCheck className="w-6 h-6 text-emerald-500" />
+                <ShieldCheck className="w-6 h-6 text-emerald-400" />
               </div>
               
               <div className="bg-slate-950/50 p-4 rounded-lg border border-slate-800/50 mb-4">
-                <span className="text-slate-500 text-xs block mb-1">Registration Number</span>
+                <span className="text-slate-400 text-xs block mb-1">Registration Number</span>
                 <span className="text-slate-200 font-mono text-sm break-all">{cred.number}</span>
               </div>
               
@@ -95,10 +95,10 @@ export default function RegistrationsCredentialsPage() {
         </div>
 
         <div className="bg-cyan-950/30 border border-cyan-900/50 rounded-xl p-6 flex gap-4 max-w-4xl mx-auto">
-          <Info className="w-6 h-6 text-cyan-500 shrink-0 mt-1" />
+          <Info className="w-6 h-6 text-cyan-400 shrink-0 mt-1" />
           <div>
-            <h4 className="text-cyan-500 font-bold mb-2">Certification Notice</h4>
-            <p className="text-cyan-100/70 text-sm leading-relaxed">
+            <h4 className="text-cyan-400 font-bold mb-2">Certification Notice</h4>
+            <p className="text-cyan-100 text-sm leading-relaxed">
               Additional operational certifications (e.g., ASC, BAP) and export registrations remain unpublished pending final client confirmation and strict verification of their current active status. We do not make unverified claims regarding international certifications.
             </p>
           </div>

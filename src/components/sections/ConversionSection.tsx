@@ -49,6 +49,36 @@ interface ErrorsState {
   message?: string;
 }
 
+function buildWhatsAppMessage(data: FormState): string {
+  const lines: string[] = [
+    "KE AQUA WEBSITE ENQUIRY",
+    "",
+    `Name: ${data.fullName.trim()}`,
+    `Phone: ${data.mobile.trim()}`,
+  ];
+
+  if (data.email.trim()) {
+    lines.push(`Email: ${data.email.trim()}`);
+  }
+  if (data.location.trim()) {
+    lines.push(`Location: ${data.location.trim()}`);
+  }
+  if (data.persona) {
+    lines.push(`Category: ${data.persona}`);
+  }
+  if (data.interestedIn) {
+    lines.push(`Enquiry Type: ${data.interestedIn}`);
+  }
+  if (data.message.trim()) {
+    lines.push(`Message: ${data.message.trim()}`);
+  }
+
+  lines.push("");
+  lines.push("Source: KE Aqua Website Contact Form");
+
+  return lines.join("\n");
+}
+
 export function ConversionSection() {
   const [formData, setFormData] = useState<FormState>({
     fullName: "",
@@ -62,7 +92,9 @@ export function ConversionSection() {
 
   const [errors, setErrors] = useState<ErrorsState>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSuccess, setIsSuccess] = useState(false);
+  const [isHandoff, setIsHandoff] = useState(false);
+  const [formattedMessage, setFormattedMessage] = useState<string>("");
+  const [whatsappUrl, setWhatsappUrl] = useState<string>("");
   const [serverError, setServerError] = useState<string | null>(null);
 
   // Client-side Validation Logic
@@ -101,25 +133,53 @@ export function ConversionSection() {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setServerError(null);
 
+    // Prevent accidental duplicate submissions while processing
+    if (isSubmitting) return;
+
     if (!validateForm()) {
+      return;
+    }
+
+    // Extract client number in international format without +, spaces, brackets, or hyphens
+    const rawNumber = CONTACT_CONFIG.whatsapp?.number || "";
+    const cleanNumber = rawNumber.replace(/[^0-9]/g, "");
+
+    if (!cleanNumber) {
+      setServerError(
+        "Client WhatsApp number is not configured in src/config/contact.ts. Please contact us directly via phone or email."
+      );
       return;
     }
 
     setIsSubmitting(true);
 
     try {
-      // Simulate API network latency (800ms)
-      await new Promise((resolve) => setTimeout(resolve, 800));
-      setIsSubmitting(false);
-      setIsSuccess(true);
+      const messageText = buildWhatsAppMessage(formData);
+      const encodedMessage = encodeURIComponent(messageText);
+      const targetUrl = `https://wa.me/${cleanNumber}?text=${encodedMessage}`;
+
+      setFormattedMessage(messageText);
+      setWhatsappUrl(targetUrl);
+
+      // Open WhatsApp synchronously within user interaction to avoid popup blocker
+      if (typeof window !== "undefined") {
+        window.open(targetUrl, "_blank", "noopener,noreferrer");
+      }
+
+      setIsHandoff(true);
     } catch {
+      setServerError("An unexpected error occurred while preparing your WhatsApp message. Please try again.");
+    } finally {
       setIsSubmitting(false);
-      setServerError("An unexpected error occurred. Please try again or connect via WhatsApp.");
     }
+  };
+
+  const handleBackToEdit = () => {
+    setIsHandoff(false);
   };
 
   const handleReset = () => {
@@ -133,7 +193,9 @@ export function ConversionSection() {
       message: "",
     });
     setErrors({});
-    setIsSuccess(false);
+    setIsHandoff(false);
+    setFormattedMessage("");
+    setWhatsappUrl("");
     setServerError(null);
   };
 
@@ -173,11 +235,11 @@ export function ConversionSection() {
             {/* Direct Contact Cards */}
             <div className="rounded-3xl bg-[#112240] border border-slate-800 p-6 sm:p-8 shadow-2xl space-y-6">
               <div>
-                <span className="text-xs font-bold uppercase tracking-widest text-cyan-400 block mb-1">
+                <span className="text-xs font-bold uppercase tracking-wide text-cyan-400 block mb-1">
                   Connect Directly
                 </span>
                 <h3 className="text-xl font-bold text-white">Speak With Our Team</h3>
-                <p className="text-xs text-slate-300 leading-relaxed mt-1">
+                <p className="text-sm text-slate-200 leading-relaxed mt-1">
                   No automated chatbots or sales pressure. Connect directly with active farm managers and technical advisors.
                 </p>
               </div>
@@ -193,13 +255,13 @@ export function ConversionSection() {
                       <Phone className="w-5 h-5" />
                     </div>
                     <div>
-                      <span className="text-[10px] font-mono text-slate-400 uppercase tracking-wider block">{CONTACT_CONFIG.phone.label}</span>
+                      <span className="text-xs font-mono text-slate-300 uppercase tracking-wide block">{CONTACT_CONFIG.phone.label}</span>
                       <span className="text-sm font-bold text-white group-hover:text-cyan-400 transition-colors">
                         {CONTACT_CONFIG.phone.display}
                       </span>
                     </div>
                   </div>
-                  <ArrowRight className="w-4 h-4 text-slate-600 group-hover:text-cyan-400 group-hover:translate-x-1 transition-all" />
+                  <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-cyan-400 group-hover:translate-x-1 transition-all" />
                 </a>
 
                 {/* Direct WhatsApp */}
@@ -214,13 +276,13 @@ export function ConversionSection() {
                       <MessageSquare className="w-5 h-5" />
                     </div>
                     <div>
-                      <span className="text-[10px] font-mono text-slate-400 uppercase tracking-wider block">WhatsApp Direct</span>
+                      <span className="text-xs font-mono text-slate-300 uppercase tracking-wide block">WhatsApp Direct</span>
                       <span className="text-sm font-bold text-white group-hover:text-emerald-400 transition-colors">
                         Start WhatsApp Chat
                       </span>
                     </div>
                   </div>
-                  <ArrowRight className="w-4 h-4 text-slate-600 group-hover:text-emerald-400 group-hover:translate-x-1 transition-all" />
+                  <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-emerald-400 group-hover:translate-x-1 transition-all" />
                 </a>
 
                 {/* Email Direct */}
@@ -233,18 +295,18 @@ export function ConversionSection() {
                       <Mail className="w-5 h-5" />
                     </div>
                     <div>
-                      <span className="text-[10px] font-mono text-slate-400 uppercase tracking-wider block">{CONTACT_CONFIG.email.label}</span>
+                      <span className="text-xs font-mono text-slate-300 uppercase tracking-wide block">{CONTACT_CONFIG.email.label}</span>
                       <span className="text-sm font-bold text-white group-hover:text-purple-400 transition-colors">
                         {CONTACT_CONFIG.email.display}
                       </span>
                     </div>
                   </div>
-                  <ArrowRight className="w-4 h-4 text-slate-600 group-hover:text-purple-400 group-hover:translate-x-1 transition-all" />
+                  <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-purple-400 group-hover:translate-x-1 transition-all" />
                 </a>
               </div>
 
               {/* Working Hours Commitment */}
-              <div className="p-3.5 rounded-xl bg-slate-950/90 border border-slate-800 flex items-center gap-2.5 text-xs text-slate-300">
+              <div className="p-3.5 rounded-xl bg-slate-950/90 border border-slate-800 flex items-center gap-2.5 text-sm text-slate-200">
                 <Clock className="w-4 h-4 text-cyan-400 shrink-0" />
                 <div>
                   <span className="font-semibold text-white block mb-0.5">{CONTACT_CONFIG.operatingHours.days} ({CONTACT_CONFIG.operatingHours.time})</span>
@@ -292,7 +354,7 @@ export function ConversionSection() {
             <div className="rounded-3xl bg-[#112240] border border-slate-800 p-6 sm:p-8 lg:p-10 shadow-2xl relative">
               
               <AnimatePresence mode="wait">
-                {!isSuccess ? (
+                {!isHandoff ? (
                   <motion.form
                     key="form"
                     initial={{ opacity: 1 }}
@@ -309,7 +371,7 @@ export function ConversionSection() {
                         Send Your Requirement
                       </h3>
                       <p className="text-xs sm:text-sm text-slate-300 mt-1 leading-relaxed">
-                        Fill out the form below to connect directly with our technical and advisory team. [CLIENT/BACKEND CONFIGURATION REQUIRED: Form submission backend is pending.]
+                        Fill out the form below. When submitted, your enquiry details will be structured and opened in WhatsApp so you can review and connect directly with our technical team.
                       </p>
                     </div>
 
@@ -330,7 +392,7 @@ export function ConversionSection() {
                           Full Name <span className="text-cyan-400">*</span>
                         </label>
                         <div className="relative">
-                          <User className="w-4 h-4 text-slate-500 absolute left-3.5 top-3.5 pointer-events-none" />
+                          <User className="w-4 h-4 text-slate-400 absolute left-3.5 top-3.5 pointer-events-none" />
                           <input
                             id="fullName"
                             type="text"
@@ -344,7 +406,7 @@ export function ConversionSection() {
                               setFormData({ ...formData, fullName: e.target.value });
                               if (errors.fullName) setErrors({ ...errors, fullName: undefined });
                             }}
-                            className={`w-full pl-10 pr-4 py-3 rounded-xl bg-slate-950 border text-sm text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-cyan-400/50 transition-all ${
+                            className={`w-full pl-10 pr-4 py-3 rounded-xl bg-slate-950 border text-sm text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-cyan-400/50 transition-all ${
                               errors.fullName ? "border-rose-500" : "border-slate-800 focus:border-cyan-400"
                             }`}
                           />
@@ -362,7 +424,7 @@ export function ConversionSection() {
                           Mobile Number <span className="text-cyan-400">*</span>
                         </label>
                         <div className="relative">
-                          <Phone className="w-4 h-4 text-slate-500 absolute left-3.5 top-3.5 pointer-events-none" />
+                          <Phone className="w-4 h-4 text-slate-400 absolute left-3.5 top-3.5 pointer-events-none" />
                           <input
                             id="mobile"
                             type="tel"
@@ -376,7 +438,7 @@ export function ConversionSection() {
                               setFormData({ ...formData, mobile: e.target.value });
                               if (errors.mobile) setErrors({ ...errors, mobile: undefined });
                             }}
-                            className={`w-full pl-10 pr-4 py-3 rounded-xl bg-slate-950 border text-sm text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-cyan-400/50 transition-all ${
+                            className={`w-full pl-10 pr-4 py-3 rounded-xl bg-slate-950 border text-sm text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-cyan-400/50 transition-all ${
                               errors.mobile ? "border-rose-500" : "border-slate-800 focus:border-cyan-400"
                             }`}
                           />
@@ -391,10 +453,10 @@ export function ConversionSection() {
                       {/* Email Address (Optional) */}
                       <div className="space-y-1.5">
                         <label htmlFor="email" className="block text-xs font-bold text-slate-200">
-                          Email Address <span className="text-slate-500 font-normal">(Optional)</span>
+                          Email Address <span className="text-slate-400 font-normal">(Optional)</span>
                         </label>
                         <div className="relative">
-                          <Mail className="w-4 h-4 text-slate-500 absolute left-3.5 top-3.5 pointer-events-none" />
+                          <Mail className="w-4 h-4 text-slate-400 absolute left-3.5 top-3.5 pointer-events-none" />
                           <input
                             id="email"
                             type="email"
@@ -406,7 +468,7 @@ export function ConversionSection() {
                               setFormData({ ...formData, email: e.target.value });
                               if (errors.email) setErrors({ ...errors, email: undefined });
                             }}
-                            className={`w-full pl-10 pr-4 py-3 rounded-xl bg-slate-950 border text-sm text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-cyan-400/50 transition-all ${
+                            className={`w-full pl-10 pr-4 py-3 rounded-xl bg-slate-950 border text-sm text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-cyan-400/50 transition-all ${
                               errors.email ? "border-rose-500" : "border-slate-800 focus:border-cyan-400"
                             }`}
                           />
@@ -421,17 +483,17 @@ export function ConversionSection() {
                       {/* Location / District */}
                       <div className="space-y-1.5">
                         <label htmlFor="location" className="block text-xs font-bold text-slate-200">
-                          Location / District <span className="text-slate-500 font-normal">(Optional)</span>
+                          Location / District <span className="text-slate-400 font-normal">(Optional)</span>
                         </label>
                         <div className="relative">
-                          <Compass className="w-4 h-4 text-slate-500 absolute left-3.5 top-3.5 pointer-events-none" />
+                          <Compass className="w-4 h-4 text-slate-400 absolute left-3.5 top-3.5 pointer-events-none" />
                           <input
                             id="location"
                             type="text"
                             placeholder="e.g. Bapatla, AP"
                             value={formData.location}
                             onChange={(e) => setFormData({ ...formData, location: e.target.value })}
-                            className="w-full pl-10 pr-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-cyan-400/50 focus:border-cyan-400 transition-all"
+                            className="w-full pl-10 pr-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-sm text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-cyan-400/50 focus:border-cyan-400 transition-all"
                           />
                         </div>
                       </div>
@@ -452,7 +514,7 @@ export function ConversionSection() {
                             className={`px-3 py-2 rounded-xl text-xs font-semibold border transition-all touch-manipulation ${
                               formData.persona === p
                                 ? "bg-cyan-500/20 border-cyan-400 text-cyan-300 shadow-md"
-                                : "bg-slate-950 border-slate-800 text-slate-400 hover:text-white"
+                                : "bg-slate-950 border-slate-800 text-slate-300 hover:text-white"
                             }`}
                           >
                             {p}
@@ -475,7 +537,7 @@ export function ConversionSection() {
                             className={`px-3.5 py-2 rounded-xl text-xs font-semibold border transition-all touch-manipulation ${
                               formData.interestedIn === opt
                                 ? "bg-emerald-500/20 border-emerald-400 text-emerald-300 shadow-md"
-                                : "bg-slate-950 border-slate-800 text-slate-400 hover:text-white"
+                                : "bg-slate-950 border-slate-800 text-slate-300 hover:text-white"
                             }`}
                           >
                             {opt}
@@ -487,7 +549,7 @@ export function ConversionSection() {
                     {/* Message Area */}
                     <div className="space-y-1.5">
                       <label htmlFor="message" className="block text-xs font-bold text-slate-200">
-                        Message / Specific Requirement <span className="text-slate-500 font-normal">(Optional)</span>
+                        Message / Specific Requirement <span className="text-slate-400 font-normal">(Optional)</span>
                       </label>
                       <textarea
                         id="message"
@@ -495,76 +557,113 @@ export function ConversionSection() {
                         placeholder="Share any specific details regarding your farm size, water testing needs, or farm visit..."
                         value={formData.message}
                         onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                        className="w-full p-3.5 rounded-xl bg-slate-950 border border-slate-800 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-cyan-400/50 focus:border-cyan-400 transition-all"
+                        className="w-full p-3.5 rounded-xl bg-slate-950 border border-slate-800 text-sm text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-cyan-400/50 focus:border-cyan-400 transition-all"
                       />
                     </div>
 
-                    {/* Submit Button with Loading Spinner */}
+                    {/* Notice explaining WhatsApp transition */}
+                    <div className="p-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-xs text-slate-300 flex items-start gap-2.5">
+                      <MessageSquare className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+                      <span>
+                        Submitting this form prepares your message and opens WhatsApp directed to our technical team ({CONTACT_CONFIG.whatsapp.display}). You will review and tap <strong>Send</strong> in WhatsApp to transmit your enquiry.
+                      </span>
+                    </div>
+
+                    {/* Submit Button */}
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full py-4 rounded-xl bg-cyan-400 hover:bg-cyan-300 text-slate-950 font-extrabold text-sm shadow-lg shadow-cyan-500/20 flex items-center justify-center gap-2 transition-all active:scale-[0.99] disabled:opacity-60 disabled:cursor-not-allowed touch-manipulation min-h-[52px]"
+                      className="w-full py-4 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold text-sm shadow-lg shadow-emerald-500/20 flex items-center justify-center gap-2 transition-all active:scale-[0.99] disabled:opacity-60 disabled:cursor-not-allowed touch-manipulation min-h-[52px]"
                     >
                       {isSubmitting ? (
                         <>
                           <Loader2 className="w-4 h-4 animate-spin text-slate-950" />
-                          <span>Sending Your Enquiry...</span>
+                          <span>Preparing WhatsApp Message...</span>
                         </>
                       ) : (
                         <>
-                          <span>Send Enquiry to Our Team</span>
-                          <Send className="w-4 h-4" />
+                          <MessageSquare className="w-4 h-4" />
+                          <span>Continue to WhatsApp</span>
+                          <ArrowRight className="w-4 h-4" />
                         </>
                       )}
                     </button>
 
                     <div className="text-[11px] text-slate-400 text-center flex items-center justify-center gap-1.5">
                       <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
-                      <span>Your contact details are used strictly to respond to your enquiry.</span>
+                      <span>Your details are formatted directly into WhatsApp. No third-party data tracking.</span>
                     </div>
 
                   </motion.form>
                 ) : (
                   <motion.div
-                    key="success"
-                    initial={{ opacity: 0, scale: 0.95 }}
+                    key="handoff"
+                    initial={{ opacity: 0, scale: 0.98 }}
                     animate={{ opacity: 1, scale: 1 }}
-                    className="py-12 px-4 text-center space-y-6"
+                    exit={{ opacity: 0 }}
+                    className="py-6 sm:py-8 px-2 sm:px-4 text-center space-y-6"
                   >
                     <div className="w-16 h-16 rounded-full bg-emerald-500/20 border border-emerald-500/40 text-emerald-400 flex items-center justify-center mx-auto shadow-lg shadow-emerald-500/10">
-                      <CheckCircle2 className="w-8 h-8" />
+                      <MessageSquare className="w-8 h-8" />
                     </div>
 
                     <div className="space-y-2">
                       <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest block font-mono">
-                        Enquiry Successfully Submitted
+                        Ready in WhatsApp · Next Step
                       </span>
                       <h3 className="text-2xl sm:text-3xl font-extrabold text-white">
-                        Thank You, {formData.fullName}!
+                        Please Tap &ldquo;Send&rdquo; in WhatsApp
                       </h3>
                       <p className="text-sm text-slate-300 max-w-md mx-auto leading-relaxed">
-                        Your enquiry regarding <span className="text-cyan-400 font-semibold">{formData.interestedIn}</span> has been received. A member of our technical team will reach out to <span className="text-white font-bold">{formData.mobile}</span> shortly.
+                        Your enquiry details have been prepared for the KE Aqua Farms team at{" "}
+                        <span className="text-white font-bold">{CONTACT_CONFIG.whatsapp.display}</span>. Please review the pre-filled message in WhatsApp and tap{" "}
+                        <strong className="text-emerald-400">Send</strong> to transmit it.
                       </p>
                     </div>
 
-                    <div className="p-4 rounded-xl bg-slate-950 border border-slate-800 text-xs text-slate-400 max-w-md mx-auto">
-                      Need immediate assistance? You can also click below to chat directly with us on WhatsApp.
-                    </div>
-
-                    <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3">
+                    {/* Primary Action / Fallback Link */}
+                    <div className="max-w-md mx-auto space-y-3">
                       <a
-                        href={CONTACT_CONFIG.whatsapp.directUrl}
+                        href={whatsappUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="w-full sm:w-auto px-6 py-3 rounded-xl bg-emerald-500 text-slate-950 font-bold text-xs hover:bg-emerald-400 transition-colors inline-flex items-center justify-center gap-2"
+                        className="w-full py-4 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold text-sm shadow-lg shadow-emerald-500/20 flex items-center justify-center gap-2 transition-all active:scale-[0.99] touch-manipulation min-h-[52px]"
                       >
-                        <MessageSquare className="w-4 h-4" /> Open WhatsApp Chat
+                        <MessageSquare className="w-4 h-4" />
+                        <span>Open WhatsApp to Send Message</span>
+                        <ExternalLink className="w-4 h-4" />
                       </a>
+                      <p className="text-xs text-slate-400">
+                        If WhatsApp didn&apos;t open automatically, click the button above to launch your chat.
+                      </p>
+                    </div>
+
+                    {/* Formatted Message Preview */}
+                    <div className="max-w-lg mx-auto text-left rounded-2xl bg-slate-950 border border-slate-800 p-4 sm:p-5">
+                      <div className="flex items-center justify-between pb-2 mb-3 border-b border-slate-800 text-xs text-slate-400 font-mono">
+                        <span>Pre-Filled WhatsApp Message</span>
+                        <span className="text-emerald-400 font-semibold">Ready to Send</span>
+                      </div>
+                      <pre className="text-xs text-slate-200 font-mono whitespace-pre-wrap leading-relaxed select-all">
+                        {formattedMessage}
+                      </pre>
+                    </div>
+
+                    {/* Secondary Actions */}
+                    <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3">
                       <button
-                        onClick={handleReset}
-                        className="w-full sm:w-auto px-6 py-3 rounded-xl bg-slate-900 border border-slate-800 text-xs font-semibold text-slate-300 hover:text-white transition-colors"
+                        type="button"
+                        onClick={handleBackToEdit}
+                        className="w-full sm:w-auto px-6 py-3 rounded-xl bg-slate-900 border border-slate-800 text-xs font-semibold text-slate-300 hover:text-white hover:border-slate-700 transition-colors"
                       >
-                        Send Another Enquiry
+                        Edit Enquiry Details
+                      </button>
+                      <button
+                        type="button"
+                        onClick={handleReset}
+                        className="w-full sm:w-auto px-6 py-3 rounded-xl bg-slate-900 border border-slate-800 text-xs font-semibold text-slate-400 hover:text-slate-200 transition-colors"
+                      >
+                        Start New Enquiry
                       </button>
                     </div>
                   </motion.div>
@@ -626,7 +725,7 @@ export function ConversionSection() {
                       <Share2 className="w-4 h-4 text-cyan-400" />
                       {social.name}
                     </span>
-                    <ExternalLink className="w-3.5 h-3.5 text-slate-500 group-hover:text-cyan-400 transition-colors" />
+                    <ExternalLink className="w-3.5 h-3.5 text-slate-400 group-hover:text-cyan-400 transition-colors" />
                   </a>
                 ))}
               </div>

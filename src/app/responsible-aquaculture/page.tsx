@@ -52,7 +52,7 @@ export default function ResponsibleAquaculturePage() {
             <div key={i} className="bg-slate-900 border border-slate-800 rounded-xl p-6 hover:border-cyan-900 transition-colors">
               <span className="text-cyan-400 font-mono text-xs uppercase tracking-widest block mb-2">0{i + 1}</span>
               <h3 className="text-white font-bold mb-3">{prin.title}</h3>
-              <p className="text-slate-400 text-sm leading-relaxed">{prin.desc}</p>
+              <p className="text-slate-300 text-sm leading-relaxed">{prin.desc}</p>
             </div>
           ))}
         </div>

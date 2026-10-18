@@ -279,11 +279,11 @@ export function FarmMonitoringPage() {
             <Link href="/" className="hover:text-cyan-400 transition-colors">
               Home
             </Link>
-            <ChevronRight className="w-3.5 h-3.5 text-slate-600 flex-shrink-0" />
+            <ChevronRight className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />
             <Link href="/#services" className="hover:text-cyan-400 transition-colors">
               Capabilities
             </Link>
-            <ChevronRight className="w-3.5 h-3.5 text-slate-600 flex-shrink-0" />
+            <ChevronRight className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />
             <span className="text-cyan-400 font-medium whitespace-nowrap">
               Farm Monitoring & Technical Support
             </span>
@@ -309,7 +309,7 @@ export function FarmMonitoringPage() {
               </h1>
 
               {/* Supporting Paragraph */}
-              <p className="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl font-light">
+              <p className="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl">
                 At <strong className="text-white font-semibold">KE Aqua Farms</strong>, farm monitoring and technical support are rooted in daily commercial experience. We combine continuous pond-side observation, water quality tracking, feeding logs, and scientific laboratory insights to support responsible, data-backed farm management.
               </p>
 
@@ -359,8 +359,8 @@ export function FarmMonitoringPage() {
               <div className="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900 shadow-2xl shadow-cyan-950/50 group">
                 <div className="aspect-[4/3] relative">
                   <Image
-                    src="/assets/svc-monitoring.jpg"
-                    alt="KE Aqua Farms - Water Quality & Pond Monitoring"
+                    src="/Real_Images/image_1.jpeg"
+                    alt="Aqua Pulse technical specialist testing pond water salinity with optical refractometer"
                     fill
                     className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
                     priority
@@ -371,15 +371,15 @@ export function FarmMonitoringPage() {
                 {/* Overlaid Card Info */}
                 <div className="p-6 relative space-y-4">
                   <div className="flex items-center justify-between border-b border-slate-800 pb-3">
-                    <span className="text-xs font-mono text-cyan-400 uppercase tracking-widest">
+                    <span className="text-xs font-mono text-cyan-400 uppercase tracking-wide">
                       COMMERCIAL FIELD MONITORING
                     </span>
-                    <span className="px-2.5 py-0.5 rounded-full bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 text-[11px] font-mono">
+                    <span className="px-2.5 py-0.5 rounded-full bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 text-xs font-mono">
                       ACTIVE POND DATA
                     </span>
                   </div>
 
-                  <p className="text-xs text-slate-300 leading-relaxed font-light">
+                  <p className="text-xs text-slate-300 leading-relaxed">
                     &ldquo;Monitoring is not just recording numbers; it is understanding what the pond is communicating before stress impacts the crop.&rdquo;
                   </p>
 
@@ -389,7 +389,7 @@ export function FarmMonitoringPage() {
                     </div>
                     <div>
                       <h4 className="text-xs font-bold text-white">KE Aqua Farms Operation</h4>
-                      <p className="text-[11px] text-slate-400 font-mono">30-Acre Commercial Farm Base</p>
+                      <p className="text-xs text-slate-400 font-mono">30-Acre Commercial Farm Base</p>
                     </div>
                   </div>
                 </div>
@@ -414,7 +414,7 @@ export function FarmMonitoringPage() {
               Why Continuous Farm Monitoring Matters
             </h2>
 
-            <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-light">
+            <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
               In intensive shrimp aquaculture, water quality and animal health change continuously. Waiting for visible signs of distress often means acting too late. Structured observation and daily record-keeping allow farmers to detect subtle shifts early and make proactive adjustments.
             </p>
           </motion.div>
@@ -429,7 +429,7 @@ export function FarmMonitoringPage() {
                 <Eye className="w-6 h-6" />
               </div>
               <h3 className="text-lg font-bold text-white">Observation Before Action</h3>
-              <p className="text-xs text-slate-300 leading-relaxed font-light">
+              <p className="text-xs text-slate-300 leading-relaxed">
                 Understanding check trays, water clarity, plankton shifts, and shrimp feeding vigor allows farm managers to adjust inputs based on real pond demand rather than fixed schedules.
               </p>
             </motion.div>
@@ -442,7 +442,7 @@ export function FarmMonitoringPage() {
                 <BarChart3 className="w-6 h-6" />
               </div>
               <h3 className="text-lg font-bold text-white">Records & Trend Analysis</h3>
-              <p className="text-xs text-slate-300 leading-relaxed font-light">
+              <p className="text-xs text-slate-300 leading-relaxed">
                 Tracking pH swings, alkalinity levels, and daily feeding rates provides a historical log. Patterns emerge across crop cycles, revealing optimal operating windows for your specific farm.
               </p>
             </motion.div>
@@ -455,7 +455,7 @@ export function FarmMonitoringPage() {
                 <FlaskConical className="w-6 h-6" />
               </div>
               <h3 className="text-lg font-bold text-white">Scientific Lab Integration</h3>
-              <p className="text-xs text-slate-300 leading-relaxed font-light">
+              <p className="text-xs text-slate-300 leading-relaxed">
                 Field observations are reinforced by chemical and microbiological analysis at <strong className="text-white">Aqua Pulse Laboratory</strong>, grounding field decisions in verified laboratory data.
               </p>
             </motion.div>
@@ -477,7 +477,7 @@ export function FarmMonitoringPage() {
               <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
                 What We Observe &amp; Monitor
               </h2>
-              <p className="text-slate-300 text-sm sm:text-base font-light">
+              <p className="text-slate-300 text-sm sm:text-base">
                 On a working commercial shrimp farm, effective technical monitoring covers five interconnected pillars of pond health and performance.
               </p>
             </motion.div>
@@ -509,7 +509,7 @@ export function FarmMonitoringPage() {
                       <div className={`w-12 h-12 rounded-xl bg-slate-900 border border-slate-700/80 flex items-center justify-center ${card.iconColor}`}>
                         <Icon className="w-6 h-6" />
                       </div>
-                      <span className={`px-2.5 py-1 rounded-md text-[11px] font-mono border ${card.badgeColor}`}>
+                      <span className={`px-2.5 py-1 rounded-md text-xs font-mono border ${card.badgeColor}`}>
                         0{idx + 1} • OBSERVE
                       </span>
                     </div>
@@ -523,7 +523,7 @@ export function FarmMonitoringPage() {
                     </div>
 
                     {/* Description */}
-                    <p className="text-xs text-slate-300 leading-relaxed font-light">
+                    <p className="text-xs text-slate-300 leading-relaxed">
                       {card.description}
                     </p>
 
@@ -532,7 +532,7 @@ export function FarmMonitoringPage() {
                       {card.points.map((pt, pIdx) => (
                         <li key={pIdx} className="flex items-start space-x-2 text-xs text-slate-300">
                           <CheckCircle2 className={`w-3.5 h-3.5 mt-0.5 flex-shrink-0 ${card.iconColor}`} />
-                          <span className="leading-tight font-light">{pt}</span>
+                          <span className="leading-tight">{pt}</span>
                         </li>
                       ))}
                     </ul>
@@ -559,7 +559,7 @@ export function FarmMonitoringPage() {
                         className="mt-4 pt-4 border-t border-cyan-500/20 text-xs text-slate-300 space-y-2 bg-slate-900/90 p-4 rounded-xl"
                       >
                         <p className="font-semibold text-cyan-300">Field Monitoring Approach:</p>
-                        <p className="text-slate-400 leading-relaxed font-light">
+                        <p className="text-slate-400 leading-relaxed">
                           Observations are logged daily into standardized farm check sheets. Where parameter trends indicate deviation from optimal ranges, samples are collected and sent to Aqua Pulse Laboratory for precise testing.
                         </p>
                       </motion.div>
@@ -587,7 +587,7 @@ export function FarmMonitoringPage() {
               Practical Monitoring Workflow
             </h2>
 
-            <p className="text-slate-300 text-sm sm:text-base font-light">
+            <p className="text-slate-300 text-sm sm:text-base">
               How daily observations translate into informed farm management decisions.
             </p>
           </motion.div>
@@ -614,7 +614,7 @@ export function FarmMonitoringPage() {
                     <p className="text-xs font-mono text-emerald-400/80 mt-0.5">{step.subtitle}</p>
                   </div>
 
-                  <p className="text-xs text-slate-400 leading-relaxed font-light">
+                  <p className="text-xs text-slate-400 leading-relaxed">
                     {step.description}
                   </p>
                 </motion.div>
@@ -641,7 +641,7 @@ export function FarmMonitoringPage() {
                 Traditional Knowledge + Science + Smart Tech
               </h2>
 
-              <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-light">
+              <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
                 KE Aqua Farms does not rely on a single approach. Effective farm monitoring brings together three complementary strengths: experienced field judgment, precise scientific diagnostic data from Aqua Pulse, and modern smart technology.
               </p>
 
@@ -649,7 +649,7 @@ export function FarmMonitoringPage() {
                 <h4 className="text-xs font-bold text-cyan-300 uppercase tracking-wider font-mono">
                   Synergy in Practice
                 </h4>
-                <p className="text-xs text-slate-300 leading-relaxed font-light">
+                <p className="text-xs text-slate-300 leading-relaxed">
                   A sensor measures dissolved oxygen, traditional experience interprets shrimp response to weather changes, and laboratory testing verifies bacterial counts. Together, they provide complete farm visibility.
                 </p>
               </div>
@@ -669,8 +669,8 @@ export function FarmMonitoringPage() {
                         <PillarIcon className="w-5 h-5" />
                       </div>
                       <h3 className="text-base font-bold text-white">{pillar.title}</h3>
-                      <p className="text-[11px] font-mono text-slate-400">{pillar.subtitle}</p>
-                      <p className="text-xs text-slate-300 leading-relaxed font-light">
+                      <p className="text-xs font-mono text-slate-400">{pillar.subtitle}</p>
+                      <p className="text-xs text-slate-300 leading-relaxed">
                         {pillar.description}
                       </p>
                     </div>
@@ -697,7 +697,7 @@ export function FarmMonitoringPage() {
               What Farm Technical Support Is — and Is Not
             </h2>
 
-            <p className="text-slate-300 text-sm max-w-2xl mx-auto font-light">
+            <p className="text-slate-300 text-sm max-w-2xl mx-auto">
               We maintain complete honesty regarding what farm monitoring and technical advisory can achieve.
             </p>
           </motion.div>
@@ -712,20 +712,20 @@ export function FarmMonitoringPage() {
                 <div className="flex items-start space-x-3">
                   <CheckCircle2 className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
                   <div>
-                    <span className="text-[11px] font-mono text-emerald-400 uppercase tracking-wider block">
+                    <span className="text-xs font-mono text-emerald-400 uppercase tracking-wider block">
                       WHAT IT IS
                     </span>
-                    <p className="text-xs text-slate-200 mt-1 font-light leading-relaxed">{pt.whatItIs}</p>
+                    <p className="text-xs text-slate-200 mt-1 leading-relaxed">{pt.whatItIs}</p>
                   </div>
                 </div>
 
                 <div className="flex items-start space-x-3 pt-3 md:pt-0 border-t md:border-t-0 md:border-l border-slate-800 md:pl-4">
                   <AlertCircle className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
                   <div>
-                    <span className="text-[11px] font-mono text-amber-400 uppercase tracking-wider block">
+                    <span className="text-xs font-mono text-amber-400 uppercase tracking-wider block">
                       WHAT IT IS NOT
                     </span>
-                    <p className="text-xs text-slate-300 mt-1 font-light leading-relaxed">{pt.whatItIsNot}</p>
+                    <p className="text-xs text-slate-300 mt-1 leading-relaxed">{pt.whatItIsNot}</p>
                   </div>
                 </div>
               </motion.div>
@@ -751,7 +751,7 @@ export function FarmMonitoringPage() {
                 Discuss Farm Technical Support with Our Team
               </h2>
 
-              <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-light">
+              <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
                 Whether you want to discuss water quality tracking, feeding logs, or scheduling a practical farm technical visit, we welcome direct conversation. Speak directly with experienced aquaculture professionals from KE Aqua Farms.
               </p>
 
@@ -765,7 +765,7 @@ export function FarmMonitoringPage() {
                     <Phone className="w-5 h-5" />
                   </div>
                   <div>
-                    <span className="text-[11px] font-mono text-slate-400 block">Direct Call</span>
+                    <span className="text-xs font-mono text-slate-400 block">Direct Call</span>
                     <span className="text-sm font-bold text-white group-hover:text-cyan-300 transition-colors">
                       {CONTACT_CONFIG.phone.display}
                     </span>
@@ -782,7 +782,7 @@ export function FarmMonitoringPage() {
                     <MessageSquare className="w-5 h-5" />
                   </div>
                   <div>
-                    <span className="text-[11px] font-mono text-slate-400 block">WhatsApp Enquiries</span>
+                    <span className="text-xs font-mono text-slate-400 block">WhatsApp Enquiries</span>
                     <span className="text-sm font-bold text-white group-hover:text-emerald-300 transition-colors">
                       Chat on WhatsApp
                     </span>
@@ -795,10 +795,10 @@ export function FarmMonitoringPage() {
                 <Clock className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                 <div className="text-xs space-y-1">
                   <p className="font-semibold text-white">Working Hours &amp; Location:</p>
-                  <p className="text-slate-300 font-light">
+                  <p className="text-slate-300">
                     {CONTACT_CONFIG.operatingHours.days} • {CONTACT_CONFIG.operatingHours.time}
                   </p>
-                  <p className="text-slate-400 text-[11px] font-mono">{CONTACT_CONFIG.location.fullAddress}</p>
+                  <p className="text-slate-400 text-xs font-mono">{CONTACT_CONFIG.location.fullAddress}</p>
                 </div>
               </div>
             </motion.div>
@@ -808,7 +808,7 @@ export function FarmMonitoringPage() {
               <div className="rounded-2xl p-7 bg-slate-900/90 border border-slate-800 shadow-2xl space-y-6">
                 <div className="border-b border-slate-800 pb-4">
                   <h3 className="text-xl font-bold text-white">Send a Technical Enquiry</h3>
-                  <p className="text-xs text-slate-400 mt-1 font-light">
+                  <p className="text-xs text-slate-400 mt-1">
                     Select your interest area and share your details. Our technical team will reach out directly.
                   </p>
                 </div>

@@ -374,11 +374,11 @@ export function FarmVisitsExposurePage() {
             <Link href="/" className="hover:text-emerald-400 transition-colors">
               Home
             </Link>
-            <ChevronRight className="w-3.5 h-3.5 text-slate-600 flex-shrink-0" />
+            <ChevronRight className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />
             <Link href="/#services" className="hover:text-emerald-400 transition-colors">
               Capabilities
             </Link>
-            <ChevronRight className="w-3.5 h-3.5 text-slate-600 flex-shrink-0" />
+            <ChevronRight className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />
             <span className="text-emerald-400 font-medium whitespace-nowrap">
               Farm Visits & Exposure
             </span>
@@ -408,7 +408,7 @@ export function FarmVisitsExposurePage() {
               </h1>
 
               {/* Supporting text */}
-              <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-light max-w-2xl">
+              <p className="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl">
                 A farm visit at KE Aqua Farms is a structured practical exposure —
                 not a tour. Walk active ponds, see technology in operation, observe
                 water testing and shrimp sampling, and gain a realistic understanding
@@ -418,7 +418,7 @@ export function FarmVisitsExposurePage() {
               {/* Not-a-tour qualifier */}
               <div className="flex items-center gap-3 p-4 rounded-xl bg-slate-900/80 border border-slate-700">
                 <Eye className="w-5 h-5 text-emerald-400 flex-shrink-0" />
-                <p className="text-xs text-slate-300 font-light">
+                <p className="text-xs text-slate-300">
                   <strong className="text-white font-semibold">Farm Exposure, Not Tourism.</strong>{" "}
                   Every visit is structured around practical observation, demonstration and
                   genuine learning — designed to give you honest, realistic insight into
@@ -457,7 +457,7 @@ export function FarmVisitsExposurePage() {
                     className="object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent" />
-                  <div className="absolute top-3 left-3 px-3 py-1.5 rounded-full bg-emerald-500/90 text-slate-950 text-[11px] font-bold font-mono uppercase">
+                  <div className="absolute top-3 left-3 px-3 py-1.5 rounded-full bg-emerald-500/90 text-slate-950 text-xs font-bold font-mono uppercase">
                     30-Acre Working Farm
                   </div>
                 </div>
@@ -475,14 +475,14 @@ export function FarmVisitsExposurePage() {
                         <div key={idx} className="p-3 rounded-lg bg-slate-950/80 border border-slate-800 space-y-1">
                           <ItemIcon className={`w-3.5 h-3.5 ${item.color} mb-1`} />
                           <p className="text-sm font-extrabold text-white">{item.value}</p>
-                          <p className="text-[10px] text-slate-400 font-mono">{item.label}</p>
+                          <p className="text-xs text-slate-400 font-mono">{item.label}</p>
                         </div>
                       );
                     })}
                   </div>
 
                   <div className="p-3 rounded-lg bg-amber-950/20 border border-amber-700/30">
-                    <p className="text-[11px] text-amber-200 font-light leading-relaxed">
+                    <p className="text-xs text-amber-200 leading-relaxed">
                       <strong className="text-amber-300">Note:</strong> Farm visits are structured
                       practical exposure programs. Outcomes depend on farm conditions, crop
                       stage and operational activity on the day of visit.
@@ -508,7 +508,7 @@ export function FarmVisitsExposurePage() {
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
               9 Areas of Practical Farm Exposure
             </h2>
-            <p className="text-slate-300 text-sm sm:text-base font-light">
+            <p className="text-slate-300 text-sm sm:text-base">
               Each area of observation is designed to give you realistic insight into
               what running a commercial shrimp farm actually involves — not an idealised
               or curated version.
@@ -528,7 +528,7 @@ export function FarmVisitsExposurePage() {
                     <AreaIcon className="w-5 h-5" />
                   </div>
                   <h3 className={`text-base font-bold ${area.color}`}>{area.title}</h3>
-                  <p className="text-xs text-slate-300 leading-relaxed font-light">{area.desc}</p>
+                  <p className="text-xs text-slate-300 leading-relaxed">{area.desc}</p>
                 </motion.div>
               );
             })}
@@ -555,7 +555,7 @@ export function FarmVisitsExposurePage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent" />
                 </div>
                 <div className="absolute top-4 left-4">
-                  <span className="px-3 py-1.5 rounded-full bg-emerald-500/90 text-slate-950 text-[11px] font-bold font-mono uppercase">
+                  <span className="px-3 py-1.5 rounded-full bg-emerald-500/90 text-slate-950 text-xs font-bold font-mono uppercase">
                     Farm Exposure
                   </span>
                 </div>
@@ -563,7 +563,7 @@ export function FarmVisitsExposurePage() {
                   <p className="text-white font-bold text-lg leading-tight">
                     See a Real Commercial Farm in Operation
                   </p>
-                  <p className="text-slate-300 text-xs mt-1 font-light">
+                  <p className="text-slate-300 text-xs mt-1">
                     KE Aqua Farms — D. No. 17-129, Ismailbegpeta, Koduru, Krishna District
                   </p>
                 </div>
@@ -571,13 +571,13 @@ export function FarmVisitsExposurePage() {
 
               {/* Floating stat card */}
               <div className="absolute -bottom-5 -right-4 sm:-right-8 p-4 rounded-xl bg-slate-900 border border-emerald-500/30 shadow-xl">
-                <p className="text-[10px] font-mono text-emerald-400 uppercase tracking-widest mb-3">
+                <p className="text-xs font-mono text-emerald-400 uppercase tracking-wide mb-3">
                   Exposure Covers
                 </p>
                 {["Ponds", "Technology", "Lab", "Sampling", "Records", "Q&A"].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-2 mb-1.5">
                     <CheckCircle2 className="w-3 h-3 text-emerald-400 flex-shrink-0" />
-                    <span className="text-[11px] text-slate-300">{item}</span>
+                    <span className="text-xs text-slate-300">{item}</span>
                   </div>
                 ))}
               </div>
@@ -593,13 +593,13 @@ export function FarmVisitsExposurePage() {
                 <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
                   One Day. A Working Farm. Real Understanding.
                 </h2>
-                <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-light">
+                <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
                   The General Farm Exposure is designed specifically for beginners and those
                   considering aquaculture as a business or career. The purpose is simple —
                   give you a clear, honest, unfiltered picture of how a commercial shrimp
                   farm actually operates before you make any decisions.
                 </p>
-                <p className="text-slate-400 text-sm leading-relaxed font-light">
+                <p className="text-slate-400 text-sm leading-relaxed">
                   You will walk the farm, observe active ponds, see the technology deployed,
                   watch water testing and shrimp sampling in practice, review farm records,
                   and have time to ask open questions — all in one structured day.
@@ -608,7 +608,7 @@ export function FarmVisitsExposurePage() {
 
               {/* What makes it different */}
               <div className="space-y-3">
-                <p className="text-xs font-mono text-slate-400 uppercase tracking-widest">
+                <p className="text-xs font-mono text-slate-400 uppercase tracking-wide">
                   What Makes This Different
                 </p>
                 {[
@@ -623,7 +623,7 @@ export function FarmVisitsExposurePage() {
                   return (
                     <div key={idx} className="flex items-center gap-3 p-3 rounded-lg bg-slate-900/80 border border-slate-800 hover:border-emerald-500/30 transition-colors">
                       <Icon className="w-4 h-4 text-emerald-400 flex-shrink-0" />
-                      <p className="text-xs text-slate-300 font-light">{item.point}</p>
+                      <p className="text-xs text-slate-300">{item.point}</p>
                     </div>
                   );
                 })}
@@ -658,7 +658,7 @@ export function FarmVisitsExposurePage() {
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
               Arrive → Orientation → Ponds → Technology → Lab → Shrimp → Records → Q&A
             </h2>
-            <p className="text-slate-300 text-sm sm:text-base font-light">
+            <p className="text-slate-300 text-sm sm:text-base">
               Each step of the exposure program is designed to build realistic understanding
               — progressing from farm overview to hands-on practical observation.
             </p>
@@ -675,16 +675,16 @@ export function FarmVisitsExposurePage() {
                   {...fadeUp(0.06 + idx * 0.05)}
                 >
                   <div className="flex items-center justify-between">
-                    <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded bg-teal-500/10 border border-teal-500/30 text-teal-300">
+                    <span className="text-xs font-mono font-bold px-2 py-0.5 rounded bg-teal-500/10 border border-teal-500/30 text-teal-300">
                       {st.label}
                     </span>
-                    <span className="text-xs font-mono text-slate-600">{st.step}</span>
+                    <span className="text-xs font-mono text-slate-400">{st.step}</span>
                   </div>
                   <div className="w-10 h-10 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-teal-400">
                     <StepIcon className="w-5 h-5" />
                   </div>
                   <h3 className="text-sm font-bold text-white">{st.title}</h3>
-                  <p className="text-xs text-slate-400 leading-relaxed font-light">{st.desc}</p>
+                  <p className="text-xs text-slate-300 leading-relaxed">{st.desc}</p>
                 </motion.div>
               );
             })}
@@ -696,7 +696,7 @@ export function FarmVisitsExposurePage() {
             {...fadeUp(0.35)}
           >
             <AlertTriangle className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
-            <p className="text-xs text-amber-200 leading-relaxed font-light">
+            <p className="text-xs text-amber-200 leading-relaxed">
               <strong className="font-semibold text-amber-300">Practical Note:</strong>{" "}
               The specific activities and sequence of the exposure program may vary
               depending on farm conditions, crop stage, weather and operational activity
@@ -720,7 +720,7 @@ export function FarmVisitsExposurePage() {
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
               Open to Anyone With a Genuine Interest in Aquaculture
             </h2>
-            <p className="text-slate-300 text-sm sm:text-base font-light">
+            <p className="text-slate-300 text-sm sm:text-base">
               Farm visits are for anyone who wants realistic, practical understanding
               of commercial aquaculture — regardless of background or experience.
             </p>
@@ -739,7 +739,7 @@ export function FarmVisitsExposurePage() {
                     <ProfileIcon className="w-5 h-5" />
                   </div>
                   <h3 className={`text-sm font-bold ${profile.color}`}>{profile.title}</h3>
-                  <p className="text-xs text-slate-300 leading-relaxed font-light">{profile.desc}</p>
+                  <p className="text-xs text-slate-300 leading-relaxed">{profile.desc}</p>
                 </motion.div>
               );
             })}
@@ -773,7 +773,7 @@ export function FarmVisitsExposurePage() {
                   "Identifying what questions to ask before investing",
                   "Understanding what further training or support you may need",
                 ].map((pt, idx) => (
-                  <li key={idx} className="flex items-start gap-2.5 text-xs text-slate-300 font-light">
+                  <li key={idx} className="flex items-start gap-2.5 text-xs text-slate-300">
                     <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 flex-shrink-0 mt-0.5" />
                     {pt}
                   </li>
@@ -801,7 +801,7 @@ export function FarmVisitsExposurePage() {
                   "Any certification, qualification or official credential",
                   "Guaranteed access to specific farm activities on the visit day",
                 ].map((pt, idx) => (
-                  <li key={idx} className="flex items-start gap-2.5 text-xs text-slate-400 font-light">
+                  <li key={idx} className="flex items-start gap-2.5 text-xs text-slate-400">
                     <div className="w-3.5 h-3.5 rounded-full bg-amber-500/20 border border-amber-500/40 flex items-center justify-center flex-shrink-0 mt-0.5 text-[9px] text-amber-400 font-bold">
                       ✕
                     </div>
@@ -827,7 +827,7 @@ export function FarmVisitsExposurePage() {
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
               After Your Farm Visit, Take the Next Step
             </h2>
-            <p className="text-slate-300 text-sm sm:text-base font-light">
+            <p className="text-slate-300 text-sm sm:text-base">
               A farm visit is often the first step. If you want to go deeper, KE Aqua
               offers structured training programs, technical support and monitoring services.
             </p>
@@ -850,9 +850,9 @@ export function FarmVisitsExposurePage() {
                       <h3 className="text-base font-bold text-white group-hover:text-emerald-300 transition-colors">
                         {prog.title}
                       </h3>
-                      <p className="text-[11px] font-mono text-slate-400 mt-0.5">{prog.subtitle}</p>
+                      <p className="text-xs font-mono text-slate-400 mt-0.5">{prog.subtitle}</p>
                     </div>
-                    <p className="text-xs text-slate-300 leading-relaxed font-light">{prog.desc}</p>
+                    <p className="text-xs text-slate-300 leading-relaxed">{prog.desc}</p>
                   </div>
                   <Link
                     href={prog.href}
@@ -885,7 +885,7 @@ export function FarmVisitsExposurePage() {
                 Contact KE Aqua Farms to Arrange Your Visit
               </h2>
 
-              <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-light">
+              <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
                 Farm visits are arranged directly through our team. Contact us to discuss
                 availability, your background and what you hope to understand from the
                 visit — and we will guide you from there.
@@ -901,7 +901,7 @@ export function FarmVisitsExposurePage() {
                     <Phone className="w-5 h-5" />
                   </div>
                   <div>
-                    <span className="text-[11px] font-mono text-slate-400 block">Direct Call</span>
+                    <span className="text-xs font-mono text-slate-400 block">Direct Call</span>
                     <span className="text-sm font-bold text-white group-hover:text-emerald-300 transition-colors">
                       {CONTACT_CONFIG.phone.display}
                     </span>
@@ -918,7 +918,7 @@ export function FarmVisitsExposurePage() {
                     <MessageSquare className="w-5 h-5" />
                   </div>
                   <div>
-                    <span className="text-[11px] font-mono text-slate-400 block">WhatsApp</span>
+                    <span className="text-xs font-mono text-slate-400 block">WhatsApp</span>
                     <span className="text-sm font-bold text-white group-hover:text-emerald-300 transition-colors">
                       Chat on WhatsApp
                     </span>
@@ -931,10 +931,10 @@ export function FarmVisitsExposurePage() {
                 <Clock className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
                 <div className="text-xs space-y-1">
                   <p className="font-semibold text-white">Working Hours & Farm Location:</p>
-                  <p className="text-slate-300 font-light">
+                  <p className="text-slate-300">
                     {CONTACT_CONFIG.operatingHours.days} • {CONTACT_CONFIG.operatingHours.time}
                   </p>
-                  <p className="text-slate-400 text-[11px] font-mono">
+                  <p className="text-slate-400 text-xs font-mono">
                     {CONTACT_CONFIG.location.fullAddress}
                   </p>
                 </div>
@@ -942,8 +942,8 @@ export function FarmVisitsExposurePage() {
 
               {/* Disclaimer note */}
               <div className="p-4 rounded-xl bg-amber-950/20 border border-amber-700/30 space-y-2">
-                <p className="text-[11px] font-bold text-amber-300">Please Note:</p>
-                <p className="text-[11px] text-amber-200 font-light leading-relaxed">
+                <p className="text-xs font-bold text-amber-300">Please Note:</p>
+                <p className="text-xs text-amber-200 leading-relaxed">
                   Farm visits are practical farm-exposure programs. We do not offer
                   online booking, automated scheduling or guaranteed activity calendars.
                   All visits are arranged directly with our team based on farm availability.
@@ -956,7 +956,7 @@ export function FarmVisitsExposurePage() {
               <div className="rounded-2xl p-7 bg-slate-900/90 border border-slate-800 shadow-2xl space-y-6">
                 <div className="border-b border-slate-800 pb-4">
                   <h3 className="text-xl font-bold text-white">Farm Visit Enquiry</h3>
-                  <p className="text-xs text-slate-400 mt-1 font-light">
+                  <p className="text-xs text-slate-400 mt-1">
                     Tell us about yourself and your interest in visiting — we&apos;ll be
                     in touch directly to discuss availability.
                   </p>
@@ -974,7 +974,7 @@ export function FarmVisitsExposurePage() {
                         <CheckCircle2 className="w-7 h-7 text-emerald-400" />
                       </div>
                       <h4 className="text-lg font-bold text-white">Enquiry Sent</h4>
-                      <p className="text-sm text-slate-300 font-light">
+                      <p className="text-sm text-slate-300">
                         Your farm visit enquiry has been forwarded via WhatsApp.
                         Our team will be in touch to discuss availability and arrangements.
                       </p>
@@ -1074,7 +1074,7 @@ export function FarmVisitsExposurePage() {
                         <span>CONTACT US</span>
                       </button>
 
-                      <p className="text-[11px] text-center text-slate-500 font-light">
+                      <p className="text-xs text-center text-slate-400 font-normal">
                         Your enquiry will be forwarded via WhatsApp for a direct response from our team.
                       </p>
                     </motion.form>
@@ -1092,7 +1092,7 @@ export function FarmVisitsExposurePage() {
             <h3 className="text-2xl font-extrabold text-white">
               Ready for Practical Training? Explore the Full Programs
             </h3>
-            <p className="text-sm text-slate-300 font-light max-w-xl mx-auto">
+            <p className="text-sm text-slate-300 max-w-xl mx-auto">
               A farm visit is a starting point. For deeper, structured practical skill
               development — explore KE Aqua&apos;s training programs from 3-day to 3-month tiers.
             </p>

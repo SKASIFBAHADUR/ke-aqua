@@ -63,7 +63,7 @@ export default function KECoastalPage() {
                   <Icon className="w-8 h-8" />
                 </div>
                 <h3 className="text-white font-bold text-xl mb-4">{focus.title}</h3>
-                <p className="text-slate-400 text-sm leading-relaxed">
+                <p className="text-slate-300 text-sm leading-relaxed">
                   {focus.desc}
                 </p>
               </div>

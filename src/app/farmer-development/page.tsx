@@ -51,7 +51,7 @@ export default function FarmerDevelopmentPage() {
           {philosophy.map((step, i) => (
             <div key={i} className="flex items-center gap-4 md:gap-6">
               <span className="text-cyan-400 font-bold text-lg md:text-xl tracking-widest bg-slate-900 px-4 py-2 rounded-lg border border-slate-800">{step}</span>
-              {i < philosophy.length - 1 && <span className="text-slate-600 hidden md:block">→</span>}
+              {i < philosophy.length - 1 && <span className="text-slate-400 hidden md:block">→</span>}
             </div>
           ))}
         </div>
@@ -70,7 +70,7 @@ export default function FarmerDevelopmentPage() {
                   <Icon className="w-5 h-5" />
                 </div>
                 <h3 className="text-white font-bold mb-2">{mod.title}</h3>
-                <p className="text-slate-400 text-sm leading-relaxed">{mod.desc}</p>
+                <p className="text-slate-300 text-sm leading-relaxed">{mod.desc}</p>
               </div>
             );
           })}

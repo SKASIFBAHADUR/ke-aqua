@@ -23,11 +23,11 @@ export default function DisclaimerPage() {
       
       <div className="container-width py-16 px-4 sm:px-6 lg:px-8">
         <div className="bg-slate-900 border border-slate-800 rounded-xl p-8 lg:p-12 text-center max-w-4xl mx-auto">
-          <div className="w-16 h-16 mx-auto bg-slate-800 rounded-full flex items-center justify-center mb-6">
-            <span className="text-slate-500 font-mono text-xs">LEGAL</span>
+          <div className="w-16 h-16 mx-auto bg-slate-800 rounded-full flex items-center justify-center mb-6 border border-slate-700">
+            <span className="text-cyan-400 font-mono text-xs font-semibold">LEGAL</span>
           </div>
           <h3 className="text-2xl font-bold text-white mb-4">[CLIENT LEGAL COPY REQUIRED]</h3>
-          <p className="text-slate-400 leading-relaxed max-w-2xl mx-auto">
+          <p className="text-slate-300 leading-relaxed max-w-2xl mx-auto">
             This document is pending finalized and approved legal copy. It remains unpublished to the public index until final client confirmation is received.
           </p>
         </div>

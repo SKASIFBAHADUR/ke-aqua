@@ -62,10 +62,10 @@ export default function AquaPulseLabPage() {
           <h2 className="text-2xl font-bold text-white mb-8">From Observation to Decision</h2>
           
           <div className="flex flex-wrap items-center justify-center gap-3 text-sm md:text-base font-mono font-bold text-cyan-400 uppercase tracking-widest bg-cyan-950/20 p-4 md:p-6 rounded-xl border border-cyan-900/50 mb-8">
-            <span>SAMPLE</span><span className="text-slate-600">→</span>
-            <span>TEST</span><span className="text-slate-600">→</span>
-            <span>INTERPRET</span><span className="text-slate-600">→</span>
-            <span>FARM DECISION</span><span className="text-slate-600">→</span>
+            <span>SAMPLE</span><span className="text-slate-400">→</span>
+            <span>TEST</span><span className="text-slate-400">→</span>
+            <span>INTERPRET</span><span className="text-slate-400">→</span>
+            <span>FARM DECISION</span><span className="text-slate-400">→</span>
             <span>MONITOR</span>
           </div>
 
@@ -90,7 +90,7 @@ export default function AquaPulseLabPage() {
                   <Icon className="w-6 h-6" />
                 </div>
                 <h3 className="text-white font-bold mb-3">{cap.name}</h3>
-                <p className="text-slate-400 text-sm leading-relaxed mb-6 flex-1">
+                <p className="text-slate-300 text-sm leading-relaxed mb-6 flex-1">
                   {cap.desc}
                 </p>
                 <Link href={cap.link} className="text-cyan-400 hover:text-cyan-300 font-bold text-xs uppercase tracking-wider mt-auto inline-flex items-center gap-1">
@@ -108,18 +108,18 @@ export default function AquaPulseLabPage() {
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-10">
             <div className="bg-[#0A192F] border border-emerald-900/50 p-6 rounded-2xl w-full md:w-64">
               <h3 className="text-emerald-400 font-bold text-lg mb-2">KE AQUA FARMS</h3>
-              <p className="text-slate-400 text-sm">Practical Farm Observation</p>
+              <p className="text-slate-300 text-sm">Practical Farm Observation</p>
             </div>
             
-            <div className="text-2xl font-bold text-slate-600">+</div>
+            <div className="text-2xl font-bold text-slate-400">+</div>
             
             <div className="bg-[#0A192F] border border-cyan-900/50 p-6 rounded-2xl w-full md:w-64">
               <h3 className="text-cyan-400 font-bold text-lg mb-2">AQUA PULSE</h3>
-              <p className="text-slate-400 text-sm">Scientific &amp; Diagnostic Support</p>
+              <p className="text-slate-300 text-sm">Scientific &amp; Diagnostic Support</p>
             </div>
           </div>
           
-          <div className="text-2xl font-bold text-slate-600 mb-6">↓</div>
+          <div className="text-2xl font-bold text-slate-400 mb-6">↓</div>
           
           <div className="bg-cyan-950/30 border border-cyan-500/30 p-4 rounded-xl inline-block mb-10 shadow-lg">
             <span className="text-cyan-400 font-mono font-bold uppercase tracking-widest">BETTER-INFORMED FARM DECISIONS</span>
@@ -136,7 +136,7 @@ export default function AquaPulseLabPage() {
       <section className="bg-slate-900 border-t border-slate-800 py-16 text-center">
         <div className="container-width px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto">
           <h3 className="text-2xl font-bold text-white mb-4">Have Questions About Aqua Pulse?</h3>
-          <p className="text-slate-400 mb-8 leading-relaxed">
+          <p className="text-slate-300 mb-8 leading-relaxed">
             Contact our team to discuss aquaculture requirements and explore the areas where Aqua Pulse may be relevant.
           </p>
           <Link 

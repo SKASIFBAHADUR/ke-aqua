@@ -123,7 +123,7 @@ export function Header() {
             <span className="block font-display font-extrabold text-base md:text-lg leading-none text-white tracking-tight">
               KE Aqua Farms
             </span>
-            <span className="block font-sans text-[0.62rem] uppercase tracking-wider text-cyan-400 font-semibold mt-0.5">
+            <span className="block font-sans text-xs uppercase tracking-wide text-cyan-400 font-semibold mt-0.5">
               The Key to Practical Aquaculture
             </span>
           </div>
@@ -135,8 +135,8 @@ export function Header() {
             <li key="Home">
                <Link
                  href="/"
-                 className={`text-[11px] xl:text-xs font-semibold uppercase tracking-wider transition-colors outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 rounded-md px-2 py-1 ${
-                   pathname === "/" ? "text-cyan-400 font-bold" : "text-slate-300 hover:text-white"
+                 className={`text-xs xl:text-sm font-semibold uppercase tracking-wide transition-colors outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 rounded-md px-2 py-1 ${
+                   pathname === "/" ? "text-cyan-400 font-bold" : "text-slate-200 hover:text-white"
                  }`}
                >
                  Home
@@ -146,12 +146,12 @@ export function Header() {
               const isActive = pathname.startsWith(group.href) || group.subItems.some(sub => pathname === sub.href);
               return (
                 <li key={group.label} className="group relative">
-                  <div className={`flex items-center gap-1 text-[11px] xl:text-xs font-semibold uppercase tracking-wider transition-colors outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 rounded-md px-2 py-1 cursor-default ${
-                      isActive ? "text-cyan-400 font-bold" : "text-slate-300 group-hover:text-white"
+                  <div className={`flex items-center gap-1 text-xs xl:text-sm font-semibold uppercase tracking-wide transition-colors outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 rounded-md px-2 py-1 cursor-default ${
+                      isActive ? "text-cyan-400 font-bold" : "text-slate-200 group-hover:text-white"
                     }`}
                   >
                     {group.label}
-                    <ChevronDown className="w-3 h-3 opacity-70 group-hover:rotate-180 transition-transform duration-200" />
+                    <ChevronDown className="w-3.5 h-3.5 opacity-80 group-hover:rotate-180 transition-transform duration-200" />
                   </div>
                   
                   {/* Dropdown */}
@@ -165,8 +165,8 @@ export function Header() {
                             href={sub.href}
                             className={`px-4 py-2 rounded-lg transition-colors border border-transparent text-sm leading-snug ${
                               pathname === sub.href 
-                                ? "bg-slate-800/80 text-cyan-400 font-medium" 
-                                : "text-slate-300 hover:text-white hover:bg-slate-800/50"
+                                ? "bg-slate-800/80 text-cyan-400 font-semibold" 
+                                : "text-slate-200 hover:text-white hover:bg-slate-800/50"
                             }`}
                           >
                             {sub.name}
@@ -185,10 +185,10 @@ export function Header() {
         <div className="hidden lg:block shrink-0">
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-cyan-400 hover:bg-cyan-300 text-slate-950 font-bold text-xs shadow-md shadow-cyan-500/20 transition-all active:scale-[0.98] outline-none focus-visible:ring-2 focus-visible:ring-cyan-400"
+            className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-cyan-400 hover:bg-cyan-300 text-slate-950 font-bold text-sm shadow-md shadow-cyan-500/20 transition-all active:scale-[0.98] outline-none focus-visible:ring-2 focus-visible:ring-cyan-400"
           >
             <span>Contact Our Team</span>
-            <ArrowRight className="w-3.5 h-3.5" />
+            <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
 
@@ -264,7 +264,7 @@ export function Header() {
                     const isActiveGroup = pathname.startsWith(group.href) || group.subItems.some(sub => pathname === sub.href);
                     return (
                       <li key={group.label} className="flex flex-col gap-2">
-                        <span className={`block py-1 text-base uppercase tracking-wider text-[10px] ${isActiveGroup ? "text-cyan-400 font-bold" : "text-slate-500 font-semibold"}`}>
+                        <span className={`block py-1 text-xs uppercase tracking-wide ${isActiveGroup ? "text-cyan-400 font-bold" : "text-slate-300 font-bold"}`}>
                           {group.label}
                         </span>
                         <div className="flex flex-col gap-2 pl-3 border-l border-slate-800">
@@ -296,7 +296,7 @@ export function Header() {
                   <span>Contact Our Team</span>
                   <ArrowRight className="w-4 h-4" />
                 </Link>
-                <div className="p-3 rounded-xl bg-slate-950 border border-slate-850 text-xs text-slate-400 text-center">
+                <div className="p-3 rounded-xl bg-slate-950 border border-slate-800 text-xs text-slate-300 text-center">
                   30-Acre Practical Demonstration Farm<br />
                   Krishna District, Andhra Pradesh
                 </div>

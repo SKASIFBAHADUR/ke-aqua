@@ -27,7 +27,7 @@ export function CaseStudiesSection() {
         <div className="text-center mb-16 max-w-3xl mx-auto">
           <span className="text-xs font-bold uppercase tracking-widest text-cyan-400 block mb-3">CASE STUDIES</span>
           <h2 className="text-3xl sm:text-4xl font-display font-bold text-white mb-6">Documented Field Experience</h2>
-          <p className="text-slate-400 text-lg">Documented field experience, practical observations and lessons from KE Aqua Farms.</p>
+          <p className="text-slate-300 text-lg leading-relaxed">Documented field experience, practical observations and lessons from KE Aqua Farms.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">

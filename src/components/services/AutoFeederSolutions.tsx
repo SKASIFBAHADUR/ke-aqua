@@ -242,11 +242,11 @@ export function AutoFeederSolutionsPage() {
             <Link href="/" className="hover:text-cyan-400 transition-colors">
               Home
             </Link>
-            <ChevronRight className="w-3.5 h-3.5 text-slate-600 flex-shrink-0" />
+            <ChevronRight className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />
             <Link href="/#services" className="hover:text-cyan-400 transition-colors">
               Capabilities
             </Link>
-            <ChevronRight className="w-3.5 h-3.5 text-slate-600 flex-shrink-0" />
+            <ChevronRight className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />
             <span className="text-amber-400 font-medium whitespace-nowrap">
               Auto Feeder Solutions
             </span>
@@ -270,7 +270,7 @@ export function AutoFeederSolutionsPage() {
               </h1>
 
               {/* Supporting Text */}
-              <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-light">
+              <p className="text-base sm:text-lg text-slate-300 leading-relaxed">
                 Automated feeding systems distribute pellets evenly across regulated hourly intervals, reducing large single-feed dumps and protecting pond bottom quality. At <strong className="text-white font-semibold">KE Aqua Farms</strong>, auto feeders are integrated with daily check tray inspection, biomass calculations, and water parameter monitoring across our 30-acre working farm.
               </p>
 
@@ -332,15 +332,15 @@ export function AutoFeederSolutionsPage() {
                 {/* Overlaid Card Info */}
                 <div className="p-6 relative space-y-4">
                   <div className="flex items-center justify-between border-b border-slate-800 pb-3">
-                    <span className="text-xs font-mono text-amber-400 uppercase tracking-widest">
+                    <span className="text-xs font-mono text-amber-400 uppercase tracking-wide">
                       COMMERCIAL FIELD FEEDING
                     </span>
-                    <span className="px-2.5 py-0.5 rounded-full bg-amber-500/20 border border-amber-500/40 text-amber-300 text-[11px] font-mono">
+                    <span className="px-2.5 py-0.5 rounded-full bg-amber-500/20 border border-amber-500/40 text-amber-300 text-xs font-mono">
                       AUTO FEEDERS
                     </span>
                   </div>
 
-                  <p className="text-xs text-slate-300 leading-relaxed font-light">
+                  <p className="text-xs text-slate-300 leading-relaxed">
                     &ldquo;Auto feeders are powerful tools for continuous feed distribution, but human check tray inspection remains indispensable for observing shrimp response.&rdquo;
                   </p>
 
@@ -350,7 +350,7 @@ export function AutoFeederSolutionsPage() {
                     </div>
                     <div>
                       <h4 className="text-xs font-bold text-white">KE Aqua Farms Advisory</h4>
-                      <p className="text-[11px] text-slate-400 font-mono">Auto Feeder Setup &amp; Advisory</p>
+                      <p className="text-xs text-slate-400 font-mono">Auto Feeder Setup &amp; Advisory</p>
                     </div>
                   </div>
                 </div>
@@ -375,7 +375,7 @@ export function AutoFeederSolutionsPage() {
               Why Auto Feeding in Modern Aquaculture
             </h2>
 
-            <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-light">
+            <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
               Traditional hand feeding distributes large feed volumes 3 to 4 times a day, often leading to temporary feed over-accumulation on the pond bottom. Auto feeders broadcast small pellet quantities continuously over hourly intervals, matching natural shrimp foraging behavior and protecting water quality.
             </p>
           </motion.div>
@@ -390,7 +390,7 @@ export function AutoFeederSolutionsPage() {
                 <Clock className="w-6 h-6" />
               </div>
               <h3 className="text-lg font-bold text-white">Regulated Hourly Broadcasts</h3>
-              <p className="text-xs text-slate-300 leading-relaxed font-light">
+              <p className="text-xs text-slate-300 leading-relaxed">
                 Distributing feed in small, frequent increments allows shrimp to consume fresh pellets continuously without leaving uneaten feed to decay on the pond substrate.
               </p>
             </motion.div>
@@ -403,7 +403,7 @@ export function AutoFeederSolutionsPage() {
                 <ShieldCheck className="w-6 h-6" />
               </div>
               <h3 className="text-lg font-bold text-white">Protecting Pond Bottom Soil</h3>
-              <p className="text-xs text-slate-300 leading-relaxed font-light">
+              <p className="text-xs text-slate-300 leading-relaxed">
                 Reducing unconsumed feed accumulation minimizes anaerobic sludge zones, TAN spikes, and toxic hydrogen sulfide formation near aerator dead spots.
               </p>
             </motion.div>
@@ -416,7 +416,7 @@ export function AutoFeederSolutionsPage() {
                 <BarChart3 className="w-6 h-6" />
               </div>
               <h3 className="text-lg font-bold text-white">Supporting FCR Optimization</h3>
-              <p className="text-xs text-slate-300 leading-relaxed font-light">
+              <p className="text-xs text-slate-300 leading-relaxed">
                 Combining automated broadcasting with check tray inspection helps farm managers track feed consumption patterns and optimize feed conversion efficiency.
               </p>
             </motion.div>
@@ -438,7 +438,7 @@ export function AutoFeederSolutionsPage() {
               <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
                 9 Key Auto Feeding Practices
               </h2>
-              <p className="text-slate-300 text-sm sm:text-base font-light">
+              <p className="text-slate-300 text-sm sm:text-base">
                 Core practical elements evaluated and managed during auto feeder operations.
               </p>
             </motion.div>
@@ -471,7 +471,7 @@ export function AutoFeederSolutionsPage() {
 
                     <h3 className="text-base font-bold text-white">{practice.title}</h3>
 
-                    <p className="text-xs text-slate-300 leading-relaxed font-light">
+                    <p className="text-xs text-slate-300 leading-relaxed">
                       {practice.desc}
                     </p>
                   </div>
@@ -497,7 +497,7 @@ export function AutoFeederSolutionsPage() {
               Auto Feeder Practical Workflow
             </h2>
 
-            <p className="text-slate-300 text-sm sm:text-base font-light">
+            <p className="text-slate-300 text-sm sm:text-base">
               From defining farm feeding objectives to daily tray inspection and logbook reviews.
             </p>
           </motion.div>
@@ -514,10 +514,10 @@ export function AutoFeederSolutionsPage() {
                 >
                   <div className="space-y-3">
                     <div className="flex items-center justify-between">
-                      <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded bg-amber-500/10 border border-amber-500/30 text-amber-300">
+                      <span className="text-xs font-mono font-bold px-2 py-0.5 rounded bg-amber-500/10 border border-amber-500/30 text-amber-300">
                         {st.label}
                       </span>
-                      <span className="text-xs font-mono text-slate-500">{st.step}</span>
+                      <span className="text-xs font-mono text-slate-400">{st.step}</span>
                     </div>
 
                     <div className="w-10 h-10 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-amber-400">
@@ -526,7 +526,7 @@ export function AutoFeederSolutionsPage() {
 
                     <h3 className="text-base font-bold text-white">{st.title}</h3>
 
-                    <p className="text-xs text-slate-400 leading-relaxed font-light">
+                    <p className="text-xs text-slate-400 leading-relaxed">
                       {st.desc}
                     </p>
                   </div>
@@ -554,7 +554,7 @@ export function AutoFeederSolutionsPage() {
                 Automation Does Not Replace Human Observation
               </h2>
 
-              <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-light">
+              <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
                 An auto feeder is a feed broadcasting tool—it cannot see shrimp gut fullness, feel weather shifts, or observe check trays. At KE Aqua Farms, automated feeding is always paired with human observation, check tray reviews, growth sampling, and water quality data.
               </p>
 
@@ -569,7 +569,7 @@ export function AutoFeederSolutionsPage() {
                     <CheckCircle2 className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" />
                     <div>
                       <h4 className="text-xs font-bold text-white">{item.title}</h4>
-                      <p className="text-xs text-slate-400 font-light mt-0.5">{item.desc}</p>
+                      <p className="text-xs text-slate-400 mt-0.5">{item.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -589,15 +589,15 @@ export function AutoFeederSolutionsPage() {
                   </div>
                 </div>
 
-                <p className="text-xs text-slate-300 leading-relaxed font-light">
+                <p className="text-xs text-slate-300 leading-relaxed">
                   On our commercial farm, dual auto feeders are installed per growout pond, operated on hourly broadcast timers, and supported by daily 4-times check tray inspections by farm technicians.
                 </p>
 
                 <div className="p-4 rounded-xl bg-slate-950 border border-slate-800 space-y-2">
-                  <span className="text-[11px] font-mono text-amber-400 uppercase tracking-wider block font-bold">
+                  <span className="text-xs font-mono text-amber-400 uppercase tracking-wider block font-bold">
                     COMMERCIAL FIELD PRINCIPLE
                   </span>
-                  <p className="text-xs text-slate-300 font-light leading-relaxed">
+                  <p className="text-xs text-slate-300 leading-relaxed">
                     Never leave auto feeders running unmonitored. Check trays must be lifted and inspected at regular intervals to adjust feeder timer broadcast duration.
                   </p>
                 </div>
@@ -619,7 +619,7 @@ export function AutoFeederSolutionsPage() {
           <blockquote className="p-6 rounded-2xl bg-slate-950 border border-slate-800 text-slate-200 text-sm sm:text-base font-serif italic max-w-3xl mx-auto">
             &ldquo;Technology should solve a farm problem.&rdquo;
           </blockquote>
-          <p className="text-xs text-slate-400 font-light max-w-2xl mx-auto">
+          <p className="text-xs text-slate-400 max-w-2xl mx-auto">
             Auto feeders should be evaluated by farm need, feeding purpose, daily check tray observation, and observed FCR trends—not as a substitute for diligent management.
           </p>
         </div>
@@ -670,7 +670,7 @@ export function AutoFeederSolutionsPage() {
                     <AudIcon className="w-5 h-5" />
                   </div>
                   <h3 className="text-lg font-bold text-white">{aud.title}</h3>
-                  <p className="text-xs text-slate-300 leading-relaxed font-light">
+                  <p className="text-xs text-slate-300 leading-relaxed">
                     {aud.desc}
                   </p>
                 </motion.div>
@@ -713,9 +713,9 @@ export function AutoFeederSolutionsPage() {
                       <h3 className="text-base font-bold text-white group-hover:text-amber-300 transition-colors">
                         {svc.title}
                       </h3>
-                      <p className="text-[11px] font-mono text-slate-400 mt-0.5">{svc.subtitle}</p>
+                      <p className="text-xs font-mono text-slate-400 mt-0.5">{svc.subtitle}</p>
                     </div>
-                    <p className="text-xs text-slate-300 leading-relaxed font-light">{svc.desc}</p>
+                    <p className="text-xs text-slate-300 leading-relaxed">{svc.desc}</p>
                   </div>
 
                   <Link
@@ -749,7 +749,7 @@ export function AutoFeederSolutionsPage() {
                 Discuss Auto Feeder Setup &amp; Advisory
               </h2>
 
-              <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-light">
+              <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
                 Whether you want to discuss auto feeder broadcast positioning, timer calibration, or check tray monitoring routines, speak directly with the KE Aqua Farms team.
               </p>
 
@@ -763,7 +763,7 @@ export function AutoFeederSolutionsPage() {
                     <Phone className="w-5 h-5" />
                   </div>
                   <div>
-                    <span className="text-[11px] font-mono text-slate-400 block">Direct Call</span>
+                    <span className="text-xs font-mono text-slate-400 block">Direct Call</span>
                     <span className="text-sm font-bold text-white group-hover:text-amber-300 transition-colors">
                       {CONTACT_CONFIG.phone.display}
                     </span>
@@ -780,7 +780,7 @@ export function AutoFeederSolutionsPage() {
                     <MessageSquare className="w-5 h-5" />
                   </div>
                   <div>
-                    <span className="text-[11px] font-mono text-slate-400 block">WhatsApp Enquiries</span>
+                    <span className="text-xs font-mono text-slate-400 block">WhatsApp Enquiries</span>
                     <span className="text-sm font-bold text-white group-hover:text-emerald-300 transition-colors">
                       Chat on WhatsApp
                     </span>
@@ -793,10 +793,10 @@ export function AutoFeederSolutionsPage() {
                 <Clock className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
                 <div className="text-xs space-y-1">
                   <p className="font-semibold text-white">Working Hours &amp; Location:</p>
-                  <p className="text-slate-300 font-light">
+                  <p className="text-slate-300">
                     {CONTACT_CONFIG.operatingHours.days} • {CONTACT_CONFIG.operatingHours.time}
                   </p>
-                  <p className="text-slate-400 text-[11px] font-mono">{CONTACT_CONFIG.location.fullAddress}</p>
+                  <p className="text-slate-400 text-xs font-mono">{CONTACT_CONFIG.location.fullAddress}</p>
                 </div>
               </div>
             </motion.div>
@@ -806,7 +806,7 @@ export function AutoFeederSolutionsPage() {
               <div className="rounded-2xl p-7 bg-slate-900/90 border border-slate-800 shadow-2xl space-y-6">
                 <div className="border-b border-slate-800 pb-4">
                   <h3 className="text-xl font-bold text-white">Auto Feeder Enquiry Form</h3>
-                  <p className="text-xs text-slate-400 mt-1 font-light">
+                  <p className="text-xs text-slate-400 mt-1">
                     Submit your auto feeder enquiry below. Our team will contact you directly to discuss setup and practices.
                   </p>
                 </div>

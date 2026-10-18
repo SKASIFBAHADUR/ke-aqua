@@ -275,11 +275,11 @@ export function MicrobiologyVibrioTestingPage() {
             <Link href="/" className="hover:text-cyan-400 transition-colors">
               Home
             </Link>
-            <ChevronRight className="w-3.5 h-3.5 text-slate-600 flex-shrink-0" />
+            <ChevronRight className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />
             <Link href="/#services" className="hover:text-cyan-400 transition-colors">
               Capabilities
             </Link>
-            <ChevronRight className="w-3.5 h-3.5 text-slate-600 flex-shrink-0" />
+            <ChevronRight className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />
             <span className="text-purple-400 font-medium whitespace-nowrap">
               Microbiology &amp; Vibrio Testing
             </span>
@@ -303,7 +303,7 @@ export function MicrobiologyVibrioTestingPage() {
               </h1>
 
               {/* Supporting Text */}
-              <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-light">
+              <p className="text-base sm:text-lg text-slate-300 leading-relaxed">
                 Microbiological and Vibrio monitoring at <strong className="text-white font-semibold">Aqua Pulse Laboratory</strong> provides objective observation of bacterial population dynamics in pond water, soil, and shrimp samples. Connected with <strong className="text-white font-semibold">KE Aqua Farms</strong>, microbial tracking supports responsible farm management without fear-based claims.
               </p>
 
@@ -353,8 +353,8 @@ export function MicrobiologyVibrioTestingPage() {
               <div className="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900 shadow-2xl shadow-purple-950/50 group">
                 <div className="aspect-[4/3] relative">
                   <Image
-                    src="/assets/svc-lab-bg.jpg"
-                    alt="Aqua Pulse Laboratory - Microbiology & Vibrio Monitoring"
+                    src="/Real_Images/image_9.jpeg"
+                    alt="Aqua Pulse laboratory technician dispensing sample with precision pipette for microbiological and diagnostic analysis"
                     fill
                     className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
                     priority
@@ -365,15 +365,15 @@ export function MicrobiologyVibrioTestingPage() {
                 {/* Overlaid Info Card */}
                 <div className="p-6 relative space-y-4">
                   <div className="flex items-center justify-between border-b border-slate-800 pb-3">
-                    <span className="text-xs font-mono text-purple-400 uppercase tracking-widest">
+                    <span className="text-xs font-mono text-purple-400 uppercase tracking-wide">
                       BACTERIAL MONITORING
                     </span>
-                    <span className="px-2.5 py-0.5 rounded-full bg-purple-500/20 border border-purple-500/40 text-purple-300 text-[11px] font-mono">
+                    <span className="px-2.5 py-0.5 rounded-full bg-purple-500/20 border border-purple-500/40 text-purple-300 text-xs font-mono">
                       MICROBIOLOGY LAB
                     </span>
                   </div>
 
-                  <p className="text-xs text-slate-300 leading-relaxed font-light">
+                  <p className="text-xs text-slate-300 leading-relaxed">
                     &ldquo;Microbial tracking is not about chasing zero bacteria; it is about understanding population dynamics and keeping your pond balanced.&rdquo;
                   </p>
 
@@ -383,7 +383,7 @@ export function MicrobiologyVibrioTestingPage() {
                     </div>
                     <div>
                       <h4 className="text-xs font-bold text-white">Aqua Pulse Laboratory</h4>
-                      <p className="text-[11px] text-slate-400 font-mono">TCBS Plating &amp; Bacterial Load Tracking</p>
+                      <p className="text-xs text-slate-400 font-mono">TCBS Plating &amp; Bacterial Load Tracking</p>
                     </div>
                   </div>
                 </div>
@@ -408,7 +408,7 @@ export function MicrobiologyVibrioTestingPage() {
               Understanding the Pond Bacterial Ecosystem
             </h2>
 
-            <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-light">
+            <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
               Bacteria are a natural and necessary part of every aquaculture pond. Beneficial bacteria break down organic waste and drive nitrification. Microbial monitoring helps farmers observe bacterial population shifts early, allowing proactive pond management without resorting to fear-based marketing or unnecessary chemical treatments.
             </p>
           </motion.div>
@@ -423,7 +423,7 @@ export function MicrobiologyVibrioTestingPage() {
                 <Activity className="w-6 h-6" />
               </div>
               <h3 className="text-lg font-bold text-white">Tracking Population Dynamics</h3>
-              <p className="text-xs text-slate-300 leading-relaxed font-light">
+              <p className="text-xs text-slate-300 leading-relaxed">
                 Monitoring bacterial counts over consecutive weeks reveals whether bacterial density is stable, rising, or shifting following weather changes or feed increases.
               </p>
             </motion.div>
@@ -436,7 +436,7 @@ export function MicrobiologyVibrioTestingPage() {
                 <ShieldCheck className="w-6 h-6" />
               </div>
               <h3 className="text-lg font-bold text-white">Supporting Biosecurity</h3>
-              <p className="text-xs text-slate-300 leading-relaxed font-light">
+              <p className="text-xs text-slate-300 leading-relaxed">
                 Microbial data reinforces biosecurity protocols by evaluating the effectiveness of water preparation, sanitization timing, and water exchange practices.
               </p>
             </motion.div>
@@ -449,7 +449,7 @@ export function MicrobiologyVibrioTestingPage() {
                 <Leaf className="w-6 h-6" />
               </div>
               <h3 className="text-lg font-bold text-white">Responsible Management</h3>
-              <p className="text-xs text-slate-300 leading-relaxed font-light">
+              <p className="text-xs text-slate-300 leading-relaxed">
                 Understanding bacterial trends encourages natural pond ecosystem management, proper aeration, and zero-antibiotic farming practices.
               </p>
             </motion.div>
@@ -471,7 +471,7 @@ export function MicrobiologyVibrioTestingPage() {
               <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
                 Vibrio &amp; Microbial Monitoring Capabilities
               </h2>
-              <p className="text-slate-300 text-sm sm:text-base font-light">
+              <p className="text-slate-300 text-sm sm:text-base">
                 Observational microbiological monitoring capabilities available at Aqua Pulse Laboratory, subject to facility and sample availability.
               </p>
             </motion.div>
@@ -500,7 +500,7 @@ export function MicrobiologyVibrioTestingPage() {
                     <div className="w-10 h-10 rounded-xl bg-slate-950 border border-slate-800 flex items-center justify-center font-mono font-bold text-xs text-purple-400">
                       0{idx + 1}
                     </div>
-                    <span className={`px-2.5 py-0.5 rounded-md text-[11px] font-mono border ${card.badgeColor}`}>
+                    <span className={`px-2.5 py-0.5 rounded-md text-xs font-mono border ${card.badgeColor}`}>
                       LAB CAPABILITY
                     </span>
                   </div>
@@ -512,7 +512,7 @@ export function MicrobiologyVibrioTestingPage() {
                     <p className="text-xs font-mono text-slate-400 mt-1">{card.subtitle}</p>
                   </div>
 
-                  <p className="text-xs text-slate-300 leading-relaxed font-light">
+                  <p className="text-xs text-slate-300 leading-relaxed">
                     {card.description}
                   </p>
 
@@ -520,7 +520,7 @@ export function MicrobiologyVibrioTestingPage() {
                     {card.points.map((pt, pIdx) => (
                       <li key={pIdx} className="flex items-start space-x-2 text-xs text-slate-300">
                         <CheckCircle2 className={`w-3.5 h-3.5 mt-0.5 flex-shrink-0 ${card.iconColor}`} />
-                        <span className="leading-tight font-light">{pt}</span>
+                        <span className="leading-tight">{pt}</span>
                       </li>
                     ))}
                   </ul>
@@ -545,7 +545,7 @@ export function MicrobiologyVibrioTestingPage() {
                       className="mt-4 pt-4 border-t border-purple-500/20 text-xs text-slate-300 space-y-2 bg-slate-950 p-4 rounded-xl"
                     >
                       <p className="font-semibold text-purple-300">Technical Context:</p>
-                      <p className="text-slate-400 leading-relaxed font-light">
+                      <p className="text-slate-400 leading-relaxed">
                         Microbiological observation tracks colony formation on selective media. Colony counts provide comparative baseline trends to inform ongoing farm management decisions.
                       </p>
                     </motion.div>
@@ -561,7 +561,7 @@ export function MicrobiologyVibrioTestingPage() {
             {...fadeUp(0.3)}
           >
             <AlertCircle className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
-            <p className="text-xs text-slate-300 leading-relaxed font-light">
+            <p className="text-xs text-slate-300 leading-relaxed">
               <strong className="text-white font-semibold">Responsible Scientific Framing:</strong> Vibrio monitoring provides observational data regarding bacterial colony counts. We never claim &ldquo;Vibrio-free&rdquo; or &ldquo;disease-free&rdquo; outcomes. All natural aquaculture ponds contain microbial populations; the goal of monitoring is to maintain healthy ecological balance.
             </p>
           </motion.div>
@@ -583,7 +583,7 @@ export function MicrobiologyVibrioTestingPage() {
               Microbiology Laboratory Process
             </h2>
 
-            <p className="text-slate-300 text-sm sm:text-base font-light">
+            <p className="text-slate-300 text-sm sm:text-base">
               A standard, observation-driven procedure from sample intake to technical review.
             </p>
           </motion.div>
@@ -600,10 +600,10 @@ export function MicrobiologyVibrioTestingPage() {
                 >
                   <div className="space-y-3">
                     <div className="flex items-center justify-between">
-                      <span className="text-[11px] font-mono font-bold px-2 py-0.5 rounded bg-purple-500/10 border border-purple-500/30 text-purple-300">
+                      <span className="text-xs font-mono font-bold px-2 py-0.5 rounded bg-purple-500/10 border border-purple-500/30 text-purple-300">
                         {st.label}
                       </span>
-                      <span className="text-xs font-mono text-slate-500">{st.step}</span>
+                      <span className="text-xs font-mono text-slate-400">{st.step}</span>
                     </div>
 
                     <div className="w-10 h-10 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-purple-400">
@@ -612,7 +612,7 @@ export function MicrobiologyVibrioTestingPage() {
 
                     <h3 className="text-base font-bold text-white">{st.title}</h3>
 
-                    <p className="text-xs text-slate-400 leading-relaxed font-light">
+                    <p className="text-xs text-slate-400 leading-relaxed">
                       {st.description}
                     </p>
                   </div>
@@ -638,7 +638,7 @@ export function MicrobiologyVibrioTestingPage() {
               Related Farm Monitoring Capabilities
             </h2>
 
-            <p className="text-slate-300 text-sm sm:text-base font-light">
+            <p className="text-slate-300 text-sm sm:text-base">
               Microbiology testing works hand-in-hand with our other specialized monitoring services.
             </p>
           </div>
@@ -664,7 +664,7 @@ export function MicrobiologyVibrioTestingPage() {
                       <p className="text-xs font-mono text-slate-400 mt-1">{svc.subtitle}</p>
                     </div>
 
-                    <p className="text-xs text-slate-300 leading-relaxed font-light">
+                    <p className="text-xs text-slate-300 leading-relaxed">
                       {svc.description}
                     </p>
                   </div>
@@ -700,7 +700,7 @@ export function MicrobiologyVibrioTestingPage() {
               5 Pillars of Responsible Farm Management
             </h2>
 
-            <p className="text-slate-300 text-sm sm:text-base font-light">
+            <p className="text-slate-300 text-sm sm:text-base">
               Scientific monitoring serves a larger goal: promoting sustainable, biosecure, and responsible shrimp aquaculture.
             </p>
           </div>
@@ -718,7 +718,7 @@ export function MicrobiologyVibrioTestingPage() {
                     <PilIcon className={`w-5 h-5 ${pil.color}`} />
                   </div>
                   <h3 className="text-base font-bold text-white">{pil.title}</h3>
-                  <p className="text-xs text-slate-300 leading-relaxed font-light">
+                  <p className="text-xs text-slate-300 leading-relaxed">
                     {pil.desc}
                   </p>
                 </motion.div>
@@ -757,7 +757,7 @@ export function MicrobiologyVibrioTestingPage() {
                     <AudIcon className="w-5 h-5" />
                   </div>
                   <h3 className="text-lg font-bold text-white">{aud.title}</h3>
-                  <p className="text-xs text-slate-300 leading-relaxed font-light">
+                  <p className="text-xs text-slate-300 leading-relaxed">
                     {aud.description}
                   </p>
                 </motion.div>
@@ -776,7 +776,7 @@ export function MicrobiologyVibrioTestingPage() {
             <AlertCircle className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
             <div className="space-y-1">
               <span className="font-semibold text-white">Capability Disclaimer:</span>
-              <p className="font-light leading-relaxed">
+              <p className="leading-relaxed">
                 Specific tests, methods and availability depend on the laboratory&apos;s current capability. Please confirm the required analysis before submitting a request.
               </p>
             </div>
@@ -801,7 +801,7 @@ export function MicrobiologyVibrioTestingPage() {
                 Request Microbiology Support or Talk to Our Lab Team
               </h2>
 
-              <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-light">
+              <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
                 Discuss your microbiology testing requirements, sample collection procedures, or schedule a technical review with the Aqua Pulse / KE Aqua Farms team.
               </p>
 
@@ -815,7 +815,7 @@ export function MicrobiologyVibrioTestingPage() {
                     <Phone className="w-5 h-5" />
                   </div>
                   <div>
-                    <span className="text-[11px] font-mono text-slate-400 block">Direct Call</span>
+                    <span className="text-xs font-mono text-slate-400 block">Direct Call</span>
                     <span className="text-sm font-bold text-white group-hover:text-purple-300 transition-colors">
                       {CONTACT_CONFIG.phone.display}
                     </span>
@@ -832,7 +832,7 @@ export function MicrobiologyVibrioTestingPage() {
                     <MessageSquare className="w-5 h-5" />
                   </div>
                   <div>
-                    <span className="text-[11px] font-mono text-slate-400 block">WhatsApp Enquiries</span>
+                    <span className="text-xs font-mono text-slate-400 block">WhatsApp Enquiries</span>
                     <span className="text-sm font-bold text-white group-hover:text-emerald-300 transition-colors">
                       Chat on WhatsApp
                     </span>
@@ -845,10 +845,10 @@ export function MicrobiologyVibrioTestingPage() {
                 <Clock className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" />
                 <div className="text-xs space-y-1">
                   <p className="font-semibold text-white">Laboratory Hours &amp; Location:</p>
-                  <p className="text-slate-300 font-light">
+                  <p className="text-slate-300">
                     {CONTACT_CONFIG.operatingHours.days} • {CONTACT_CONFIG.operatingHours.time}
                   </p>
-                  <p className="text-slate-400 text-[11px] font-mono">{CONTACT_CONFIG.location.fullAddress}</p>
+                  <p className="text-slate-400 text-xs font-mono">{CONTACT_CONFIG.location.fullAddress}</p>
                 </div>
               </div>
             </motion.div>
@@ -858,7 +858,7 @@ export function MicrobiologyVibrioTestingPage() {
               <div className="rounded-2xl p-7 bg-slate-900/90 border border-slate-800 shadow-2xl space-y-6">
                 <div className="border-b border-slate-800 pb-4">
                   <h3 className="text-xl font-bold text-white">Microbiology Enquiry Form</h3>
-                  <p className="text-xs text-slate-400 mt-1 font-light">
+                  <p className="text-xs text-slate-400 mt-1">
                     Submit your microbiology analysis enquiry below. The Aqua Pulse team will respond promptly.
                   </p>
                 </div>

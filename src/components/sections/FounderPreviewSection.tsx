@@ -21,11 +21,11 @@ export function FounderPreviewSection() {
             </div>
           </div>
           <div className="lg:col-span-7 order-1 lg:order-2 space-y-6">
-            <span className="text-xs font-bold uppercase tracking-widest text-emerald-400 block mb-2">Our Founder</span>
+            <span className="text-xs font-bold uppercase tracking-wide text-emerald-400 block mb-2">Our Founder</span>
             <h2 className="text-3xl sm:text-4xl font-display font-bold text-white leading-tight">
               From Engineering &amp; Skill Development to Scientific Aquaculture
             </h2>
-            <p className="text-slate-300 text-lg leading-relaxed">
+            <p className="text-slate-200 text-base sm:text-lg leading-relaxed">
               Kamatham Emmanuel is a Mechanical Engineer, entrepreneur, technical trainer and aquaculture professional. Through KE Aqua Farms, his focus is on learning from real farm conditions, monitoring systematically, evaluating technology practically and sharing useful knowledge responsibly.
             </p>
             <div className="bg-slate-900/60 p-6 rounded-xl border-l-4 border-emerald-500 my-8">
@@ -33,7 +33,7 @@ export function FounderPreviewSection() {
                 “We Practice. We Monitor. We Learn. We Share.”
               </p>
             </div>
-            <Link href="/founder" className="inline-flex items-center gap-2 px-6 py-3 bg-slate-800 hover:bg-cyan-500 hover:text-slate-950 text-cyan-400 font-bold rounded-lg transition-colors">
+            <Link href="/founder" className="inline-flex items-center gap-2 px-6 py-3.5 bg-cyan-400 hover:bg-cyan-300 text-slate-950 font-bold text-sm rounded-xl transition-all shadow-md">
               Meet the Founder &rarr;
             </Link>
           </div>

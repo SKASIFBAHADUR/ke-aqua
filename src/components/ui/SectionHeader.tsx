@@ -14,7 +14,7 @@ export function SectionHeader({ title, subtitle, description }: { title: string;
         {title}
       </h2>
       {description && (
-        <p className="text-slate-400 max-w-3xl leading-relaxed text-sm md:text-base">
+        <p className="text-slate-300 max-w-3xl leading-relaxed text-sm md:text-base">
           {description}
         </p>
       )}

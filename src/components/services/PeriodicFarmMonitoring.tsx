@@ -308,11 +308,11 @@ export function PeriodicFarmMonitoringPage() {
             <Link href="/" className="hover:text-cyan-400 transition-colors">
               Home
             </Link>
-            <ChevronRight className="w-3.5 h-3.5 text-slate-600 flex-shrink-0" />
+            <ChevronRight className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />
             <Link href="/#services" className="hover:text-cyan-400 transition-colors">
               Capabilities
             </Link>
-            <ChevronRight className="w-3.5 h-3.5 text-slate-600 flex-shrink-0" />
+            <ChevronRight className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />
             <span className="text-cyan-400 font-medium whitespace-nowrap">
               Periodic Farm Monitoring
             </span>
@@ -336,7 +336,7 @@ export function PeriodicFarmMonitoringPage() {
               </h1>
 
               {/* Supporting Text */}
-              <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-light">
+              <p className="text-base sm:text-lg text-slate-300 leading-relaxed">
                 Aquaculture conditions evolve continuously from stocking to harvest. At <strong className="text-white font-semibold">KE Aqua Farms</strong>, periodic farm monitoring provides structured field observation, water quality tracking, shrimp behavior checks, and record reviews to help farmers adapt to changing pond conditions.
               </p>
 
@@ -386,8 +386,8 @@ export function PeriodicFarmMonitoringPage() {
               <div className="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900 shadow-2xl shadow-cyan-950/50 group">
                 <div className="aspect-[4/3] relative">
                   <Image
-                    src="/assets/svc-farm-ops.jpg"
-                    alt="KE Aqua Farms Team — Periodic Pond Monitoring & Sampling"
+                    src="/Real_Images/image_1.jpeg"
+                    alt="Aqua Pulse specialist testing pond water salinity with optical refractometer during routine farm monitoring"
                     fill
                     className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
                     priority
@@ -398,15 +398,15 @@ export function PeriodicFarmMonitoringPage() {
                 {/* Overlaid Card Info */}
                 <div className="p-6 relative space-y-4">
                   <div className="flex items-center justify-between border-b border-slate-800 pb-3">
-                    <span className="text-xs font-mono text-cyan-400 uppercase tracking-widest">
+                    <span className="text-xs font-mono text-cyan-400 uppercase tracking-wide">
                       COMMERCIAL FIELD VISITS
                     </span>
-                    <span className="px-2.5 py-0.5 rounded-full bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 text-[11px] font-mono">
+                    <span className="px-2.5 py-0.5 rounded-full bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 text-xs font-mono">
                       PERIODIC OBSERVATION
                     </span>
                   </div>
 
-                  <p className="text-xs text-slate-300 leading-relaxed font-light">
+                  <p className="text-xs text-slate-300 leading-relaxed">
                     &ldquo;Periodic monitoring builds a continuous history of pond condition, helping growers catch subtle parameter shifts before they impact crop survival.&rdquo;
                   </p>
 
@@ -416,7 +416,7 @@ export function PeriodicFarmMonitoringPage() {
                     </div>
                     <div>
                       <h4 className="text-xs font-bold text-white">KE Aqua Farms Advisory</h4>
-                      <p className="text-[11px] text-slate-400 font-mono">30-Acre Commercial Working Base</p>
+                      <p className="text-xs text-slate-400 font-mono">30-Acre Commercial Working Base</p>
                     </div>
                   </div>
                 </div>
@@ -441,7 +441,7 @@ export function PeriodicFarmMonitoringPage() {
               Observation + Records + Data
             </h2>
 
-            <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-light">
+            <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
               Single one-off observations capture only a snapshot in time. Periodic, repeated monitoring tracks parameter evolution across stocking days. By combining physical observation with daily record logbooks and verified data, farmers gain complete visibility into pond trends.
             </p>
           </motion.div>
@@ -456,7 +456,7 @@ export function PeriodicFarmMonitoringPage() {
                 <Eye className="w-6 h-6" />
               </div>
               <h3 className="text-lg font-bold text-white">Physical Observation</h3>
-              <p className="text-xs text-slate-300 leading-relaxed font-light">
+              <p className="text-xs text-slate-300 leading-relaxed">
                 Pond walks to observe water surface activity, aerator placement, feed tray response, plankton blooms, and general shrimp vigor.
               </p>
             </motion.div>
@@ -469,7 +469,7 @@ export function PeriodicFarmMonitoringPage() {
                 <FileSpreadsheet className="w-6 h-6" />
               </div>
               <h3 className="text-lg font-bold text-white">Structured Records</h3>
-              <p className="text-xs text-slate-300 leading-relaxed font-light">
+              <p className="text-xs text-slate-300 leading-relaxed">
                 Logging daily feed broadcasts, water parameter readings, MBW growth sampling, and input applications into farm check sheets.
               </p>
             </motion.div>
@@ -482,7 +482,7 @@ export function PeriodicFarmMonitoringPage() {
                 <BarChart3 className="w-6 h-6" />
               </div>
               <h3 className="text-lg font-bold text-white">Data Trend Analysis</h3>
-              <p className="text-xs text-slate-300 leading-relaxed font-light">
+              <p className="text-xs text-slate-300 leading-relaxed">
                 Evaluating parameter trends over consecutive weeks to identify gradual pH shifts, TAN increases, or feed conversion anomalies early.
               </p>
             </motion.div>
@@ -504,7 +504,7 @@ export function PeriodicFarmMonitoringPage() {
               <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
                 10 Key Farm Monitoring Areas
               </h2>
-              <p className="text-slate-300 text-sm sm:text-base font-light">
+              <p className="text-slate-300 text-sm sm:text-base">
                 Observation areas evaluated during periodic commercial farm visits and record reviews.
               </p>
             </motion.div>
@@ -537,7 +537,7 @@ export function PeriodicFarmMonitoringPage() {
 
                     <h3 className="text-base font-bold text-white">{area.title}</h3>
 
-                    <p className="text-xs text-slate-300 leading-relaxed font-light">
+                    <p className="text-xs text-slate-300 leading-relaxed">
                       {area.desc}
                     </p>
                   </div>
@@ -568,7 +568,7 @@ export function PeriodicFarmMonitoringPage() {
               Periodic Monitoring Workflow
             </h2>
 
-            <p className="text-slate-300 text-sm sm:text-base font-light">
+            <p className="text-slate-300 text-sm sm:text-base">
               How periodic farm visits translate into structured observation logs and practical farmer discussions.
             </p>
           </motion.div>
@@ -585,10 +585,10 @@ export function PeriodicFarmMonitoringPage() {
                 >
                   <div className="space-y-2">
                     <div className="flex items-center justify-between">
-                      <span className="text-[10px] font-mono font-bold px-1.5 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/30 text-emerald-300">
+                      <span className="text-xs font-mono font-bold px-1.5 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/30 text-emerald-300">
                         {st.label}
                       </span>
-                      <span className="text-[10px] font-mono text-slate-500">{st.step}</span>
+                      <span className="text-xs font-mono text-slate-400">{st.step}</span>
                     </div>
 
                     <div className="w-8 h-8 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-emerald-400">
@@ -597,7 +597,7 @@ export function PeriodicFarmMonitoringPage() {
 
                     <h3 className="text-xs font-bold text-white leading-snug">{st.title}</h3>
 
-                    <p className="text-[11px] text-slate-400 leading-relaxed font-light">
+                    <p className="text-xs text-slate-400 leading-relaxed">
                       {st.description}
                     </p>
                   </div>
@@ -623,7 +623,7 @@ export function PeriodicFarmMonitoringPage() {
               Connecting Field Monitoring with Laboratory Analysis
             </h2>
 
-            <p className="text-slate-300 text-sm sm:text-base font-light">
+            <p className="text-slate-300 text-sm sm:text-base">
               Where field observations indicate parameter drift or health concerns, samples can be escalated to specialized laboratory testing at Aqua Pulse.
             </p>
           </div>
@@ -646,10 +646,10 @@ export function PeriodicFarmMonitoringPage() {
                       <h3 className="text-lg font-bold text-white group-hover:text-cyan-300 transition-colors">
                         {svc.title}
                       </h3>
-                      <p className="text-[11px] font-mono text-slate-400 mt-0.5">{svc.subtitle}</p>
+                      <p className="text-xs font-mono text-slate-400 mt-0.5">{svc.subtitle}</p>
                     </div>
 
-                    <p className="text-xs text-slate-300 leading-relaxed font-light">
+                    <p className="text-xs text-slate-300 leading-relaxed">
                       {svc.description}
                     </p>
                   </div>
@@ -689,7 +689,7 @@ export function PeriodicFarmMonitoringPage() {
               Essential Farm Logbook Metrics
             </h2>
 
-            <p className="text-slate-300 text-sm sm:text-base font-light">
+            <p className="text-slate-300 text-sm sm:text-base">
               Structured record keeping forms the backbone of commercial aquaculture. Tracking key metrics across daily logbooks provides empirical data for farm decision making.
             </p>
           </div>
@@ -710,7 +710,7 @@ export function PeriodicFarmMonitoringPage() {
                     </div>
                     <h3 className="text-xs font-bold text-white">{met.label}</h3>
                   </div>
-                  <p className="text-[11px] text-slate-400 leading-relaxed font-light pl-9">
+                  <p className="text-xs text-slate-400 leading-relaxed pl-9">
                     {met.detail}
                   </p>
                 </motion.div>
@@ -749,7 +749,7 @@ export function PeriodicFarmMonitoringPage() {
                     <AudIcon className="w-5 h-5" />
                   </div>
                   <h3 className="text-lg font-bold text-white">{aud.title}</h3>
-                  <p className="text-xs text-slate-300 leading-relaxed font-light">
+                  <p className="text-xs text-slate-300 leading-relaxed">
                     {aud.description}
                   </p>
                 </motion.div>
@@ -768,7 +768,7 @@ export function PeriodicFarmMonitoringPage() {
             <AlertCircle className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
             <div className="space-y-1">
               <span className="font-semibold text-white">Monitoring Scope Disclaimer:</span>
-              <p className="font-light leading-relaxed">
+              <p className="leading-relaxed">
                 Periodic monitoring services, visit arrangements, and scope are customized according to farm location, crop phase, and specific grower requirements. Specific laboratory tests are conducted where requested and available.
               </p>
             </div>
@@ -793,7 +793,7 @@ export function PeriodicFarmMonitoringPage() {
                 Discuss Farm Monitoring Support for Your Operations
               </h2>
 
-              <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-light">
+              <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
                 Whether you want to discuss periodic pond checks, water quality logging, or scheduling a technical visit to your farm, speak directly with the KE Aqua Farms team.
               </p>
 
@@ -807,7 +807,7 @@ export function PeriodicFarmMonitoringPage() {
                     <Phone className="w-5 h-5" />
                   </div>
                   <div>
-                    <span className="text-[11px] font-mono text-slate-400 block">Direct Call</span>
+                    <span className="text-xs font-mono text-slate-400 block">Direct Call</span>
                     <span className="text-sm font-bold text-white group-hover:text-cyan-300 transition-colors">
                       {CONTACT_CONFIG.phone.display}
                     </span>
@@ -824,7 +824,7 @@ export function PeriodicFarmMonitoringPage() {
                     <MessageSquare className="w-5 h-5" />
                   </div>
                   <div>
-                    <span className="text-[11px] font-mono text-slate-400 block">WhatsApp Enquiries</span>
+                    <span className="text-xs font-mono text-slate-400 block">WhatsApp Enquiries</span>
                     <span className="text-sm font-bold text-white group-hover:text-emerald-300 transition-colors">
                       Chat on WhatsApp
                     </span>
@@ -837,10 +837,10 @@ export function PeriodicFarmMonitoringPage() {
                 <Clock className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                 <div className="text-xs space-y-1">
                   <p className="font-semibold text-white">Working Hours &amp; Location:</p>
-                  <p className="text-slate-300 font-light">
+                  <p className="text-slate-300">
                     {CONTACT_CONFIG.operatingHours.days} • {CONTACT_CONFIG.operatingHours.time}
                   </p>
-                  <p className="text-slate-400 text-[11px] font-mono">{CONTACT_CONFIG.location.fullAddress}</p>
+                  <p className="text-slate-400 text-xs font-mono">{CONTACT_CONFIG.location.fullAddress}</p>
                 </div>
               </div>
             </motion.div>
@@ -850,7 +850,7 @@ export function PeriodicFarmMonitoringPage() {
               <div className="rounded-2xl p-7 bg-slate-900/90 border border-slate-800 shadow-2xl space-y-6">
                 <div className="border-b border-slate-800 pb-4">
                   <h3 className="text-xl font-bold text-white">Periodic Monitoring Enquiry Form</h3>
-                  <p className="text-xs text-slate-400 mt-1 font-light">
+                  <p className="text-xs text-slate-400 mt-1">
                     Submit your farm monitoring enquiry below. Our team will contact you directly to discuss details.
                   </p>
                 </div>

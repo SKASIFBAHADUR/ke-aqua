@@ -318,14 +318,14 @@ export function MicroNanoBubblePage() {
             <Link href="/" className="hover:text-cyan-400 transition-colors">
               Home
             </Link>
-            <ChevronRight className="w-3.5 h-3.5 text-slate-600 flex-shrink-0" />
+            <ChevronRight className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />
             <Link
               href="/#services"
               className="hover:text-cyan-400 transition-colors"
             >
               Capabilities
             </Link>
-            <ChevronRight className="w-3.5 h-3.5 text-slate-600 flex-shrink-0" />
+            <ChevronRight className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />
             <span className="text-teal-400 font-medium whitespace-nowrap">
               Micro/Nano Bubble Technology
             </span>
@@ -350,7 +350,7 @@ export function MicroNanoBubblePage() {
               </h1>
 
               {/* Supporting Text */}
-              <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-light">
+              <p className="text-base sm:text-lg text-slate-300 leading-relaxed">
                 At{" "}
                 <strong className="text-white font-semibold">KE Aqua Farms</strong>,
                 technology adoption begins with a farm problem—not a product brochure.
@@ -417,15 +417,15 @@ export function MicroNanoBubblePage() {
                 {/* Overlaid Card Info */}
                 <div className="p-6 relative space-y-4">
                   <div className="flex items-center justify-between border-b border-slate-800 pb-3">
-                    <span className="text-xs font-mono text-teal-400 uppercase tracking-widest">
+                    <span className="text-xs font-mono text-teal-400 uppercase tracking-wide">
                       ADVANCED TECHNOLOGY
                     </span>
-                    <span className="px-2.5 py-0.5 rounded-full bg-teal-500/20 border border-teal-500/40 text-teal-300 text-[11px] font-mono">
+                    <span className="px-2.5 py-0.5 rounded-full bg-teal-500/20 border border-teal-500/40 text-teal-300 text-xs font-mono">
                       FIELD EVALUATION
                     </span>
                   </div>
 
-                  <p className="text-xs text-slate-300 leading-relaxed font-light">
+                  <p className="text-xs text-slate-300 leading-relaxed">
                     &ldquo;Technology should solve a farm problem. We evaluate micro/nano
                     bubble technology through practical demonstration—not through
                     invented specifications or guaranteed performance claims.&rdquo;
@@ -439,7 +439,7 @@ export function MicroNanoBubblePage() {
                       <h4 className="text-xs font-bold text-white">
                         KE Aqua Farms Practice
                       </h4>
-                      <p className="text-[11px] text-slate-400 font-mono">
+                      <p className="text-xs text-slate-400 font-mono">
                         Practical Evaluation — 30-Acre Working Farm
                       </p>
                     </div>
@@ -472,7 +472,7 @@ export function MicroNanoBubblePage() {
               Technology Should Solve a Farm Problem
             </h2>
 
-            <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-light">
+            <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
               KE Aqua evaluates micro and nano bubble technology by the same
               standard applied to every other technology on our farm. Before
               recommending any technology, we assess six practical dimensions
@@ -496,7 +496,7 @@ export function MicroNanoBubblePage() {
                     <ItemIcon className="w-5 h-5" />
                   </div>
                   <h3 className="text-base font-bold text-white">{item.title}</h3>
-                  <p className="text-xs text-slate-300 leading-relaxed font-light">
+                  <p className="text-xs text-slate-300 leading-relaxed">
                     {item.desc}
                   </p>
                 </motion.div>
@@ -509,13 +509,13 @@ export function MicroNanoBubblePage() {
             className="mt-12 p-6 rounded-2xl bg-teal-950/30 border border-teal-700/40 text-center space-y-3"
             {...fadeUp(0.35)}
           >
-            <p className="text-teal-300 font-mono text-xs uppercase tracking-widest">
+            <p className="text-teal-300 font-mono text-xs uppercase tracking-wide">
               KE Aqua Technology Evaluation Principle
             </p>
             <blockquote className="text-white text-base sm:text-lg font-semibold italic">
               &ldquo;Farm Requirement → Purpose → Practical Use → Observation → Cost → Observed Result&rdquo;
             </blockquote>
-            <p className="text-slate-400 text-xs font-light">
+            <p className="text-slate-400 text-xs">
               Applied to every technology evaluated on our 30-acre working farm before any guidance is shared.
             </p>
           </motion.div>
@@ -540,14 +540,14 @@ export function MicroNanoBubblePage() {
                   An Advanced Aquaculture Technology Area Under Practical Evaluation
                 </h2>
 
-                <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-light">
+                <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
                   Micro and nano bubble technology represents an advanced area of aquaculture
                   pond management. KE Aqua presents this technology as an area of practical
                   exploration and field demonstration—evaluated on our working farm according
                   to actual conditions and honest observation.
                 </p>
 
-                <p className="text-slate-400 text-sm leading-relaxed font-light">
+                <p className="text-slate-400 text-sm leading-relaxed">
                   We do not publish invented oxygen efficiency figures, guaranteed survival
                   improvements, growth enhancement claims, or disease reduction guarantees.
                   What we offer is honest field exploration and the opportunity to discuss
@@ -569,7 +569,7 @@ export function MicroNanoBubblePage() {
                     className="flex items-start space-x-3 p-3 rounded-lg bg-slate-900/80 border border-slate-800"
                   >
                     <CheckCircle2 className="w-4 h-4 text-teal-400 flex-shrink-0 mt-0.5" />
-                    <p className="text-xs text-slate-300 font-light leading-relaxed">
+                    <p className="text-xs text-slate-300 leading-relaxed">
                       {point}
                     </p>
                   </div>
@@ -625,30 +625,20 @@ export function MicroNanoBubblePage() {
                   ].map((item, idx) => (
                     <div
                       key={idx}
-                      className={`flex items-start space-x-3 p-3 rounded-lg border ${
-                        item.ok
-                          ? "bg-teal-950/20 border-teal-700/30"
-                          : "bg-red-950/10 border-red-900/20"
-                      }`}
+                      className={`flex items-start space-x-3 p-3 rounded-lg border ${ item.ok ? "bg-teal-950/20 border-teal-700/30" : "bg-red-950/10 border-red-900/20" }`}
                     >
                       <div
-                        className={`w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-[10px] font-bold ${
-                          item.ok
-                            ? "bg-teal-500/20 text-teal-400"
-                            : "bg-red-500/20 text-red-400"
-                        }`}
+                        className={`w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold ${ item.ok ? "bg-teal-500/20 text-teal-400" : "bg-red-500/20 text-red-400" }`}
                       >
                         {item.ok ? "✓" : "✕"}
                       </div>
                       <div>
                         <p
-                          className={`text-xs font-bold ${
-                            item.ok ? "text-teal-300" : "text-red-400"
-                          }`}
+                          className={`text-xs font-bold ${ item.ok ? "text-teal-300" : "text-red-400" }`}
                         >
                           {item.label}
                         </p>
-                        <p className="text-[11px] text-slate-400 font-light mt-0.5">
+                        <p className="text-xs text-slate-400 mt-0.5">
                           {item.desc}
                         </p>
                       </div>
@@ -679,7 +669,7 @@ export function MicroNanoBubblePage() {
               Farm Requirement → Technology → Implementation → Observation → Evaluation
             </h2>
 
-            <p className="text-slate-300 text-sm sm:text-base font-light">
+            <p className="text-slate-300 text-sm sm:text-base">
               How KE Aqua approaches every technology evaluation—from identifying
               a real farm need through to honest field-observed assessment.
             </p>
@@ -697,10 +687,10 @@ export function MicroNanoBubblePage() {
                 >
                   <div className="space-y-3">
                     <div className="flex items-center justify-between">
-                      <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded bg-teal-500/10 border border-teal-500/30 text-teal-300">
+                      <span className="text-xs font-mono font-bold px-2 py-0.5 rounded bg-teal-500/10 border border-teal-500/30 text-teal-300">
                         {st.label}
                       </span>
-                      <span className="text-xs font-mono text-slate-500">
+                      <span className="text-xs font-mono text-slate-400">
                         {st.step}
                       </span>
                     </div>
@@ -711,14 +701,14 @@ export function MicroNanoBubblePage() {
 
                     <h3 className="text-base font-bold text-white">{st.title}</h3>
 
-                    <p className="text-xs text-slate-400 leading-relaxed font-light">
+                    <p className="text-xs text-slate-300 leading-relaxed">
                       {st.desc}
                     </p>
                   </div>
 
                   {idx < evaluationSteps.length - 1 && (
                     <div className="hidden lg:block absolute -right-3 top-1/2 -translate-y-1/2 z-10">
-                      <ChevronRight className="w-5 h-5 text-slate-600" />
+                      <ChevronRight className="w-5 h-5 text-slate-400" />
                     </div>
                   )}
                 </motion.div>
@@ -746,7 +736,7 @@ export function MicroNanoBubblePage() {
               Technology in the Context of Farm Management
             </h2>
 
-            <p className="text-slate-300 text-sm sm:text-base font-light">
+            <p className="text-slate-300 text-sm sm:text-base">
               Micro and nano bubble technology does not operate in isolation. Its evaluation
               and potential application is connected conceptually with broader farm
               monitoring, aeration management, and operational practice.
@@ -770,7 +760,7 @@ export function MicroNanoBubblePage() {
                   <h3 className={`text-base font-bold ${area.color}`}>
                     {area.title}
                   </h3>
-                  <p className="text-xs text-slate-300 leading-relaxed font-light">
+                  <p className="text-xs text-slate-300 leading-relaxed">
                     {area.desc}
                   </p>
                 </motion.div>
@@ -784,7 +774,7 @@ export function MicroNanoBubblePage() {
             {...fadeUp(0.3)}
           >
             <AlertTriangle className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
-            <p className="text-xs text-amber-200 leading-relaxed font-light">
+            <p className="text-xs text-amber-200 leading-relaxed">
               <strong className="font-semibold text-amber-300">Important:</strong>{" "}
               No guaranteed outcomes are claimed for dissolved oxygen improvement, shrimp
               growth, survival rates, disease reduction, or production increases. Technology
@@ -810,7 +800,7 @@ export function MicroNanoBubblePage() {
               Technology Evaluated Alongside Other Advanced Farm Systems
             </h2>
 
-            <p className="text-slate-300 text-sm sm:text-base font-light">
+            <p className="text-slate-300 text-sm sm:text-base">
               Micro/nano bubble technology is one area within KE Aqua&apos;s broader
               practical approach to smart aquaculture technology evaluation.
             </p>
@@ -833,11 +823,11 @@ export function MicroNanoBubblePage() {
                       <h3 className="text-base font-bold text-white group-hover:text-teal-300 transition-colors">
                         {svc.title}
                       </h3>
-                      <p className="text-[11px] font-mono text-slate-400 mt-0.5">
+                      <p className="text-xs font-mono text-slate-400 mt-0.5">
                         {svc.subtitle}
                       </p>
                     </div>
-                    <p className="text-xs text-slate-300 leading-relaxed font-light">
+                    <p className="text-xs text-slate-300 leading-relaxed">
                       {svc.desc}
                     </p>
                   </div>
@@ -874,7 +864,7 @@ export function MicroNanoBubblePage() {
               For Farmers, Managers & Operators Interested in Advanced Technology
             </h2>
 
-            <p className="text-slate-300 text-sm sm:text-base font-light">
+            <p className="text-slate-300 text-sm sm:text-base">
               Technology discussions are most useful for those already operating farms
               and looking to evaluate whether advanced technology approaches suit their
               specific conditions and management practice.
@@ -900,7 +890,7 @@ export function MicroNanoBubblePage() {
                       {profile.title}
                     </h3>
                   </div>
-                  <p className="text-xs text-slate-300 leading-relaxed font-light">
+                  <p className="text-xs text-slate-300 leading-relaxed">
                     {profile.desc}
                   </p>
                   <a
@@ -934,7 +924,7 @@ export function MicroNanoBubblePage() {
             efficiency percentages, or guaranteed production or health outcomes.
             Our approach is grounded in what is actually observed on the farm.&rdquo;
           </blockquote>
-          <p className="text-xs text-slate-400 font-light max-w-2xl mx-auto">
+          <p className="text-xs text-slate-400 max-w-2xl mx-auto">
             KE Aqua Farms — The Key to Practical Aquaculture. Technology evaluated by
             farm need, demonstrated in practice, and shared honestly.
           </p>
@@ -958,7 +948,7 @@ export function MicroNanoBubblePage() {
                 Discuss Advanced Technology for Your Farm
               </h2>
 
-              <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-light">
+              <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
                 Whether you want to understand how micro and nano bubble technology
                 might relate to your farm conditions, arrange a practical demonstration
                 at KE Aqua Farms, or discuss your overall technology approach—speak
@@ -975,7 +965,7 @@ export function MicroNanoBubblePage() {
                     <Phone className="w-5 h-5" />
                   </div>
                   <div>
-                    <span className="text-[11px] font-mono text-slate-400 block">
+                    <span className="text-xs font-mono text-slate-400 block">
                       Direct Call
                     </span>
                     <span className="text-sm font-bold text-white group-hover:text-teal-300 transition-colors">
@@ -994,7 +984,7 @@ export function MicroNanoBubblePage() {
                     <MessageSquare className="w-5 h-5" />
                   </div>
                   <div>
-                    <span className="text-[11px] font-mono text-slate-400 block">
+                    <span className="text-xs font-mono text-slate-400 block">
                       WhatsApp Enquiries
                     </span>
                     <span className="text-sm font-bold text-white group-hover:text-emerald-300 transition-colors">
@@ -1011,11 +1001,11 @@ export function MicroNanoBubblePage() {
                   <p className="font-semibold text-white">
                     Working Hours & Location:
                   </p>
-                  <p className="text-slate-300 font-light">
+                  <p className="text-slate-300">
                     {CONTACT_CONFIG.operatingHours.days} •{" "}
                     {CONTACT_CONFIG.operatingHours.time}
                   </p>
-                  <p className="text-slate-400 text-[11px] font-mono">
+                  <p className="text-slate-400 text-xs font-mono">
                     {CONTACT_CONFIG.location.fullAddress}
                   </p>
                 </div>
@@ -1029,7 +1019,7 @@ export function MicroNanoBubblePage() {
                   <h3 className="text-xl font-bold text-white">
                     Micro/Nano Bubble Technology Enquiry
                   </h3>
-                  <p className="text-xs text-slate-400 mt-1 font-light">
+                  <p className="text-xs text-slate-400 mt-1">
                     Submit your enquiry below. Our team will contact you directly
                     to discuss your farm&apos;s conditions and technology interests.
                   </p>
@@ -1049,7 +1039,7 @@ export function MicroNanoBubblePage() {
                       <h4 className="text-lg font-bold text-white">
                         Enquiry Submitted
                       </h4>
-                      <p className="text-sm text-slate-300 font-light">
+                      <p className="text-sm text-slate-300">
                         Your message has been forwarded via WhatsApp. Our team
                         will be in touch shortly to discuss your technology
                         enquiry.
@@ -1163,7 +1153,7 @@ export function MicroNanoBubblePage() {
                         <span>DISCUSS MICRO/NANO BUBBLE TECHNOLOGY</span>
                       </button>
 
-                      <p className="text-[11px] text-center text-slate-500 font-light">
+                      <p className="text-xs text-center text-slate-400 font-normal">
                         Your enquiry will be sent via WhatsApp for a direct
                         response from our technical team.
                       </p>
@@ -1182,7 +1172,7 @@ export function MicroNanoBubblePage() {
             <h3 className="text-2xl font-extrabold text-white">
               Contact KE Aqua Farms
             </h3>
-            <p className="text-sm text-slate-300 font-light max-w-xl mx-auto">
+            <p className="text-sm text-slate-300 max-w-xl mx-auto">
               For farm visits, technology demonstrations, or general aquaculture
               enquiries—reach our team directly.
             </p>

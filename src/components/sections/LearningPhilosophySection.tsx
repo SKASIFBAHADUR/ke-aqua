@@ -67,7 +67,7 @@ const experienceCards = [
     description:
       "Replace traditional guesswork with laboratory diagnostics. Connect physical pond observations (water color, feeding behavior) with Aqua Pulse lab data (microscopic tissue screening, TCBS Vibrio counts, and chemical titration).",
     icon: FlaskConical,
-    image: "/assets/svc-lab-bg.jpg",
+    image: "/Real_Images/image_7.jpeg",
     accentColor: "from-purple-500/20 to-indigo-500/10 border-purple-500/30 text-purple-400",
     badgeColor: "bg-purple-500/10 text-purple-400 border-purple-500/30",
     keyTakeaways: [
@@ -103,7 +103,7 @@ const experienceCards = [
     description:
       "Aquaculture is far more than owning a growout pond. We help aspiring entrepreneurs and farmers identify where they fit best across the complete value chain — from seed screening and lab services to farm technology, input supply, and seafood processing.",
     icon: Users,
-    image: "/assets/svc-training-bg.jpg",
+    image: "/Real_Images/image_8.jpeg",
     accentColor: "from-blue-500/20 to-cyan-500/10 border-blue-500/30 text-blue-400",
     badgeColor: "bg-blue-500/10 text-blue-400 border-blue-500/30",
     keyTakeaways: [
@@ -160,7 +160,7 @@ export function LearningPhilosophySection() {
           {/* Left Column: 5 Pillar Selector Navigation */}
           <div className="lg:col-span-5 space-y-3 flex flex-col justify-between">
             <div className="space-y-2">
-              <span className="text-xs font-bold uppercase tracking-widest text-slate-400 block mb-2 px-1">
+              <span className="text-xs font-bold uppercase tracking-wide text-slate-300 block mb-2 px-1">
                 Explore The 5 Learning Pillars
               </span>
               {experienceCards.map((card, idx) => {
@@ -181,15 +181,15 @@ export function LearningPhilosophySection() {
                         <Icon className="w-4 h-4" />
                       </div>
                       <div>
-                        <span className="text-[10px] font-mono font-bold text-slate-400 block">
+                        <span className="text-xs font-mono font-bold text-slate-300 block">
                           Pillar {card.number}
                         </span>
-                        <h4 className={`text-sm font-bold transition-colors ${isActive ? "text-white" : "text-slate-300 group-hover:text-white"}`}>
+                        <h4 className={`text-base font-bold transition-colors ${isActive ? "text-white" : "text-slate-200 group-hover:text-white"}`}>
                           {card.title}
                         </h4>
                       </div>
                     </div>
-                    <ChevronRight className={`w-4 h-4 transition-transform ${isActive ? "text-cyan-400 translate-x-1" : "text-slate-600 group-hover:text-slate-400"}`} />
+                    <ChevronRight className={`w-4 h-4 transition-transform ${isActive ? "text-cyan-400 translate-x-1" : "text-slate-400 group-hover:text-white"}`} />
                   </button>
                 );
               })}
@@ -197,7 +197,7 @@ export function LearningPhilosophySection() {
 
             {/* Stepper controls for mobile/tablet */}
             <div className="pt-4 flex items-center justify-between border-t border-slate-800 text-xs">
-              <span className="text-slate-400 font-mono">Pillar {activeCardIndex + 1} of {experienceCards.length}</span>
+              <span className="text-slate-300 font-mono">Pillar {activeCardIndex + 1} of {experienceCards.length}</span>
               <div className="flex items-center gap-2">
                 <button
                   onClick={handlePrev}
@@ -247,7 +247,7 @@ export function LearningPhilosophySection() {
                   </div>
 
                   {/* Summary overlay */}
-                  <div className="absolute bottom-4 left-4 right-4 p-3 rounded-xl bg-slate-950/90 backdrop-blur border border-slate-800 text-xs text-slate-200">
+                  <div className="absolute bottom-4 left-4 right-4 p-3.5 rounded-xl bg-slate-950/90 backdrop-blur border border-slate-800 text-sm text-slate-200">
                     <span className="font-bold text-cyan-400 block mb-0.5">Core Focus:</span>
                     {activeCard.summary}
                   </div>
@@ -258,18 +258,18 @@ export function LearningPhilosophySection() {
                   <h3 className="text-2xl font-bold text-white">
                     {activeCard.title}
                   </h3>
-                  <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+                  <p className="text-slate-200 text-sm sm:text-base leading-relaxed">
                     {activeCard.description}
                   </p>
                 </div>
 
                 {/* Key Field Takeaways */}
                 <div className="space-y-2.5 pt-2 border-t border-slate-800 mb-6">
-                  <span className="text-xs font-bold text-slate-400 uppercase tracking-wider block">
+                  <span className="text-xs font-bold text-slate-300 uppercase tracking-wide block">
                     What You Learn &amp; Experience:
                   </span>
                   {activeCard.keyTakeaways.map((takeaway, idx) => (
-                    <div key={idx} className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-200">
+                    <div key={idx} className="flex items-start gap-2.5 text-sm text-slate-200">
                       <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
                       <span>{takeaway}</span>
                     </div>
@@ -278,14 +278,14 @@ export function LearningPhilosophySection() {
 
                 {/* Bottom CTA Action Button */}
                 <div className="pt-4 border-t border-slate-800/80 flex items-center justify-between">
-                  <span className="text-xs text-slate-400 font-mono">
+                  <span className="text-xs text-slate-300 font-mono">
                     Practical Learning Pillar #{activeCard.number}
                   </span>
                   <Link
                     href="/contact"
-                    className="inline-flex items-center gap-1.5 text-xs font-bold text-cyan-400 hover:text-cyan-300 hover:underline"
+                    className="inline-flex items-center gap-1.5 text-sm font-bold text-cyan-400 hover:text-cyan-300 hover:underline"
                   >
-                    Explore Our Farm <ArrowRight className="w-3.5 h-3.5" />
+                    Explore Our Farm <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>
 
@@ -307,10 +307,10 @@ export function LearningPhilosophySection() {
             <h3 className="text-xl sm:text-2xl font-bold text-white">
               Why We Don&apos;t Publish Manufactured Testimonials
             </h3>
-            <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+            <p className="text-sm text-slate-200 leading-relaxed max-w-2xl mx-auto">
               In commercial aquaculture, every pond, water source, and stocking season carries distinct biological variables. We believe farmers and entrepreneurs deserve real technical exposure, field data, and transparent risk management — not promotional marketing claims.
             </p>
-            <div className="pt-2 flex flex-wrap items-center justify-center gap-6 text-xs text-slate-400 font-mono">
+            <div className="pt-2 flex flex-wrap items-center justify-center gap-6 text-xs sm:text-sm text-slate-300 font-mono">
               <div className="flex items-center gap-1.5">
                 <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" /> 30-Acre Working Farm
               </div>

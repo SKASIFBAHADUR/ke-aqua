@@ -72,28 +72,28 @@ export default function FarmTechnologyPage() {
         {/* New Section: Technology Should Solve a Farm Problem */}
         <section className="bg-slate-900 border border-slate-800 rounded-3xl p-8 lg:p-12 text-center shadow-xl mb-24">
           <h2 className="text-2xl font-bold text-white mb-6">Technology Should Solve a Farm Problem</h2>
-          <p className="text-lg leading-relaxed text-slate-300 max-w-3xl mx-auto mb-10">
+          <p className="text-lg leading-relaxed text-slate-200 max-w-3xl mx-auto mb-10">
             We don't implement technology for the sake of it. We study the farm problem, evaluate the technology under real conditions, monitor its performance, identify its limitations, and decide whether it provides practical value.
           </p>
 
-          <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-3 text-[10px] sm:text-xs md:text-sm font-mono font-bold text-cyan-400 uppercase tracking-widest bg-cyan-950/20 p-4 md:p-6 rounded-xl border border-cyan-900/50">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-3 text-xs md:text-sm font-mono font-bold text-cyan-400 uppercase tracking-wide bg-cyan-950/30 p-4 md:p-6 rounded-xl border border-cyan-800/60">
             <span>FARM PROBLEM</span>
-            <span className="md:hidden text-slate-600">↓</span><span className="hidden md:block text-slate-600">→</span>
+            <span className="md:hidden text-slate-400">↓</span><span className="hidden md:block text-slate-400">→</span>
             
             <span>TECHNOLOGY</span>
-            <span className="md:hidden text-slate-600">↓</span><span className="hidden md:block text-slate-600">→</span>
+            <span className="md:hidden text-slate-400">↓</span><span className="hidden md:block text-slate-400">→</span>
             
             <span>IMPLEMENT</span>
-            <span className="md:hidden text-slate-600">↓</span><span className="hidden md:block text-slate-600">→</span>
+            <span className="md:hidden text-slate-400">↓</span><span className="hidden md:block text-slate-400">→</span>
             
             <span>MONITOR</span>
-            <span className="md:hidden text-slate-600">↓</span><span className="hidden md:block text-slate-600">→</span>
+            <span className="md:hidden text-slate-400">↓</span><span className="hidden md:block text-slate-400">→</span>
             
             <span>IDENTIFY LIMITATIONS</span>
-            <span className="md:hidden text-slate-600">↓</span><span className="hidden md:block text-slate-600">→</span>
+            <span className="md:hidden text-slate-400">↓</span><span className="hidden md:block text-slate-400">→</span>
             
             <span>EVALUATE</span>
-            <span className="md:hidden text-slate-600">↓</span><span className="hidden md:block text-slate-600">→</span>
+            <span className="md:hidden text-slate-400">↓</span><span className="hidden md:block text-slate-400">→</span>
             
             <span className="text-emerald-400">IMPROVE</span>
           </div>
@@ -110,31 +110,31 @@ export default function FarmTechnologyPage() {
             <div key={i} className="bg-slate-900 border border-slate-800 rounded-2xl p-6 lg:p-10 hover:border-slate-700 transition-colors">
               <div className="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4 border-b border-slate-800 pb-6">
                 <h3 className="text-2xl font-display font-bold text-white">{tech.name}</h3>
-                <Link href={tech.link} className="inline-block px-5 py-2.5 bg-slate-800 hover:bg-cyan-500 hover:text-slate-950 text-cyan-400 text-xs font-bold uppercase tracking-wider rounded-lg transition-colors border border-slate-700 hover:border-cyan-500">
+                <Link href={tech.link} className="inline-block px-5 py-2.5 bg-slate-800 hover:bg-cyan-500 hover:text-slate-950 text-cyan-400 text-xs font-bold uppercase tracking-wide rounded-lg transition-colors border border-slate-700 hover:border-cyan-500">
                   View Full Details
                 </Link>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
                 <div className="bg-slate-950/50 p-5 rounded-xl border border-slate-800/50">
-                  <span className="text-[10px] text-cyan-500 font-bold uppercase tracking-widest block mb-2">Farm Problem</span>
-                  <p className="text-sm text-slate-300">{tech.problem}</p>
+                  <span className="text-xs text-cyan-400 font-bold uppercase tracking-wide block mb-2">Farm Problem</span>
+                  <p className="text-sm text-slate-200 leading-relaxed">{tech.problem}</p>
                 </div>
                 <div className="bg-slate-950/50 p-5 rounded-xl border border-slate-800/50">
-                  <span className="text-[10px] text-emerald-500 font-bold uppercase tracking-widest block mb-2">Technology</span>
-                  <p className="text-sm text-slate-300">{tech.tech}</p>
+                  <span className="text-xs text-emerald-400 font-bold uppercase tracking-wide block mb-2">Technology</span>
+                  <p className="text-sm text-slate-200 leading-relaxed">{tech.tech}</p>
                 </div>
                 <div className="bg-slate-950/50 p-5 rounded-xl border border-slate-800/50">
-                  <span className="text-[10px] text-amber-500 font-bold uppercase tracking-widest block mb-2">Our Practice</span>
-                  <p className="text-sm text-slate-300">{tech.practice}</p>
+                  <span className="text-xs text-amber-400 font-bold uppercase tracking-wide block mb-2">Our Practice</span>
+                  <p className="text-sm text-slate-200 leading-relaxed">{tech.practice}</p>
                 </div>
                 <div className="bg-slate-950/50 p-5 rounded-xl border border-slate-800/50">
-                  <span className="text-[10px] text-blue-500 font-bold uppercase tracking-widest block mb-2">Observation</span>
-                  <p className="text-sm text-slate-300">{tech.observation}</p>
+                  <span className="text-xs text-blue-400 font-bold uppercase tracking-wide block mb-2">Observation</span>
+                  <p className="text-sm text-slate-200 leading-relaxed">{tech.observation}</p>
                 </div>
                 <div className="bg-cyan-950/20 p-5 rounded-xl border border-cyan-900/30">
-                  <span className="text-[10px] text-cyan-400 font-bold uppercase tracking-widest block mb-2">Potential Benefit</span>
-                  <p className="text-sm text-cyan-200">{tech.benefit}</p>
+                  <span className="text-xs text-cyan-400 font-bold uppercase tracking-wide block mb-2">Potential Benefit</span>
+                  <p className="text-sm text-cyan-100 leading-relaxed">{tech.benefit}</p>
                 </div>
               </div>
             </div>
@@ -145,7 +145,7 @@ export default function FarmTechnologyPage() {
         <section className="bg-slate-900/50 border border-slate-800 p-8 lg:p-12 rounded-3xl text-center mb-10">
           <div className="mb-10 text-center">
             <h2 className="text-3xl font-bold text-white mb-4">Technology in Practice</h2>
-            <p className="text-slate-400 max-w-2xl mx-auto text-lg">
+            <p className="text-slate-300 max-w-2xl mx-auto text-lg">
               Technology is only useful when it helps farmers understand, manage or improve a real farm problem.
             </p>
           </div>
@@ -153,21 +153,21 @@ export default function FarmTechnologyPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             <div className="bg-[#0A192F] border border-slate-800 rounded-2xl p-8 hover:border-cyan-500/50 transition-colors">
               <h3 className="text-xl font-bold text-cyan-400 mb-3">Observe</h3>
-              <p className="text-sm text-slate-400">
+              <p className="text-sm text-slate-300">
                 Monitor what is happening in the pond.
               </p>
             </div>
             
             <div className="bg-[#0A192F] border border-slate-800 rounded-2xl p-8 hover:border-emerald-500/50 transition-colors">
               <h3 className="text-xl font-bold text-emerald-400 mb-3">Evaluate</h3>
-              <p className="text-sm text-slate-400">
+              <p className="text-sm text-slate-300">
                 Compare technology performance with farm conditions and requirements.
               </p>
             </div>
 
             <div className="bg-[#0A192F] border border-slate-800 rounded-2xl p-8 hover:border-blue-500/50 transition-colors">
               <h3 className="text-xl font-bold text-blue-400 mb-3">Improve</h3>
-              <p className="text-sm text-slate-400">
+              <p className="text-sm text-slate-300">
                 Use the observations to refine future farm decisions.
               </p>
             </div>
@@ -180,7 +180,7 @@ export default function FarmTechnologyPage() {
       <section className="bg-slate-900 border-t border-slate-800 py-16 text-center">
         <div className="container-width px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto">
           <h3 className="text-2xl font-bold text-white mb-4">Ready to Discuss Farm Technology?</h3>
-          <p className="text-slate-400 mb-8 leading-relaxed">
+          <p className="text-slate-300 mb-8 leading-relaxed">
             Contact our team to discuss aquaculture requirements and explore practical technology solutions.
           </p>
           <Link 

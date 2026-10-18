@@ -289,11 +289,11 @@ export function AerationManagementPage() {
             <Link href="/" className="hover:text-cyan-400 transition-colors">
               Home
             </Link>
-            <ChevronRight className="w-3.5 h-3.5 text-slate-600 flex-shrink-0" />
+            <ChevronRight className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />
             <Link href="/#services" className="hover:text-cyan-400 transition-colors">
               Capabilities
             </Link>
-            <ChevronRight className="w-3.5 h-3.5 text-slate-600 flex-shrink-0" />
+            <ChevronRight className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />
             <span className="text-blue-400 font-medium whitespace-nowrap">
               Aeration Management
             </span>
@@ -317,7 +317,7 @@ export function AerationManagementPage() {
               </h1>
 
               {/* Supporting Text */}
-              <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-light">
+              <p className="text-base sm:text-lg text-slate-300 leading-relaxed">
                 Aeration is the single most vital operational infrastructure in intensive aquaculture. At <strong className="text-white font-semibold">KE Aqua Farms</strong>, aeration management balances aerator placement, water depth, central sludge movement, and nighttime oxygen demand across our 30-acre commercial working farm.
               </p>
 
@@ -379,15 +379,15 @@ export function AerationManagementPage() {
                 {/* Overlaid Card Info */}
                 <div className="p-6 relative space-y-4">
                   <div className="flex items-center justify-between border-b border-slate-800 pb-3">
-                    <span className="text-xs font-mono text-blue-400 uppercase tracking-widest">
+                    <span className="text-xs font-mono text-blue-400 uppercase tracking-wide">
                       COMMERCIAL INFRASTRUCTURE
                     </span>
-                    <span className="px-2.5 py-0.5 rounded-full bg-blue-500/20 border border-blue-500/40 text-blue-300 text-[11px] font-mono">
+                    <span className="px-2.5 py-0.5 rounded-full bg-blue-500/20 border border-blue-500/40 text-blue-300 text-xs font-mono">
                       AERATION SETUP
                     </span>
                   </div>
 
-                  <p className="text-xs text-slate-300 leading-relaxed font-light">
+                  <p className="text-xs text-slate-300 leading-relaxed">
                     &ldquo;Proper aerator positioning creates a continuous circular flow that moves bottom sludge to the central drain while maintaining oxygen saturation across the feeding zone.&rdquo;
                   </p>
 
@@ -397,7 +397,7 @@ export function AerationManagementPage() {
                     </div>
                     <div>
                       <h4 className="text-xs font-bold text-white">KE Aqua Farms Operation</h4>
-                      <p className="text-[11px] text-slate-400 font-mono">4-HP &amp; 8-HP Aerator Configurations</p>
+                      <p className="text-xs text-slate-400 font-mono">4-HP &amp; 8-HP Aerator Configurations</p>
                     </div>
                   </div>
                 </div>
@@ -422,7 +422,7 @@ export function AerationManagementPage() {
               Aeration as Oxygen &amp; Water Management Infrastructure
             </h2>
 
-            <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-light">
+            <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
               Aeration does far more than inject oxygen into water. Mechanical aerators drive pond circulation, break thermal stratification, increase gas exchange at the surface, and sweep organic waste into central sludge collection zones.
             </p>
           </motion.div>
@@ -437,7 +437,7 @@ export function AerationManagementPage() {
                 <Wind className="w-6 h-6" />
               </div>
               <h3 className="text-lg font-bold text-white">Oxygenation &amp; Gas Exchange</h3>
-              <p className="text-xs text-slate-300 leading-relaxed font-light">
+              <p className="text-xs text-slate-300 leading-relaxed">
                 Agitating water surfaces increases oxygen absorption from air and accelerates the release of toxic dissolved carbon dioxide and excess gases.
               </p>
             </motion.div>
@@ -450,7 +450,7 @@ export function AerationManagementPage() {
                 <RotateCw className="w-6 h-6" />
               </div>
               <h3 className="text-lg font-bold text-white">Pond Water Circulation</h3>
-              <p className="text-xs text-slate-300 leading-relaxed font-light">
+              <p className="text-xs text-slate-300 leading-relaxed">
                 Strategic aerator angling generates uniform circular currents, sweeping unconsumed feed, molt shells, and fecal waste into central sludge cones.
               </p>
             </motion.div>
@@ -463,7 +463,7 @@ export function AerationManagementPage() {
                 <Activity className="w-6 h-6" />
               </div>
               <h3 className="text-lg font-bold text-white">Night Respiration Support</h3>
-              <p className="text-xs text-slate-300 leading-relaxed font-light">
+              <p className="text-xs text-slate-300 leading-relaxed">
                 Phytoplankton and pond sediment consume oxygen heavily during darkness. Operating full aeration horsepower at night prevents severe morning DO drops.
               </p>
             </motion.div>
@@ -485,7 +485,7 @@ export function AerationManagementPage() {
               <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
                 8 Key Aeration Considerations
               </h2>
-              <p className="text-slate-300 text-sm sm:text-base font-light">
+              <p className="text-slate-300 text-sm sm:text-base">
                 Practical elements evaluated when configuring pond aeration and oxygen support infrastructure.
               </p>
             </motion.div>
@@ -518,7 +518,7 @@ export function AerationManagementPage() {
 
                     <h3 className="text-base font-bold text-white">{item.title}</h3>
 
-                    <p className="text-xs text-slate-300 leading-relaxed font-light">
+                    <p className="text-xs text-slate-300 leading-relaxed">
                       {item.desc}
                     </p>
                   </div>
@@ -544,7 +544,7 @@ export function AerationManagementPage() {
               Aeration Planning &amp; Monitoring Workflow
             </h2>
 
-            <p className="text-slate-300 text-sm sm:text-base font-light">
+            <p className="text-slate-300 text-sm sm:text-base">
               How pond conditions lead to tailored aeration planning, daily monitoring, and logbook reviews.
             </p>
           </motion.div>
@@ -561,10 +561,10 @@ export function AerationManagementPage() {
                 >
                   <div className="space-y-3">
                     <div className="flex items-center justify-between">
-                      <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded bg-blue-500/10 border border-blue-500/30 text-blue-300">
+                      <span className="text-xs font-mono font-bold px-2 py-0.5 rounded bg-blue-500/10 border border-blue-500/30 text-blue-300">
                         {st.label}
                       </span>
-                      <span className="text-xs font-mono text-slate-500">{st.step}</span>
+                      <span className="text-xs font-mono text-slate-400">{st.step}</span>
                     </div>
 
                     <div className="w-10 h-10 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-blue-400">
@@ -573,7 +573,7 @@ export function AerationManagementPage() {
 
                     <h3 className="text-base font-bold text-white">{st.title}</h3>
 
-                    <p className="text-xs text-slate-400 leading-relaxed font-light">
+                    <p className="text-xs text-slate-400 leading-relaxed">
                       {st.desc}
                     </p>
                   </div>
@@ -599,7 +599,7 @@ export function AerationManagementPage() {
               Conventional → Scientific → Technology Assisted
             </h2>
 
-            <p className="text-slate-300 text-sm sm:text-base font-light">
+            <p className="text-slate-300 text-sm sm:text-base">
               How aeration practices evolve from experience-based schedules to lab-monitored and sensor-assisted oxygen management.
             </p>
           </div>
@@ -626,7 +626,7 @@ export function AerationManagementPage() {
                       <p className="text-xs font-mono text-slate-400 mt-1">{tier.subtitle}</p>
                     </div>
 
-                    <p className="text-xs text-slate-300 leading-relaxed font-light">
+                    <p className="text-xs text-slate-300 leading-relaxed">
                       {tier.desc}
                     </p>
 
@@ -634,7 +634,7 @@ export function AerationManagementPage() {
                       {tier.points.map((pt, pIdx) => (
                         <li key={pIdx} className="flex items-center space-x-2 text-xs text-slate-300">
                           <CheckCircle2 className={`w-3.5 h-3.5 ${tier.color} flex-shrink-0`} />
-                          <span className="font-light">{pt}</span>
+                          <span className="">{pt}</span>
                         </li>
                       ))}
                     </ul>
@@ -679,9 +679,9 @@ export function AerationManagementPage() {
                       <h3 className="text-base font-bold text-white group-hover:text-blue-300 transition-colors">
                         {svc.title}
                       </h3>
-                      <p className="text-[11px] font-mono text-slate-400 mt-0.5">{svc.subtitle}</p>
+                      <p className="text-xs font-mono text-slate-400 mt-0.5">{svc.subtitle}</p>
                     </div>
-                    <p className="text-xs text-slate-300 leading-relaxed font-light">{svc.desc}</p>
+                    <p className="text-xs text-slate-300 leading-relaxed">{svc.desc}</p>
                   </div>
 
                   <Link
@@ -710,7 +710,7 @@ export function AerationManagementPage() {
           <blockquote className="p-6 rounded-2xl bg-slate-900 border border-slate-800 text-slate-200 text-sm sm:text-base font-serif italic max-w-3xl mx-auto">
             &ldquo;Aeration planning should be evaluated based on real pond conditions, stocking biomass, oxygen demand, and equipment reliability—never on unrealistic energy-saving promises.&rdquo;
           </blockquote>
-          <p className="text-xs text-slate-400 font-light max-w-2xl mx-auto">
+          <p className="text-xs text-slate-400 max-w-2xl mx-auto">
             We provide practical, experience-backed aeration placement and horsepower planning tailored to your specific farm layout.
           </p>
         </div>
@@ -733,7 +733,7 @@ export function AerationManagementPage() {
                 Discuss Aeration Planning for Your Farm
               </h2>
 
-              <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-light">
+              <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
                 Whether you want to evaluate aerator horsepower requirements for growout ponds, optimize paddlewheel placement for central sludge movement, or explore subsurface aeration, speak directly with the KE Aqua Farms team.
               </p>
 
@@ -747,7 +747,7 @@ export function AerationManagementPage() {
                     <Phone className="w-5 h-5" />
                   </div>
                   <div>
-                    <span className="text-[11px] font-mono text-slate-400 block">Direct Call</span>
+                    <span className="text-xs font-mono text-slate-400 block">Direct Call</span>
                     <span className="text-sm font-bold text-white group-hover:text-blue-300 transition-colors">
                       {CONTACT_CONFIG.phone.display}
                     </span>
@@ -764,7 +764,7 @@ export function AerationManagementPage() {
                     <MessageSquare className="w-5 h-5" />
                   </div>
                   <div>
-                    <span className="text-[11px] font-mono text-slate-400 block">WhatsApp Enquiries</span>
+                    <span className="text-xs font-mono text-slate-400 block">WhatsApp Enquiries</span>
                     <span className="text-sm font-bold text-white group-hover:text-emerald-300 transition-colors">
                       Chat on WhatsApp
                     </span>
@@ -777,10 +777,10 @@ export function AerationManagementPage() {
                 <Clock className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
                 <div className="text-xs space-y-1">
                   <p className="font-semibold text-white">Working Hours &amp; Location:</p>
-                  <p className="text-slate-300 font-light">
+                  <p className="text-slate-300">
                     {CONTACT_CONFIG.operatingHours.days} • {CONTACT_CONFIG.operatingHours.time}
                   </p>
-                  <p className="text-slate-400 text-[11px] font-mono">{CONTACT_CONFIG.location.fullAddress}</p>
+                  <p className="text-slate-400 text-xs font-mono">{CONTACT_CONFIG.location.fullAddress}</p>
                 </div>
               </div>
             </motion.div>
@@ -790,7 +790,7 @@ export function AerationManagementPage() {
               <div className="rounded-2xl p-7 bg-slate-900/90 border border-slate-800 shadow-2xl space-y-6">
                 <div className="border-b border-slate-800 pb-4">
                   <h3 className="text-xl font-bold text-white">Aeration Management Enquiry Form</h3>
-                  <p className="text-xs text-slate-400 mt-1 font-light">
+                  <p className="text-xs text-slate-400 mt-1">
                     Submit your aeration planning enquiry below. Our team will contact you directly to discuss details.
                   </p>
                 </div>

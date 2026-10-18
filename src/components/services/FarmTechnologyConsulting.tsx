@@ -320,11 +320,11 @@ export function FarmTechnologyConsultingPage() {
             <Link href="/" className="hover:text-cyan-400 transition-colors">
               Home
             </Link>
-            <ChevronRight className="w-3.5 h-3.5 text-slate-600 flex-shrink-0" />
+            <ChevronRight className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />
             <Link href="/#services" className="hover:text-cyan-400 transition-colors">
               Capabilities
             </Link>
-            <ChevronRight className="w-3.5 h-3.5 text-slate-600 flex-shrink-0" />
+            <ChevronRight className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />
             <span className="text-cyan-400 font-medium whitespace-nowrap">
               Farm Technology Consulting
             </span>
@@ -353,7 +353,7 @@ export function FarmTechnologyConsultingPage() {
               </blockquote>
 
               {/* Supporting Text */}
-              <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-light">
+              <p className="text-base sm:text-lg text-slate-300 leading-relaxed">
                 At <strong className="text-white font-semibold">KE Aqua Farms</strong>, we do not operate as a machinery catalogue or equipment dealership. We evaluate aquaculture technology from real commercial farm needs—testing auto feeders, aeration setups, sensors, and micro-bubble units across our 30-acre working farm before advising growers.
               </p>
 
@@ -415,15 +415,15 @@ export function FarmTechnologyConsultingPage() {
                 {/* Overlaid Card Info */}
                 <div className="p-6 relative space-y-4">
                   <div className="flex items-center justify-between border-b border-slate-800 pb-3">
-                    <span className="text-xs font-mono text-cyan-400 uppercase tracking-widest">
+                    <span className="text-xs font-mono text-cyan-400 uppercase tracking-wide">
                       COMMERCIAL FIELD TESTED
                     </span>
-                    <span className="px-2.5 py-0.5 rounded-full bg-cyan-500/20 border border-cyan-500/40 text-cyan-300 text-[11px] font-mono">
+                    <span className="px-2.5 py-0.5 rounded-full bg-cyan-500/20 border border-cyan-500/40 text-cyan-300 text-xs font-mono">
                       30-ACRE FIELD BASE
                     </span>
                   </div>
 
-                  <p className="text-xs text-slate-300 leading-relaxed font-light">
+                  <p className="text-xs text-slate-300 leading-relaxed">
                     &ldquo;Every technology must justify its presence by solving a specific farm challenge and improving daily operational control.&rdquo;
                   </p>
 
@@ -433,7 +433,7 @@ export function FarmTechnologyConsultingPage() {
                     </div>
                     <div>
                       <h4 className="text-xs font-bold text-white">KE Aqua Farms Advisory</h4>
-                      <p className="text-[11px] text-slate-400 font-mono">Practical Equipment &amp; Advisory</p>
+                      <p className="text-xs text-slate-400 font-mono">Practical Equipment &amp; Advisory</p>
                     </div>
                   </div>
                 </div>
@@ -458,7 +458,7 @@ export function FarmTechnologyConsultingPage() {
               Our Technology Evaluation Philosophy
             </h2>
 
-            <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-light">
+            <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
               We evaluate farm technology by purpose, pond conditions, ease of field operation, and observed outcomes—not catalog marketing claims.
             </p>
           </motion.div>
@@ -475,10 +475,10 @@ export function FarmTechnologyConsultingPage() {
                 >
                   <div className="space-y-3">
                     <div className="flex items-center justify-between">
-                      <span className="text-[11px] font-mono font-bold px-2 py-0.5 rounded bg-cyan-500/10 border border-cyan-500/30 text-cyan-300">
+                      <span className="text-xs font-mono font-bold px-2 py-0.5 rounded bg-cyan-500/10 border border-cyan-500/30 text-cyan-300">
                         {st.label}
                       </span>
-                      <span className="text-xs font-mono text-slate-500">{st.step}</span>
+                      <span className="text-xs font-mono text-slate-400">{st.step}</span>
                     </div>
 
                     <div className="w-10 h-10 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-cyan-400">
@@ -487,7 +487,7 @@ export function FarmTechnologyConsultingPage() {
 
                     <h3 className="text-base font-bold text-white">{st.title}</h3>
 
-                    <p className="text-xs text-slate-400 leading-relaxed font-light">
+                    <p className="text-xs text-slate-400 leading-relaxed">
                       {st.desc}
                     </p>
                   </div>
@@ -512,7 +512,7 @@ export function FarmTechnologyConsultingPage() {
               <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
                 8 Practical Technology Areas
               </h2>
-              <p className="text-slate-300 text-sm sm:text-base font-light">
+              <p className="text-slate-300 text-sm sm:text-base">
                 Key technology domains evaluated and integrated into commercial shrimp farm operations.
               </p>
             </motion.div>
@@ -545,7 +545,7 @@ export function FarmTechnologyConsultingPage() {
 
                     <h3 className="text-base font-bold text-white">{area.title}</h3>
 
-                    <p className="text-xs text-slate-300 leading-relaxed font-light">
+                    <p className="text-xs text-slate-300 leading-relaxed">
                       {area.desc}
                     </p>
                   </div>
@@ -571,7 +571,7 @@ export function FarmTechnologyConsultingPage() {
               Traditional → Scientific → Advanced
             </h2>
 
-            <p className="text-slate-300 text-sm sm:text-base font-light">
+            <p className="text-slate-300 text-sm sm:text-base">
               Modern technology does not replace traditional experience—it builds upon it.
             </p>
           </div>
@@ -598,7 +598,7 @@ export function FarmTechnologyConsultingPage() {
                       <p className="text-xs font-mono text-slate-400 mt-1">{tier.subtitle}</p>
                     </div>
 
-                    <p className="text-xs text-slate-300 leading-relaxed font-light">
+                    <p className="text-xs text-slate-300 leading-relaxed">
                       {tier.desc}
                     </p>
 
@@ -606,7 +606,7 @@ export function FarmTechnologyConsultingPage() {
                       {tier.points.map((pt, pIdx) => (
                         <li key={pIdx} className="flex items-center space-x-2 text-xs text-slate-300">
                           <CheckCircle2 className={`w-3.5 h-3.5 ${tier.color} flex-shrink-0`} />
-                          <span className="font-light">{pt}</span>
+                          <span className="">{pt}</span>
                         </li>
                       ))}
                     </ul>
@@ -633,7 +633,7 @@ export function FarmTechnologyConsultingPage() {
               5 Questions Before Adopting Technology
             </h2>
 
-            <p className="text-slate-300 text-sm sm:text-base font-light">
+            <p className="text-slate-300 text-sm sm:text-base">
               Before investing in new farm machinery or sensors, evaluate these five critical questions.
             </p>
           </motion.div>
@@ -650,7 +650,7 @@ export function FarmTechnologyConsultingPage() {
                 </span>
                 <div className="space-y-1">
                   <h3 className="text-base sm:text-lg font-bold text-white">{item.q}</h3>
-                  <p className="text-xs text-slate-300 leading-relaxed font-light">{item.desc}</p>
+                  <p className="text-xs text-slate-300 leading-relaxed">{item.desc}</p>
                 </div>
               </motion.div>
             ))}
@@ -706,9 +706,9 @@ export function FarmTechnologyConsultingPage() {
                       <h3 className="text-sm font-bold text-white group-hover:text-cyan-300 transition-colors">
                         {sol.title}
                       </h3>
-                      <p className="text-[11px] font-mono text-slate-400 mt-0.5">{sol.subtitle}</p>
+                      <p className="text-xs font-mono text-slate-400 mt-0.5">{sol.subtitle}</p>
                     </div>
-                    <p className="text-xs text-slate-300 leading-relaxed font-light">{sol.desc}</p>
+                    <p className="text-xs text-slate-300 leading-relaxed">{sol.desc}</p>
                   </div>
 
                   <Link
@@ -742,7 +742,7 @@ export function FarmTechnologyConsultingPage() {
                 Discuss Your Farm Technology Requirements
               </h2>
 
-              <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-light">
+              <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
                 Whether you want to evaluate auto feeders for your growout ponds, optimize aeration positioning, or explore sensor monitoring, speak directly with the KE Aqua Farms team.
               </p>
 
@@ -756,7 +756,7 @@ export function FarmTechnologyConsultingPage() {
                     <Phone className="w-5 h-5" />
                   </div>
                   <div>
-                    <span className="text-[11px] font-mono text-slate-400 block">Direct Call</span>
+                    <span className="text-xs font-mono text-slate-400 block">Direct Call</span>
                     <span className="text-sm font-bold text-white group-hover:text-cyan-300 transition-colors">
                       {CONTACT_CONFIG.phone.display}
                     </span>
@@ -773,7 +773,7 @@ export function FarmTechnologyConsultingPage() {
                     <MessageSquare className="w-5 h-5" />
                   </div>
                   <div>
-                    <span className="text-[11px] font-mono text-slate-400 block">WhatsApp Enquiries</span>
+                    <span className="text-xs font-mono text-slate-400 block">WhatsApp Enquiries</span>
                     <span className="text-sm font-bold text-white group-hover:text-emerald-300 transition-colors">
                       Chat on WhatsApp
                     </span>
@@ -786,10 +786,10 @@ export function FarmTechnologyConsultingPage() {
                 <Clock className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                 <div className="text-xs space-y-1">
                   <p className="font-semibold text-white">Working Hours &amp; Location:</p>
-                  <p className="text-slate-300 font-light">
+                  <p className="text-slate-300">
                     {CONTACT_CONFIG.operatingHours.days} • {CONTACT_CONFIG.operatingHours.time}
                   </p>
-                  <p className="text-slate-400 text-[11px] font-mono">{CONTACT_CONFIG.location.fullAddress}</p>
+                  <p className="text-slate-400 text-xs font-mono">{CONTACT_CONFIG.location.fullAddress}</p>
                 </div>
               </div>
             </motion.div>
@@ -799,7 +799,7 @@ export function FarmTechnologyConsultingPage() {
               <div className="rounded-2xl p-7 bg-slate-900/90 border border-slate-800 shadow-2xl space-y-6">
                 <div className="border-b border-slate-800 pb-4">
                   <h3 className="text-xl font-bold text-white">Technology Advisory Enquiry</h3>
-                  <p className="text-xs text-slate-400 mt-1 font-light">
+                  <p className="text-xs text-slate-400 mt-1">
                     Submit your farm technology enquiry below. Our team will contact you directly to discuss your requirements.
                   </p>
                 </div>

@@ -119,7 +119,7 @@ export function ServicesSection() {
                     {["OBSERVE", "UNDERSTAND", "MEASURE", "ASSESS", "ACT", "IMPROVE"].map((step, i, arr) => (
                       <span key={step} className="flex items-center gap-1.5">
                         <span className="px-2 py-0.5 rounded bg-slate-900 text-emerald-400 border border-slate-800 font-bold tracking-wide">{step}</span>
-                        {i < arr.length - 1 && <ChevronRight className="w-3 h-3 text-slate-600" />}
+                        {i < arr.length - 1 && <ChevronRight className="w-3 h-3 text-slate-400" />}
                       </span>
                     ))}
                   </div>
@@ -411,11 +411,11 @@ export function ServicesSection() {
             {/* Lab Image Banner Card */}
             <motion.div {...fadeUp(0.1)} className="lg:col-span-5 relative rounded-2xl overflow-hidden border border-slate-800 min-h-[340px] flex flex-col justify-end p-6 sm:p-8 shadow-2xl">
               <Image
-                src="/assets/svc-lab-bg.jpg"
-                alt="Lab technician conducting microscopic observation"
+                src="/Real_Images/image_7.jpeg"
+                alt="Aqua Pulse laboratory technician conducting water testing and titration diagnostics"
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                className="object-cover"
+                className="object-cover object-center"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/70 to-transparent" />
               <div className="relative z-10 space-y-3">
@@ -551,65 +551,65 @@ export function ServicesSection() {
               
               <div className="p-4 rounded-xl bg-slate-950/90 border border-slate-800 hover:border-emerald-500/50 transition-all flex flex-col justify-between">
                 <div>
-                  <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-wider">Tier 1</span>
-                  <h5 className="text-sm font-bold text-white mt-1 mb-2">1-Day Exposure Program</h5>
-                  <p className="text-xs text-slate-300 leading-relaxed">
+                  <span className="text-xs font-bold text-emerald-400 uppercase tracking-wide">Tier 1</span>
+                  <h5 className="text-base font-bold text-white mt-1 mb-2">1-Day Exposure Program</h5>
+                  <p className="text-sm text-slate-200 leading-relaxed">
                     Guided 30-acre farm tour, basic water testing demo, and operational overview for beginners.
                   </p>
                 </div>
-                <div className="mt-4 pt-2 border-t border-slate-900 text-[11px] text-slate-400 font-mono">
+                <div className="mt-4 pt-2 border-t border-slate-900 text-xs text-slate-400 font-mono">
                   Duration: 1 Day
                 </div>
               </div>
 
               <div className="p-4 rounded-xl bg-slate-950/90 border border-slate-800 hover:border-emerald-500/50 transition-all flex flex-col justify-between">
                 <div>
-                  <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-wider">Tier 2</span>
-                  <h5 className="text-sm font-bold text-white mt-1 mb-2">3-Day Technical Orientation</h5>
-                  <p className="text-xs text-slate-300 leading-relaxed">
+                  <span className="text-xs font-bold text-emerald-400 uppercase tracking-wide">Tier 2</span>
+                  <h5 className="text-base font-bold text-white mt-1 mb-2">3-Day Technical Orientation</h5>
+                  <p className="text-sm text-slate-200 leading-relaxed">
                     Water quality parameter management, basic feeding schedules, and health monitoring essentials.
                   </p>
                 </div>
-                <div className="mt-4 pt-2 border-t border-slate-900 text-[11px] text-slate-400 font-mono">
+                <div className="mt-4 pt-2 border-t border-slate-900 text-xs text-slate-400 font-mono">
                   Duration: 3 Days
                 </div>
               </div>
 
               <div className="p-4 rounded-xl bg-slate-950/90 border border-slate-800 hover:border-emerald-500/50 transition-all flex flex-col justify-between">
                 <div>
-                  <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-wider">Tier 3</span>
-                  <h5 className="text-sm font-bold text-white mt-1 mb-2">7-Day Operator Workshop</h5>
-                  <p className="text-xs text-slate-300 leading-relaxed">
+                  <span className="text-xs font-bold text-emerald-400 uppercase tracking-wide">Tier 3</span>
+                  <h5 className="text-base font-bold text-white mt-1 mb-2">7-Day Operator Workshop</h5>
+                  <p className="text-sm text-slate-200 leading-relaxed">
                     Pond prep, seed stocking protocol, feeder setup, lab testing practice, and daily farm routines.
                   </p>
                 </div>
-                <div className="mt-4 pt-2 border-t border-slate-900 text-[11px] text-slate-400 font-mono">
+                <div className="mt-4 pt-2 border-t border-slate-900 text-xs text-slate-400 font-mono">
                   Duration: 7 Days
                 </div>
               </div>
 
               <div className="p-4 rounded-xl bg-slate-950/90 border border-slate-800 hover:border-emerald-500/50 transition-all flex flex-col justify-between">
                 <div>
-                  <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-wider">Tier 4</span>
-                  <h5 className="text-sm font-bold text-white mt-1 mb-2">15-Day Management Course</h5>
-                  <p className="text-xs text-slate-300 leading-relaxed">
+                  <span className="text-xs font-bold text-emerald-400 uppercase tracking-wide">Tier 4</span>
+                  <h5 className="text-base font-bold text-white mt-1 mb-2">15-Day Management Course</h5>
+                  <p className="text-sm text-slate-200 leading-relaxed">
                     End-to-end farm management, bio-security setup, FCR optimization, disease response, harvesting.
                   </p>
                 </div>
-                <div className="mt-4 pt-2 border-t border-slate-900 text-[11px] text-slate-400 font-mono">
+                <div className="mt-4 pt-2 border-t border-slate-900 text-xs text-slate-400 font-mono">
                   Duration: 15 Days
                 </div>
               </div>
 
               <div className="p-4 rounded-xl bg-emerald-950/40 border border-emerald-700/60 hover:border-emerald-500 transition-all flex flex-col justify-between">
                 <div>
-                  <span className="text-[10px] font-bold text-emerald-300 uppercase tracking-wider">Tier 5</span>
-                  <h5 className="text-sm font-bold text-white mt-1 mb-2">Full Crop Internship</h5>
-                  <p className="text-xs text-slate-200 leading-relaxed">
+                  <span className="text-xs font-bold text-emerald-300 uppercase tracking-wide">Tier 5</span>
+                  <h5 className="text-base font-bold text-white mt-1 mb-2">Full Crop Internship</h5>
+                  <p className="text-sm text-slate-200 leading-relaxed">
                     Complete seasonal exposure from pre-stocking pond preparation through growout to harvest &amp; sales.
                   </p>
                 </div>
-                <div className="mt-4 pt-2 border-t border-emerald-900/60 text-[11px] text-emerald-400 font-mono font-bold">
+                <div className="mt-4 pt-2 border-t border-emerald-900/60 text-xs text-emerald-300 font-mono font-bold">
                   Full Crop Duration
                 </div>
               </div>
@@ -617,7 +617,7 @@ export function ServicesSection() {
             </div>
 
             {/* Who Can Join Strip */}
-            <div className="mt-8 pt-6 border-t border-slate-800 grid grid-cols-1 md:grid-cols-4 gap-4 text-xs">
+            <div className="mt-8 pt-6 border-t border-slate-800 grid grid-cols-1 md:grid-cols-4 gap-4 text-sm">
               <div className="flex items-center gap-2 text-slate-200">
                 <Users className="w-4 h-4 text-emerald-400 shrink-0" />
                 <span>New Farmers &amp; Entrepreneurs</span>
@@ -636,7 +636,7 @@ export function ServicesSection() {
               </div>
             </div>
 
-            <div className="mt-6 p-3.5 rounded-xl bg-amber-950/40 border border-amber-800/60 text-xs text-amber-200 flex items-center justify-between">
+            <div className="mt-6 p-3.5 rounded-xl bg-amber-950/40 border border-amber-800/60 text-sm text-amber-200 flex items-center justify-between">
               <span className="flex items-center gap-2">
                 <AlertTriangle className="w-4 h-4 text-amber-400 shrink-0" />
                 <span>Disclaimer: Training programs provide technical skills and practical farm exposure. We do not advertise guaranteed financial returns or risk-free investments.</span>

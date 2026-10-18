@@ -239,11 +239,11 @@ export function AquacultureInputsProductsPage() {
             <Link href="/" className="hover:text-emerald-400 transition-colors">
               Home
             </Link>
-            <ChevronRight className="w-3.5 h-3.5 text-slate-600" />
+            <ChevronRight className="w-3.5 h-3.5 text-slate-400" />
             <Link href="/#services" className="hover:text-emerald-400 transition-colors">
               Services
             </Link>
-            <ChevronRight className="w-3.5 h-3.5 text-slate-600" />
+            <ChevronRight className="w-3.5 h-3.5 text-slate-400" />
             <span className="text-emerald-400">Inputs &amp; Farmer Support</span>
           </motion.div>
 
@@ -306,7 +306,7 @@ export function AquacultureInputsProductsPage() {
                       <p className="text-xs text-emerald-400">Feed · Health · Growth</p>
                     </div>
                   </div>
-                  <span className="text-[10px] uppercase tracking-wider font-semibold px-2.5 py-1 rounded-full bg-emerald-950 text-emerald-300 border border-emerald-500/30">
+                  <span className="text-xs uppercase tracking-wider font-semibold px-2.5 py-1 rounded-full bg-emerald-950 text-emerald-300 border border-emerald-500/30">
                     Input Vertical
                   </span>
                 </div>
@@ -468,7 +468,7 @@ export function AquacultureInputsProductsPage() {
                         </div>
                         <h3 className="text-lg sm:text-xl font-bold text-white">{cat.title}</h3>
                       </div>
-                      <span className="text-[10px] font-semibold px-2.5 py-0.5 rounded-full bg-slate-800 text-emerald-300 border border-slate-700">
+                      <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-slate-800 text-emerald-300 border border-slate-700">
                         {cat.badge}
                       </span>
                     </div>
@@ -633,7 +633,7 @@ export function AquacultureInputsProductsPage() {
                     <Icon className={`w-5 h-5 ${srv.color}`} />
                     <span className="text-xs font-bold text-white group-hover:text-emerald-300 transition-colors">{srv.title}</span>
                   </div>
-                  <ChevronRight className="w-4 h-4 text-slate-500 group-hover:text-emerald-400 transition-colors" />
+                  <ChevronRight className="w-4 h-4 text-slate-400 group-hover:text-emerald-400 transition-colors" />
                 </Link>
               );
             })}
