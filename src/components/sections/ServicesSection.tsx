@@ -671,7 +671,7 @@ export function ServicesSection() {
               </p>
               <ul className="space-y-2 text-xs text-slate-200">
                 <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-indigo-400 shrink-0" /> Soil salinity &amp; seepage evaluation</li>
-                <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-indigo-400 shrink-0" /> Drainage &amp; central drain design</li>
+                <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-indigo-400 shrink-0" /> Drainage &amp; pond layout design</li>
               </ul>
             </motion.div>
 

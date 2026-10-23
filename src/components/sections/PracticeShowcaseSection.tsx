@@ -23,7 +23,7 @@ const farmPractices = [
     id: "farming-ops",
     title: "Commercial Aquaculture Farming",
     subtitle: "30-Acre Commercial Growout Facility",
-    image: "/Real_Images/image_1.jpeg",
+    image: "/assets/Commercial Aquaculture Farming.jpeg",
     tag: "Field Infrastructure",
     description:
       "Operating 30 acres of commercial growout ponds under active coastal weather and biological conditions in Andhra Pradesh. Real crop management, water management, and daily pond operations.",
@@ -36,13 +36,13 @@ const farmPractices = [
   {
     id: "pond-infra",
     title: "Pond Infrastructure & Design",
-    subtitle: "Central Drains & High Dyke Engineering",
-    image: "/Real_Images/image_4.jpeg",
+    subtitle: "Dyke Compaction & Pond Layout",
+    image: "/assets/Pond Infrastructure & Design.jpeg",
     tag: "Infrastructure",
     description:
-      "Earthen pond design optimized for efficient water circulation, sludge accumulation towards central drains, and solar-assisted monitoring stations on dykes.",
+      "Earthen pond design optimized for efficient water circulation, embankment stability, and solar-assisted monitoring stations on dykes.",
     details: [
-      "Central drain systems for regular bottom sludge siphoning",
+      "Engineered earthen pond layout for optimal water circulation",
       "High dyke compaction to prevent seepage and erosion",
       "Solar-assisted energy units for remote monitoring stations",
     ],
@@ -51,7 +51,7 @@ const farmPractices = [
     id: "pond-prep",
     title: "Pond Preparation Protocols",
     subtitle: "Soil Desilting & Natural Plankton Blooms",
-    image: "/Real_Images/image_5.jpeg",
+    image: "/assets/Pond Preparation Protocols.jpeg",
     tag: "Pre-Stocking",
     description:
       "Thorough sun-drying, soil desilting, agricultural liming, reservoir water treatment, and natural beneficial plankton bloom establishment before PL stocking.",
@@ -65,7 +65,7 @@ const farmPractices = [
     id: "seed-select",
     title: "Seed Selection & Screening",
     subtitle: "PL Quality & Pathogen Verification",
-    image: "/Real_Images/image_2.jpeg",
+    image: "/assets/Seed Selection & Screening.jpeg",
     tag: "Seed Quality",
     description:
       "Microscopic screening of Post-Larvae (PL) for gut fullness, muscle-to-gut ratio, stress test survival, and cross-verification of PCR pathogen test reports.",
@@ -79,7 +79,7 @@ const farmPractices = [
     id: "stocking",
     title: "Controlled Stocking Protocol",
     subtitle: "Acclimatization & Carrying Capacity",
-    image: "/Real_Images/image_2.jpeg",
+    image: "/assets/Controlled Stocking Protocol.jpeg",
     tag: "Stocking",
     description:
       "Gradual temperature and salinity acclimation on pond dykes before seed release, maintaining optimal stocking densities aligned with aeration capacity.",
@@ -93,7 +93,7 @@ const farmPractices = [
     id: "feeding",
     title: "Regulated Feeding & Check Trays",
     subtitle: "Check-Tray Monitoring & FCR Control",
-    image: "/Real_Images/image_4.jpeg",
+    image: "/assets/Regulated Feeding & Check Trays.jpeg",
     tag: "Feed Management",
     description:
       "Four-ration daily feeding schedules combined with regular check-tray inspections to monitor appetite, prevent overfeeding, and optimize Feed Conversion Ratio (FCR).",
@@ -107,7 +107,7 @@ const farmPractices = [
     id: "auto-feeding",
     title: "Automated Feeding Systems",
     subtitle: "Broadcasting Units for Growth Uniformity",
-    image: "/Real_Images/image_5.jpeg",
+    image: "/assets/Automated_feeding_system.jpeg",
     tag: "Automation",
     description:
       "Deployment of electric auto-feeders with timer controls and adjustable broadcasting radii, ensuring continuous small-ration feeding across growout ponds.",
@@ -121,13 +121,13 @@ const farmPractices = [
     id: "aeration",
     title: "Aeration Management & DO Control",
     subtitle: "Paddlewheels & Subsurface Air Injectors",
-    image: "/Real_Images/image_1.jpeg",
+    image: "/assets/Aeration Management & DO Control.jpeg",
     tag: "Oxygenation",
     description:
       "Strategic arrangement of 4-HP paddlewheel aerators and subsurface jet aerators to maintain dissolved oxygen levels above 4.5 ppm continuously.",
     details: [
       "24/7 aeration rotation matching biomass weight and light conditions",
-      "Circular water current creation to drive organic waste to central drain",
+      "Circular water current creation to accumulate waste into pond center",
       "Emergency aerator backup power for nighttime DO dips",
     ],
   },
@@ -135,7 +135,7 @@ const farmPractices = [
     id: "water-mgmt",
     title: "Water Management & Minerals",
     subtitle: "Salinity, pH & Mineral Balance Tracking",
-    image: "/Real_Images/image_7.jpeg",
+    image: "/assets/Water Management & Minerals.jpeg",
     tag: "Water Chemistry",
     description:
       "Daily parameter logging of pH, salinity, alkalinity, hardness, and calcium-magnesium ratios to support regular molting cycles and water stability.",
@@ -149,7 +149,7 @@ const farmPractices = [
     id: "health-monitor",
     title: "Animal Health Monitoring",
     subtitle: "Routine Sampling & Gut Checks",
-    image: "/Real_Images/image_6.jpeg",
+    image: "/assets/Animal Health Monitoring.jpeg",
     tag: "Health Screening",
     description:
       "Weekly cast-net sampling to observe shrimp weight gain (ADG), shell hardness, gut fullness, hepatopancreas color, and check for gill fouling or lethargy.",
@@ -163,7 +163,7 @@ const farmPractices = [
     id: "biosecurity",
     title: "Biosecurity Systems",
     subtitle: "Multi-Barrier Protection Protocols",
-    image: "/Real_Images/image_5.jpeg",
+    image: "/assets/Biosecurity Systems.jpeg",
     tag: "Biosecurity",
     description:
       "Physical exclusion barriers including bird netting, crab fencing, tire disinfestation baths, and restricted visitor entry protocols to protect growout ponds.",
@@ -177,7 +177,7 @@ const farmPractices = [
     id: "harvest",
     title: "Harvest Operations",
     subtitle: "Partial & Final Net Harvests",
-    image: "/Real_Images/image_4.jpeg",
+    image: "/assets/Harvest Operations.jpeg",
     tag: "Harvest",
     description:
       "Organized partial or complete harvests using specialized drag nets, immediate ice chilling on dykes, and rapid size grading for market dispatch.",
@@ -191,7 +191,7 @@ const farmPractices = [
     id: "crop-analysis",
     title: "Farm Records & Crop Analysis",
     subtitle: "Data-Driven Production Logging",
-    image: "/Real_Images/image_8.jpeg",
+    image: "/assets/Farm Records & Crop Analysis.jpeg",
     tag: "Data Logging",
     description:
       "Detailed record-keeping covering daily feed consumption, water parameters, energy usage, total survival rate, FCR, and crop financial analysis.",
@@ -209,7 +209,7 @@ const labPractices = [
     id: "lab-water",
     title: "Water Quality Parameter Monitoring",
     subtitle: "Chemical Titration & Spectrophotometry",
-    image: "/Real_Images/image_7.jpeg",
+    image: "/assets/Water Management & Minerals.jpeg",
     tag: "Lab Diagnostics",
     description:
       "Precision testing for key water parameters including pH, Salinity, Total Ammonia Nitrogen (TAN), Toxic Nitrite (NO2), Alkalinity, Hardness, Calcium, and Magnesium.",
@@ -237,7 +237,7 @@ const labPractices = [
     id: "lab-health",
     title: "Shrimp Health & Hepatopancreas Inspection",
     subtitle: "Lipid Droplet & Organ Integrity Analysis",
-    image: "/Real_Images/image_6.jpeg",
+    image: "/assets/Seed Selection & Screening.jpeg",
     tag: "Organ Screening",
     description:
       "Microscopic analysis of the hepatopancreas structure, observing lipid droplet density, tubule integrity, and early signs of cellular tubule atrophy.",
@@ -251,7 +251,7 @@ const labPractices = [
     id: "lab-plankton",
     title: "Plankton & Microalgae Observation",
     subtitle: "Diatom vs Cyanobacteria Colony Counting",
-    image: "/Real_Images/image_6.jpeg",
+    image: "/assets/Regulated Feeding & Check Trays.jpeg",
     tag: "Algal Ecology",
     description:
       "Microscopic identification and counting of beneficial diatoms vs harmful blue-green algae (cyanobacteria) to guide pond water treatment decisions.",
@@ -283,7 +283,7 @@ const techPractices = [
     id: "tech-feeders",
     title: "Automated Feeding Technology",
     subtitle: "Timer-Based Feed Broadcasting",
-    image: "/Real_Images/image_5.jpeg",
+    image: "/assets/Automated_feeding_system.jpeg",
     tag: "Smart Hardware",
     description:
       "Automated feed broadcasting units installed across growout ponds to disperse feed evenly, reducing labor costs and preventing bottom sludge buildup.",
@@ -297,7 +297,7 @@ const techPractices = [
     id: "tech-station",
     title: "Solar-Powered Dyke Monitoring",
     subtitle: "24/7 Dyke Security & Data Nodes",
-    image: "/Real_Images/image_1.jpeg",
+    image: "/assets/hero-tech-farm.jpg",
     tag: "Solar Tech",
     description:
       "Off-grid solar power stations deployed on pond dykes to power continuous sensor arrays, night security lighting, and wireless data transmission nodes.",
@@ -311,7 +311,7 @@ const techPractices = [
     id: "tech-sensors",
     title: "IoT Water Quality Probes",
     subtitle: "Continuous pH, DO & Temperature Sensors",
-    image: "/Real_Images/image_7.jpeg",
+    image: "/assets/svc-tech-bg.jpg",
     tag: "Digital Probes",
     description:
       "Digital probe sensor arrays suspended in active ponds for real-time tracking of dissolved oxygen, pH, temperature, and electrical conductivity.",
@@ -325,7 +325,7 @@ const techPractices = [
     id: "tech-aeration",
     title: "Aeration Management Systems",
     subtitle: "Paddlewheel & Jet Aeration Synchronization",
-    image: "/Real_Images/image_1.jpeg",
+    image: "/assets/Aeration Management & DO Control.jpeg",
     tag: "Aeration Tech",
     description:
       "Synchronized aeration systems combining high-efficiency paddlewheel aerators with directional jet injectors to maximize gas transfer and water movement.",
@@ -339,7 +339,7 @@ const techPractices = [
     id: "tech-nanobubble",
     title: "Micro & Nano Bubble Technology",
     subtitle: "Deep Benthic Gas Dissolution",
-    image: "/Real_Images/image_4.jpeg",
+    image: "/assets/hero-farm-pond.jpg",
     tag: "Advanced Oxygenation",
     description:
       "Evaluation of micro and nano bubble generator units designed to increase oxygen residence time in pond water and prevent anaerobic sludge zones.",
@@ -353,7 +353,7 @@ const techPractices = [
     id: "tech-records",
     title: "Digital Farm Data & Records",
     subtitle: "Centralized Crop Parameter Tracking",
-    image: "/Real_Images/image_8.jpeg",
+    image: "/assets/Farm Records & Crop Analysis.jpeg",
     tag: "Data Software",
     description:
       "Centralized digital logging of daily feeding rates, water test results, chemical dosages, harvest counts, and overall pond economic performance.",
@@ -502,33 +502,52 @@ export function PracticeShowcaseSection() {
               
               {/* Left Column: Featured Image with Hover Scale */}
               <div className="lg:col-span-6 space-y-4">
-                <div className="relative h-72 sm:h-96 rounded-2xl overflow-hidden border border-slate-700/80 shadow-xl group">
+                <div className="relative h-80 sm:h-[420px] lg:h-[460px] rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl bg-slate-950 flex items-center justify-center group">
+                  {/* Ambient background glow derived from image colors */}
                   <Image
                     src={activeItem.image}
-                    alt={activeItem.title}
+                    alt=""
                     fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    className="object-cover group-hover:scale-105 transition-transform duration-700"
+                    aria-hidden="true"
+                    className="object-cover blur-2xl opacity-20 scale-110 pointer-events-none"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent opacity-90" />
                   
-                  {/* Top Badge */}
-                  <div className="absolute top-4 left-4 z-10">
-                    <span className="px-3 py-1.5 rounded-lg bg-slate-950/90 backdrop-blur border border-slate-800 text-cyan-400 font-mono text-xs font-bold uppercase tracking-wider">
+                  {/* Fully visible, uncropped image */}
+                  <div className="relative w-full h-full p-2 z-10 flex items-center justify-center">
+                    <Image
+                      src={activeItem.image}
+                      alt={activeItem.title}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      className="object-contain transition-transform duration-500 group-hover:scale-[1.02]"
+                      priority
+                    />
+                  </div>
+                  
+                  {/* Top Category Badge */}
+                  <div className="absolute top-3 left-3 z-20">
+                    <span className="px-3 py-1 rounded-lg bg-slate-950/85 backdrop-blur border border-slate-700 text-cyan-400 font-mono text-xs font-bold uppercase tracking-wider shadow-lg">
                       {activeItem.tag}
                     </span>
                   </div>
 
-                  {/* Bottom Image Caption */}
-                  <div className="absolute bottom-4 left-4 right-4 p-3.5 rounded-xl bg-slate-950/90 backdrop-blur border border-slate-800 z-10 flex items-center justify-between">
-                    <div>
-                      <span className="text-xs font-mono text-slate-300 uppercase tracking-wide block">Operational Area</span>
-                      <p className="text-sm font-bold text-white truncate max-w-[240px] sm:max-w-none">{activeItem.subtitle}</p>
-                    </div>
-                    <span className="text-xs font-mono font-bold text-cyan-400 bg-cyan-950/60 px-2.5 py-1 rounded border border-cyan-800">
+                  {/* Top Item Index Counter */}
+                  <div className="absolute top-3 right-3 z-20">
+                    <span className="text-xs font-mono font-bold text-cyan-300 bg-slate-950/85 backdrop-blur px-2.5 py-1 rounded-lg border border-slate-700 shadow-lg">
                       {selectedIndex + 1} / {currentData.length}
                     </span>
                   </div>
+                </div>
+
+                {/* Subtitle / Operational Area caption placed underneath so it never blocks the image */}
+                <div className="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800 flex items-center justify-between gap-3">
+                  <div>
+                    <span className="text-[11px] font-mono text-cyan-400 uppercase tracking-wider block font-semibold">Operational Area</span>
+                    <p className="text-sm font-bold text-white">{activeItem.subtitle}</p>
+                  </div>
+                  <span className="text-xs font-mono text-slate-400 shrink-0">
+                    Field Verified
+                  </span>
                 </div>
 
                 {/* Quick Item Stepper Navigation Buttons */}

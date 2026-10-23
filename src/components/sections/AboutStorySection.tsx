@@ -194,10 +194,10 @@ export function AboutStorySection() {
 
           {/* Large Authentic Farm Image & Stat Callout */}
           <motion.div {...fadeUp(0.2)} className="lg:col-span-5 space-y-4">
-            <div className="relative h-80 sm:h-96 rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl group">
+            <div className="relative h-80 sm:h-96 lg:h-[420px] rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl group">
               <Image
-                src="/Real_Images/image_1.jpeg"
-                alt="KE Aqua Farms 30-acre growout pond facility"
+                src="/assets/pond_home.jpeg"
+                alt="KE Aqua Farms 30-acre growout pond facility and infrastructure layout"
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className="object-cover group-hover:scale-105 transition-transform duration-700"

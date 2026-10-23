@@ -68,7 +68,7 @@ const experienceAreas = [
   {
     id: "pond-infra",
     title: "Pond Infrastructure",
-    desc: "See pond construction, lining, central drain systems, sluice gates and how individual ponds are designed to support biosecurity and water management.",
+    desc: "See earthen pond construction, dyke compaction, sluice gates and how individual ponds are designed to support biosecurity and water management.",
     icon: Waves,
     color: "text-cyan-400",
     bg: "bg-cyan-500/10 border-cyan-500/30",

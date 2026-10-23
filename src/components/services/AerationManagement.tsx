@@ -89,7 +89,7 @@ const aerationConsiderations = [
   {
     id: "farm-conditions",
     title: "4. Pond Shape & Circulation",
-    desc: "Positioning aerators to generate a continuous circular water current that concentrates sludge into the central pond drain.",
+    desc: "Positioning aerators to generate a continuous circular water current that concentrates sludge into the pond center.",
     icon: RotateCw,
     color: "text-teal-400",
     bg: "bg-teal-500/10 border-teal-500/30",
@@ -388,7 +388,7 @@ export function AerationManagementPage() {
                   </div>
 
                   <p className="text-xs text-slate-300 leading-relaxed">
-                    &ldquo;Proper aerator positioning creates a continuous circular flow that moves bottom sludge to the central drain while maintaining oxygen saturation across the feeding zone.&rdquo;
+                    &ldquo;Proper aerator positioning creates a continuous circular flow that moves bottom sludge to the pond center while maintaining oxygen saturation across the feeding zone.&rdquo;
                   </p>
 
                   <div className="flex items-center space-x-3 pt-1">
